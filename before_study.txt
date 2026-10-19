@@ -1,0 +1,7 @@
+以后每次开始学习前，在项目目录执行：
+git pull --ff-only
+学习结束后：
+git add .
+git status
+git commit -m "记录本次学习进展"
+git push
