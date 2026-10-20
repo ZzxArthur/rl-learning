@@ -1,3 +1,6 @@
+# 练习17：使用-log_prob(action) * reward，观察奖励对动作概率更新的影响。
+# 当前reward=-1，动作2的概率降低；末尾记录正、零、负奖励的结果。
+
 import torch
 
 logits = torch.tensor(

@@ -1,0 +1,7 @@
+
+x.shape	    获取完整形状	torch.Size([2, 3])
+x.shape[0]	获取第 0 维大小	    2
+x.shape[1]	获取第 1 维大小	    3
+len(x)	    获取第 0 维大小	    2
+x.ndim	    获取维度数量	    2
+x.numel()	获取所有元素数量	 6

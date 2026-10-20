@@ -1,3 +1,6 @@
+# 练习15：为两条样本分别查询所选动作的log_prob，并与参考值比较。
+# 核对概率(2, 3)、动作(2,)与输出log_probs(2,)的对应关系。
+
 import torch
 
 batch_probs = torch.tensor(

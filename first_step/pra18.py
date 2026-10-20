@@ -1,3 +1,6 @@
+# 练习18：将两条样本的log_prob按奖励加权并取均值，直接优化两行独立logits。
+# 执行一次SGD更新，再重新计算动作概率和批量平均损失。
+
 import torch
 
 batch_logits = torch.tensor(

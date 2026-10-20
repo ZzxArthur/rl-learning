@@ -1,5 +1,5 @@
 # 练习14：用softmax转换动作分数，并使用Categorical分布采样。
-# 固定随机种子，抽取10000个动作并统计各动作的出现频率。
+# 固定随机种子，抽取100000个动作统计频率，并核对给定动作的log_prob。
 import torch
 
 logits = torch.tensor(

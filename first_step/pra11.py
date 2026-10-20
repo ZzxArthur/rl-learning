@@ -10,7 +10,6 @@ class EzNet:
         self.w2 = torch.randn([1, 1], requires_grad=True)
         self.b  = torch.randn([1, 1], requires_grad=True)
 
-
     def predict(self, x):
         y = x[:, 0] * self.w1 + x[:, 1] * self.w2 + self.b
         return y
@@ -36,7 +35,8 @@ train_loss = eznet.loss(x, t)
 train_loss.backward()
 
 print(eznet.w1.grad, eznet.w2.grad, eznet.b.grad)
-print(torch.allclose(dw1, eznet.w1.grad), torch.allclose(dw2, eznet.w2.grad), torch.allclose(db, eznet.b.grad))
+print(torch.allclose(dw1, eznet.w1.grad), torch.allclose(dw2, eznet.w2.grad), \
+       torch.allclose(db, eznet.b.grad))
 
 
 

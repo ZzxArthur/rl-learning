@@ -1,3 +1,6 @@
+# 练习16：直接优化三个logits，观察log_prob损失的符号如何影响动作概率。
+# 当前loss=log_prob(action)，一次SGD更新会降低动作2的概率。
+
 import torch
 
 logits = torch.tensor(

@@ -1,3 +1,6 @@
+# 练习12：用nn.Module和nn.Parameter注册线性模型的权重与偏置。
+# 通过parameters()将参数交给SGD管理，使用MSE训练双特征线性回归。
+
 import torch
 import torch.nn as nn
 import torch.nn.functional as F

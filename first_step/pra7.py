@@ -14,11 +14,11 @@ def mse_loss(y, t):
         raise ValueError("y 与 t 的形状必须一致")
         
 
-x = torch.tensor([[0], [1], [2], [3]], dtype = torch.float32)
-t = torch.tensor([[1], [3], [5], [7]], dtype = torch.float32)
+x = torch.tensor([[0], [1], [2], [3]], dtype=torch.float32)
+t = torch.tensor([[1], [3], [5], [7]], dtype=torch.float32)
 step = 0
 model = torch.nn.Linear(in_features=1, out_features=1)
-optimizer = torch.optim.SGD(model.parameters(), lr = 0.2)
+optimizer = torch.optim.SGD(model.parameters(), lr=0.2)
 y = model(x)
 loss = mse_loss(y, t)
 while loss > 1e-6 and step < 100:
