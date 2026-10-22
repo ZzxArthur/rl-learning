@@ -1,7 +1,21 @@
-
+"""
 x.shape	    获取完整形状	torch.Size([2, 3])
 x.shape[0]	获取第 0 维大小	    2
 x.shape[1]	获取第 1 维大小	    3
 len(x)	    获取第 0 维大小	    2
 x.ndim	    获取维度数量	    2
 x.numel()	获取所有元素数量	 6
+"""
+
+x = torch.tensor(obs, dtype=torch.float32).unsqueeze(0) # 维度转换,unsqueeze(0) 在最前面增加一个维度，把 (4,) 变为 (1,4)
+
+
+"""
+logits_mc = torch.tensor(
+    [0.0, 0.0], dtype=torch.float32, requires_grad=True
+)
+reward_table = torch.tensor([1.0, 3.0], dtype=torch.float32)
+distribution_logits_ms = torch.distributions.Categorical(logits=logits_mc)
+action_sample = distribution_logits_ms.sample((1000,))
+sample_rewards = reward_table[action_sample]  #把 action_sample 中的每个数字当作索引，从 reward_table 中取出对应位置的值。
+"""

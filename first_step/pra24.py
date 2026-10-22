@@ -9,13 +9,13 @@ def collect_episode(env, seed):
     env.action_space.seed(seed)
     action_space = env.action_space
     transition = [] 
-    step = 0
+ 
     while True:
         action = action_space.sample()
         next_obs, reward, terminated, truncated, info = env.step(action)
         transition.append([obs, action, reward, next_obs, terminated, truncated])
         obs = next_obs
-        step += 1
+
         if terminated or truncated:
             break
     return transition
@@ -30,13 +30,20 @@ def collect_episode(env, seed):
 # spec	环境的配置信息，用于创建环境	环境配置
 # metadata	环境的元数据，例如支持的渲染模式、帧率等	环境说明信息
 # np_random	环境使用的 NumPy 随机数生成器	控制环境随机性
+
+
 env = gym.make("CartPole-v1")  # osb[0]:小车水平位置 osb[1]:小车水平位置 osb[2]:小车水平位置 osb[3]:小车水平位置
 seed = 42
 trajectory = collect_episode(env, seed)
 print(trajectory)
 print(sum(trajectory[i][2] for i in range(len(trajectory))))
-
+print(len(trajectory))
+print(trajectory[-1][4])
+print(trajectory[-1][5])
+print(trajectory[0][0].shape)
+print(trajectory[0][0].dtype)
 env.close()
+
 # env.action_space.seed(seed) # 固定随机动作种子
 # action = env.action_space.sample()
 # env.step(action)
