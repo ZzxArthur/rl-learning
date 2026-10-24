@@ -19,3 +19,26 @@ distribution_logits_ms = torch.distributions.Categorical(logits=logits_mc)
 action_sample = distribution_logits_ms.sample((1000,))
 sample_rewards = reward_table[action_sample]  #把 action_sample 中的每个数字当作索引，从 reward_table 中取出对应位置的值。
 """
+
+"""
+之前写loss的计算,每次算一项，最后累加成平均值：
+L = torch.tensor(0.0)
+T = actions_log_prob.numel()
+
+for i in range(T):
+    L += -actions_log_prob[i] * gt[i] / T
+训练耗时：34.09 秒，约 0.57 分钟 评估耗时：0.05 秒，约 0.00 分钟
+新写法
+L += - torch.mean(actions_log_prob * gt) “对应位置相乘 → 求和 → 除以 T → 加负号”。 一次性计算
+训练耗时：32.31 秒，约 0.54 分钟 评估耗时：0.10 秒，约 0.00 分钟
+不明显 还是除了加上with torch.no_grad():在采样和评估的时候 计算速度会变快!
+"""
+"""
+model_parameters = {
+    "model_state_dict": model.state_dict(),
+    "seed": seed,
+    "gamma": gamma,
+    "lr": lr,
+    "training_rewards": training_rewards
+}
+"""

@@ -1,44 +1,27 @@
-# 练习31：对照两动作问题中精确期望奖励与蒙特卡洛采样损失的参数梯度。
-# 两条路线分别反向传播；当前采样 1000 次，损失数值不同但梯度接近。
-import torch
+# 练习34：用 epsilon-greedy 在随机探索与贪心动作选择之间切换。
+# 重复采样，观察动作频率与理论概率的对应关系。
+import numpy as np
 
-torch.manual_seed(42)
-sample_count = 10000
+def choose_action(q_values, state, epsilon, rng):
+    # 一种简单方法叫 epsilon-greedy（ε 贪心）：
+    if rng.random() < epsilon:
+        action_space = len(q_values[state])
 
-logits_exact = torch.tensor(
-    [0.0, 0.0], dtype=torch.float32, requires_grad=True
-)
-logits_mc = torch.tensor(
-    [0.0, 0.0], dtype=torch.float32, requires_grad=True
-)
-reward_table = torch.tensor([1.0, 3.0], dtype=torch.float32)
-
-softmax_logits_exact = torch.nn.functional.softmax(logits_exact)
-l_exact = -sum(softmax_logits_exact * reward_table)
-
-l_exact.backward()
-print(logits_exact.grad)
-distribution_logits_ms = torch.distributions.Categorical(logits=logits_mc)
-action_sample = distribution_logits_ms.sample((1000,))
-
-sample_rewards = reward_table[action_sample]
-action_probs = distribution_logits_ms.log_prob(action_sample)
-sample_rewards = reward_table[action_sample]  #把 action_sample 中的每个数字当作索引，从 reward_table 中取出对应位置的值。
+        return int(rng.integers(action_space))  # rng.integers(n)：从 0 到 n-1 均匀随机选一个整数。
+    else:
+        return int(np.argmax(q_values[state]))  # np.argmax(values)：返回最大值的索引，并列时返回第一个。
 
 
-l_mc = -(action_probs * sample_rewards).mean()
-l_mc.backward()
-print(logits_mc.grad)
+q_values = {
+    "A": [1.0, 1.8],
+    "B": [2.0, -1.0],
+    "C": [0.0, 0.0],
+}
+states = ["A", "B", "C"]
+epsilon = 0.2
+rng = np.random.default_rng(42)
+a = []
+for i in range(10000):
+    a.append(choose_action(q_values, states[0], epsilon, rng))
 
-
-
-
-
-
-
-
-
-
-
-
-
+print(a.count(1)/len(a))
