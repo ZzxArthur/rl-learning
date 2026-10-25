@@ -6,6 +6,7 @@ import numpy as np
 
 def choose_action(q_values, states, epsilon, rng):
     if rng.random() < epsilon:
+        
         action_space = len(q_values[states])
         action_arg = int(rng.integers(action_space))
         return action_arg

@@ -13,5 +13,11 @@
     "editor.hover.enabled": "on",
     "editor.inlineSuggest.enabled": false,
     "editor.tabCompletion": "off",
-    "editor.wordBasedSuggestions": "off"
+    "editor.wordBasedSuggestions": "off",
+    "[python]": {
+        "editor.suggest.showVariables": true,
+        "editor.suggest.showSnippets": true,
+        "editor.snippetSuggestions": "top",
+        "editor.suggestSelection": "first"
+    }
 }
