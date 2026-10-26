@@ -1,8 +1,5 @@
 # 练习33：用表格 Q-learning 更新状态—动作价值，未终止时取下一状态的最大 Q 值。
 # 反复遍历给定转移，观察奖励经折扣向前传播及 Q 值逐渐稳定。
-import numpy as np
-
-
 def q_learning_update(q_values, transitions, gamma, alpha):
     for obs in transitions:
         state, action, reward, next_state, terminated = obs
@@ -29,7 +26,7 @@ transitions = [
 gamma = 0.9
 alpha = 0.5
 a = 0
-for i in range(100):
+for i in range(1000):
     q_values1 = q_learning_update(q_values, transitions, gamma, alpha)
     q_values = q_values1
 

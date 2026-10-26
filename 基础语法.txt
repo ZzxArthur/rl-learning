@@ -42,3 +42,8 @@ model_parameters = {
     "training_rewards": training_rewards
 }
 """
+
+
+rng = np.random.default_rng(44)
+np.random() 代表随机0-1的值 
+action = int(rng.integers(action_space)) #代表从动作空间中随机选一个动作

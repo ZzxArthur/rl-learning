@@ -1,6 +1,6 @@
-# 练习37：在字典环境中训练 1000 局 SARSA，下一动作既用于更新，也用于下一步执行。
+# 练习37：在字典环境中训练多局 SARSA，下一动作既用于更新，也用于下一步执行。
 # 每局重置状态并保留 Q 表，真正终止时只用即时奖励更新。
-# 训练后按指定 epsilon 评估多局平均原始奖励，评估期间不更新 Q 表。
+# 提供按指定 epsilon 评估平均原始奖励的函数，当前主程序打印训练后的 Q 表。
 import numpy as np
 
 
@@ -20,7 +20,7 @@ def sarsa_update(q_values, state, action, reward, next_state,
         target_reward = reward
     else:
         target_reward = reward + gamma * q_values[next_state][next_action]
-    q_values[state][action] += alpha*(target_reward - q_values[state][action])
+    q_values[state][action] += alpha * (target_reward - q_values[state][action])
     return q_values
 
 
@@ -56,7 +56,7 @@ alpha = 0.5
 epsilon = 0.5
 num_episodes = 1000
 rng = np.random.default_rng(44)
-for i in range(1000):
+for i in range(num_episodes):
     state = 'A'
     action = choose_action(q_values, state, epsilon, rng)
     while True:
@@ -75,8 +75,10 @@ for i in range(1000):
 
             state = next_state
             action = next_action
-
 print(q_values)
-epsilon = 1
-print(evaluate(q_values, env_table, epsilon, num_episodes, rng))
+# print(q_values)
+# epsilon = 1
+# print(evaluate(q_values, env_table, epsilon, num_episodes, rng))
+# epsilon = 0
+# print(evaluate(q_values, env_table, epsilon, num_episodes, rng))
 

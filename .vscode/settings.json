@@ -15,9 +15,6 @@
     "editor.tabCompletion": "off",
     "editor.wordBasedSuggestions": "off",
     "[python]": {
-        "editor.suggest.showVariables": true,
-        "editor.suggest.showSnippets": true,
-        "editor.snippetSuggestions": "top",
-        "editor.suggestSelection": "first"
+        "editor.suggest.showVariables": true
     }
 }
