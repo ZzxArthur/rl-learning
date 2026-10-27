@@ -45,5 +45,29 @@ model_parameters = {
 
 
 rng = np.random.default_rng(44)
-np.random() 代表随机0-1的值 
+np.random() 代表随机0-1的值
 action = int(rng.integers(action_space)) #代表从动作空间中随机选一个动作
+
+
+limits = np.array([rows, cols])
+out_of_bounds = (
+    (next_state < 0).any()
+    or (next_state >= limits).any()
+) #  用来判断是否越界
+
+
+for state in np.ndindex(values.shape):
+    print(state) # 坐标值索引 (0, 0), (0, 1)
+
+
+
+values = np.array([
+    [4.58, 6.2,  8.0],
+    [6.2,  0.0, 10.0],
+    [8.0, 10.0,  0.0],
+], dtype=np.float64)
+索引方式	代码	结果
+元组索引	values[(0, 1)]	6.2
+列表索引	values[[0, 1]]	第 0、1 行
+NumPy 数组索引	values[np.array([0, 1])]	第 0、1 行
+分别传入行和列	values[0, 1]	6.2  # 索引方式
