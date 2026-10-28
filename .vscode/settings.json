@@ -4,16 +4,17 @@
     "python-envs.defaultEnvManager": "ms-python.python:conda",
     "python-envs.defaultPackageManager": "ms-python.python:conda",
     "editor.quickSuggestions": {
-        "other": "on",
+        "other": "off",
         "comments": "off",
         "strings": "off"
     },
-    "editor.suggestOnTriggerCharacters": true,
-    "editor.parameterHints.enabled": true,
+    "editor.suggestOnTriggerCharacters": false,
+    "editor.parameterHints.enabled": false,
     "editor.hover.enabled": "on",
     "editor.inlineSuggest.enabled": false,
     "editor.tabCompletion": "off",
     "editor.wordBasedSuggestions": "off",
+    "python.analysis.autoImportCompletions": false,
     "[python]": {
         "editor.suggest.showVariables": true
     }
