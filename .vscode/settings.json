@@ -16,6 +16,13 @@
     "editor.wordBasedSuggestions": "off",
     "python.analysis.autoImportCompletions": false,
     "[python]": {
+        "editor.quickSuggestions": {
+            "other": "on",
+            "comments": "off",
+            "strings": "off"
+        },
+        "editor.suggestOnTriggerCharacters": true,
+        "editor.parameterHints.enabled": true,
         "editor.suggest.showVariables": true
     }
 }

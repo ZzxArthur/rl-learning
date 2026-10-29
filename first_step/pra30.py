@@ -1,7 +1,7 @@
 # 练习30：逐局采集 CartPole 轨迹、更新模型并记录训练奖励，训练前后用独立环境评估成绩。
 # 采集按终止或截断结束，截断尾值当前默认取 0；评估使用最大概率动作，窗口演示代码目前注释保留。
 # 绘制逐局原始总奖励和最近 100 局平均奖励，并保存模型参数与本次实验数据。
-# 时序差分
+# REINFORCE
 import torch
 import gymnasium as gym
 import numpy as np

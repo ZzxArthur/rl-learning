@@ -1,3 +1,4 @@
+# 练习41：在已知网格模型下评估固定策略，反复进行同步 Bellman 备份直至价值变化低于阈值。
 import numpy as np
 
 
@@ -30,7 +31,7 @@ def step(state, action_tag):
 def evaluate_policy(policy, values, gamma, tol, max_iterations):
     while max_iterations > 0:
         new_values = np.zeros_like(values)
-        
+
         for state in np.ndindex(values.shape):
             if state in walls or state == goal_state:
                 continue
@@ -44,12 +45,13 @@ def evaluate_policy(policy, values, gamma, tol, max_iterations):
             new_values[state] = target_reward
         delta = np.max(np.abs(new_values - values))
         values = new_values
-        print(values)
+
         max_iterations -= 1
-        if  delta < tol:
+        if delta < tol:
             break
 
     return values
+
 
 rows, cols = 3, 3
 start_state = (0, 0)
