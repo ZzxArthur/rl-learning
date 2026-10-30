@@ -1,5 +1,4 @@
 # 练习45：逐局计算折扣回报，拼接不同长度的结果并保留局间边界。
-
 import torch
 
 
@@ -34,3 +33,4 @@ if __name__ == "__main__":
     returns_by_episode, flat_returns = computer_batch_rewards(rewards_by_episode, gamma)
     print("各局回报：", returns_by_episode)
     print("拼接回报：", flat_returns)
+    
