@@ -24,5 +24,6 @@
         "editor.suggestOnTriggerCharacters": true,
         "editor.parameterHints.enabled": true,
         "editor.suggest.showVariables": true
-    }
+    },
+    "deepseekHarness.permissionMode": "danger-full-access"
 }
