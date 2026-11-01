@@ -25,5 +25,8 @@
         "editor.parameterHints.enabled": true,
         "editor.suggest.showVariables": true
     },
+    "python.analysis.extraPaths": [
+        "./first_step"
+    ],
     "deepseekHarness.permissionMode": "danger-full-access"
 }

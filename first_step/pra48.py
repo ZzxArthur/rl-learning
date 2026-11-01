@@ -1,7 +1,7 @@
 # 练习48：使用同一策略采集的多局轨迹，计算批次损失并更新一次模型。
 import torch
 from pra47 import TwoStepEnv, collect_episodes
-from pra46 import prepare_batch
+from pra46 import prepare_batch  # prepare_batch(episodes, gamma) 返回 states, next_states, actions, returns, terminated
 
 
 def update_batch(model, optimizer, states, actions, gt):
@@ -30,10 +30,10 @@ if __name__ == "__main__":
 
     # 先采集全部局，再更新模型
     episodes = collect_episodes(env, model, num_episodes)
-    states, actions, gt = prepare_batch(episodes, gamma)
+    states, next_states, actions, returns, terminated = prepare_batch(episodes, gamma)
 
     before = [p.detach().clone() for p in model.parameters()]
-    print('更新前损失：', update_batch(model, optimizer, states, actions, gt))
+    print('更新前损失：', update_batch(model, optimizer, states, actions, returns))
     changed = [
         not torch.equal(old, new)
         for old, new in zip(before, model.parameters())

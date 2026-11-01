@@ -2,8 +2,8 @@
 import torch
 
 from pra47 import TwoStepEnv, collect_episodes  # collect_episodes(env, model, num_episodes)
-from pra46 import prepare_batch  # prepare_batch(episodes, gamma) 返回 states, actions, returns
-from pra48 import update_batch  # update_batch(model, optimizer, states, actions, gt)
+from pra46 import prepare_batch  # prepare_batch(episodes, gamma) 返回 states, next_states, actions, returns, terminated
+from pra48 import update_batch  # update_batch(model, optimizer, states, actions, returns)
 from pra50 import expected_total_reward
 
 if __name__ == "__main__":
@@ -20,8 +20,8 @@ if __name__ == "__main__":
     for batch in range(num_batches):
         episodes = collect_episodes(env, model, num_episodes)
         mean_reward = sum(episode['rewards'].sum().item() for episode in episodes) / len(episodes)
-        states, actions, gt = prepare_batch(episodes, gamma)
-        loss = update_batch(model, optimizer, states, actions, gt)
+        states, next_states, actions, returns, terminated = prepare_batch(episodes, gamma)
+        loss = update_batch(model, optimizer, states, actions, returns)
         print(f'第 {batch + 1} 轮：平均奖励 {mean_reward:.2f}，更新前损失 {loss:.4f}')
         if (batch + 1) % 10 == 0:
             print(expected_total_reward(model))

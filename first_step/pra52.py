@@ -3,7 +3,7 @@ import torch
 
 from pra47 import TwoStepEnv
 from pra47 import collect_episodes  # collect_episodes(env, model, num_episodes) 返回 episodes
-from pra46 import prepare_batch  # prepare_batch(episodes, gamma) 返回 states, actions, returns
+from pra46 import prepare_batch  # prepare_batch(episodes, gamma) 返回 states, next_states, actions, returns, terminated
 
 
 def compute_gradient(model, states, actions, returns, baseline):
@@ -31,7 +31,7 @@ nobaseline_gradients_list = []
 baseline_gradients_list = []
 for _ in range(num_batches):
     episodes = collect_episodes(env, model, num_episodes)
-    states, actions, returns = prepare_batch(episodes, gamma)
+    states, next_states, actions, returns, terminated = prepare_batch(episodes, gamma)
     nobaseline_gradients_list.append(compute_gradient(model, states, actions, returns, baseline=0))
     baseline_gradients_list.append(compute_gradient(model, states, actions, returns, baseline=4))
 nobaseline_gradients = torch.stack(nobaseline_gradients_list, dim=0)
@@ -41,3 +41,5 @@ baseline_gradient_variance = baseline_gradients.var(dim=0, unbiased=False).mean(
 print('梯度均值（无基线）：', nobaseline_gradients.mean(dim=0))
 print('梯度均值（基线4）：', baseline_gradients.mean(dim=0))
 print('平均方差（无基线、基线4）：', nobaseline_gradient_variance, baseline_gradient_variance)
+print("该休息了,代码敲多了对眼睛不好")
+

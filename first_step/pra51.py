@@ -3,7 +3,7 @@ import torch
 
 from pra47 import TwoStepEnv
 from pra47 import collect_episodes  # collect_episodes(env, model, num_episodes) 返回 episodes
-from pra46 import prepare_batch  # prepare_batch(episodes, gamma) 返回 states, actions, returns
+from pra46 import prepare_batch  # prepare_batch(episodes, gamma) 返回 states, next_states, actions, returns, terminated
 
 
 def update_with_baseline(model, optimizer, states, actions, gt, baseline):
@@ -38,13 +38,13 @@ if __name__ == "__main__":
 
     episodes = collect_episodes(env, model, num_episodes)
 
-    states, actions, gt = prepare_batch(episodes, gamma)
+    states, next_states, actions, returns, terminated = prepare_batch(episodes, gamma)
     before = [p.detach().clone() for p in model.parameters()]
 
-    loss = update_with_baseline(model, optimizer, states, actions, gt, baseline)
+    loss = update_with_baseline(model, optimizer, states, actions, returns, baseline)
     changed = [not torch.equal(old, new) for old, new in zip(before, model.parameters())]
-    print('回报：', gt)
-    print('基线调整后的回报：', gt - baseline)
+    print('回报：', returns)
+    print('基线调整后的回报：', returns - baseline)
     print('更新后损失：', loss)
 
     print('参数是否变化：', changed)
