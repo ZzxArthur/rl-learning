@@ -29,6 +29,7 @@ def prepare_batch(episodes, gamma):
     gt_by_episode, flat_returns = computer_batch_rewards(rewards_by_episodes, gamma)
     return states_by_episodes, next_states_by_episodes, actions_by_episodes, flat_returns, terminated_by_episodes
 
+
 def prepare_td_batch(episodes):
     # 返回 states, next_states, actions, rewards, terminated
     states_by_episodes = []

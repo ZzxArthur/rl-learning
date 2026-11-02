@@ -40,3 +40,18 @@ value_loss = torch.nn.functional.mse_loss(values, td_targets)
 
 MC：用整局实际奖励算 returns，再用 returns 学习
 一步 TD：用当前 reward + 下一状态的价值预测作目标
+
+
+
+REINFORCE：直接学习策略（Policy-Based），让神经网络学会如何选择动作。
+SARSA：学习动作价值函数（Value-Based），通过 TD 更新当前状态下动作的价值。
+Q-learning：也是学习动作价值函数，但使用最优动作价值进行更新。
+
+
+| 基线 | Actor 的权重 | 特点 |
+| --- | --- | --- |
+| 不使用基线 | \(G_t\) | 最直接，但梯度波动可能较大 |
+| 固定常数 \(b\) | \(G_t-b\) | 简单，例如你在 `pra51`、`pra52` 中用过固定基线 |
+| 状态价值 \(V(s_t)\) | \(G_t-V(s_t)\) | 基线随状态变化，能够反映不同状态下不同的预期回报 |
+| 状态价值配合一步 TD | \(r_t+\gamma V(s_{t+1})-V(s_t)\) | 用 TD 目标估计后续回报，是当前 `pra59` 的做法 |
+

@@ -94,3 +94,4 @@ torch.stack([a, b], dim=0)
 torch.squeeze(-1) 的作用是：删除 Tensor 最后一个维度，但只有当最后一个维度的大小为 1 时才会删除。
 
 它在 PyTorch 神经网络中非常常见，尤其是你现在实现 PPO、Critic 网络时。
+next_state = next_state.unsqueeze(0)  # (2,) -> (1, 2)  在前面增加一个维度
