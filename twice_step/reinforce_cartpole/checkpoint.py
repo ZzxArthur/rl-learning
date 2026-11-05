@@ -13,3 +13,4 @@ def load_model(model_path):
     policy = PolicyNetwork()
     policy.load_state_dict(parameters)
     return policy
+    

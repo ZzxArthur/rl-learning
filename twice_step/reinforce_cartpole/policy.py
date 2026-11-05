@@ -5,12 +5,15 @@ import torch
 class PolicyNetwork(torch.nn.Module):
     def __init__(self):
         super().__init__()
-        self.layer = torch.nn.Linear(4, 2)
+        self.fc1 = torch.nn.Linear(4, 64)
+        self.activation = torch.nn.Tanh()
+        self.fc2 = torch.nn.Linear(64, 2)
 
     def forward(self, states):
-        logits = self.layer(states)
-
-        return logits
+        f1 = self.fc1(states)
+        a1 = self.activation(f1)
+        f2 = self.fc2(a1)
+        return f2
 
 
 if __name__ == "__main__":
