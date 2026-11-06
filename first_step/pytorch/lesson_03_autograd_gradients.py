@@ -8,6 +8,7 @@ def f(x):
 def grad(x):
     return 2*(x-3)
 
+
 x = torch.tensor([1.0], dtype=torch.float32, requires_grad=True)
 print(x.grad)
 loss = f(x)

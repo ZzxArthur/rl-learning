@@ -39,5 +39,3 @@ if __name__ == "__main__":
         evalue_policy(env, policy_model, eval_seeds)
     finally:
         env.close()
-
-

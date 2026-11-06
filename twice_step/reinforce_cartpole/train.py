@@ -28,7 +28,7 @@ def train_policy(env, policy_model, policy_optimizer, num_train, gamma, seed):
         states = torch.cat(states_list, dim=0)
         actions = torch.tensor(actions_list, dtype=torch.long)
         returns = compute_returns(trajectory, gamma)
-        
+
         policy_optimizer.zero_grad()
         logits = policy_model(states)
         actions_probs = torch.distributions.Categorical(logits=logits)
@@ -67,6 +67,30 @@ if __name__ == "__main__":
     model_path = Path(__file__).resolve().parent / "policy_weights.pt"
     save_model_weights(policy_model, model_path)
     env.close()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
