@@ -16,3 +16,4 @@ class ReplayBuffer():
         else:
             transitions = random.sample(list(self.buffer), batch_size)
         return transitions
+    
