@@ -7,8 +7,8 @@ class ReplayBuffer():
         self.buffer = deque(maxlen=capacity)
 
     def push(self, state, action, reward, next_state, terminated):
-        self.buffer.append((state, action, reward,
-                           next_state, terminated))  # append只能接受一个对象, 所以要把5个组成一条元组再存
+        tranisition = (state, action, reward, next_state, terminated)
+        self.buffer.append(tranisition)  # append只能接受一个对象, 所以要把5个组成一条元组再存
         # TD 目标只用 terminated 屏蔽后续价值；时间限制截断时仍保留 bootstrap。
 
     def sample(self, batch_size):

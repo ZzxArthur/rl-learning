@@ -1,5 +1,8 @@
 import torch
 import numpy as np
+import csv
+import math
+from pathlib import Path
 from Q_network import Q_network
 
 # agent 根据环境选择动作
@@ -17,6 +20,7 @@ class DqnAgent():
         self.target_net = Q_network(states_num, actions_num, hidden_width)
         self.target_net.load_state_dict(self.train_net.state_dict())
         self.train_optimizer = torch.optim.SGD(self.train_net.parameters(), lr=lr)
+        self.metrics_path = Path(__file__).with_name("training_metrics.csv")
 
     def save(self, model_path):
         checkpoint = {
@@ -41,6 +45,34 @@ class DqnAgent():
         terminated = torch.tensor(terminated_list, dtype=torch.bool)
         return states, actions, rewards, next_states, terminated
 
+    def record_training_metrics(self, train_loss):
+        """记录每次更新的 loss 和全网络梯度 L2 范数；异常时在参数更新前停止。"""
+        loss_value = train_loss.detach().item()
+        # 用 float64 计算范数，避免平方求和本身在 float32 中溢出；不修改梯度。
+        grad_norm = math.sqrt(sum(
+            parameter.grad.detach().double().square().sum().item()
+            for parameter in self.train_net.parameters()
+            if parameter.grad is not None
+        ))
+        update_number = self.update_step + 1
+        status = "ok" if math.isfinite(loss_value) and math.isfinite(grad_norm) else "nonfinite"
+        mode = "w" if self.update_step == 0 else "a"
+        with self.metrics_path.open(mode, newline="", encoding="utf-8") as log_file:
+            writer = csv.writer(log_file)
+            if log_file.tell() == 0:
+                writer.writerow(["update_attempt", "loss", "grad_norm", "status"])
+                print(f"训练诊断日志: {self.metrics_path}")
+            writer.writerow([update_number, loss_value, grad_norm, status])
+
+        if status == "nonfinite":
+            raise FloatingPointError(
+                f"第 {update_number} 次更新出现非有限值: loss={loss_value}, "
+                f"grad_norm={grad_norm}。已停止，未执行本次 optimizer.step()。"
+                f"日志: {self.metrics_path}")
+        if update_number == 1 or update_number % 200 == 0:
+            print(f"更新{update_number}, loss:{loss_value:.6g}, 梯度范数:{grad_norm:.6g}")
+        # 本函数主要代码由 AI 助手完成。
+
     def update(self, replaybuffer):  # 回放经验池应该传输进来, 而不是自己每次重新创建
         if len(replaybuffer.buffer) >= self.batch_size:  # 记得要做判断
             transitions = replaybuffer.sample(self.batch_size)
@@ -53,6 +85,7 @@ class DqnAgent():
             select_q = q_values.gather(1, actions.unsqueeze(1)).squeeze(1)
             train_loss = torch.nn.functional.mse_loss(select_q, td_target)
             train_loss.backward()
+            self.record_training_metrics(train_loss)
             with torch.no_grad():
                 self.train_optimizer.step()
                 self.train_optimizer.zero_grad()
