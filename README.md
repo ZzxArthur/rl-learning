@@ -12,7 +12,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Python-Learning-3776AB?style=flat&amp;logo=python&amp;logoColor=white" alt="Python：学习中">
   <img src="https://img.shields.io/badge/PyTorch-Practicing-EE4C2C?style=flat&amp;logo=pytorch&amp;logoColor=white" alt="PyTorch：练习中">
-  <img src="https://img.shields.io/badge/Stage-Foundations-14B8A6?style=flat" alt="当前阶段：基础学习">
+  <img src="https://img.shields.io/badge/Stage-Discrete_PPO-14B8A6?style=flat" alt="当前阶段：离散PPO起步">
   <img src="https://img.shields.io/badge/Feedback-Welcome-F59E0B?style=flat" alt="欢迎批评与建议">
 </p>
 
@@ -32,33 +32,33 @@
 
 部分练习参考教程完成，学习中也会查阅官方文档、借助 AI 解释概念和检查代码。我会继续练习脱离参考独立实现，把自己的理解和问题都记录下来。
 
-> 📍 **当前进度：Python / PyTorch 基础练习。**
-> 下面的 PPO、SAC 和机器人方向是后续学习计划。
+> 📍 **当前进度（2026-11-12）：离散 PPO 起步。**
+> 已完成引导式 REINFORCE/DQN 和用户主导的 LunarLander DQN 基础项目；PPO clip 小题已通过，下一步在空的 `twice_step/ppo_cartpole/networks.py` 实现 ActorCritic。完整 PPO、SAC 和机器人项目仍待完成。最新任务以 [学习交接](学习交接.md) 和源码为准。
 
 ## 🧩 现在在练什么？
 
-| 主题 | 正在弄明白的问题 |
+| 主题 | 当前状态与重点 |
 | --- | --- |
-| 🔢 张量与广播 | 形状怎样对齐？为什么所有样本要共享偏置？ |
-| 📉 求导与更新 | 损失、梯度和参数分别是什么？什么时候发生更新？ |
-| 🧠 简单神经网络 | 线性层怎样连接？ReLU 为什么能改变表达能力？ |
-| 🎲 概率与动作 | 怎样从分数得到概率，再按概率抽取动作？ |
-| 🛠️ 编程习惯 | 怎样把代码写清楚、读明白，并验证自己的修改？ |
+| 🔢 Python / PyTorch 与基础 RL | 已有练习和项目实践，在新问题中继续巩固。 |
+| 🧠 REINFORCE / DQN | 基础项目闭环完成，有教师审查、纠错和部分工具补写。 |
+| 🎲 离散 PPO | ratio/clip 固定数据小题通过；网络、采样和完整更新尚待实现。 |
+| 🛠️ 项目工程 | 继续练职责、梯度流向、实验记录与独立验证。 |
+| 🦾 SAC / 机器人 / 视觉 | 后续方向，尚未完成相应独立项目。 |
 
 ## 🧭 一步步往前走
 
 ```mermaid
 flowchart LR
-    A["🌱 基础练习<br/>当前阶段"] --> B["🧠 强化学习算法<br/>表格方法 → PPO / SAC"]
+    A["🌱 基础练习<br/>已有实践"] --> B["🧠 算法项目<br/>当前：离散PPO → 连续PPO / SAC"]
     B --> C["🦾 机械臂仿真<br/>状态输入 → 双相机视觉"]
     C --> D["🌉 Sim2Real<br/>逐步走向真机"]
-    style A fill:#DCFCE7,stroke:#16A34A,stroke-width:2px,color:#14532D
-    style B fill:#EFF6FF,stroke:#93C5FD,color:#1E3A8A
+    style A fill:#DCFCE7,stroke:#86EFAC,color:#14532D
+    style B fill:#EFF6FF,stroke:#2563EB,stroke-width:2px,color:#1E3A8A
     style C fill:#FFF7ED,stroke:#FDBA74,color:#7C2D12
     style D fill:#F5F3FF,stroke:#C4B5FD,color:#4C1D95
 ```
 
-希望先学好基础，再从表格方法、REINFORCE 和 DQN 逐步走向独立实现 PPO、SAC，建立自己的训练框架。之后继续学习机械臂仿真、腕部与全局双相机，以及 Sim2Real。
+接下来复用表格方法、REINFORCE、DQN 和简化 Actor-Critic/GAE 的经验，逐步独立实现 PPO、SAC。之后继续学习机械臂仿真、腕部与全局双相机，以及 Sim2Real。代码能运行、一个项目闭环和多条件稳定表现分别记录，不用一次高奖励代替完整能力证明。
 
 这是长期路线，我会根据实际掌握情况逐步推进。
 
@@ -67,7 +67,11 @@ flowchart LR
 | 入口 | 内容 |
 | --- | --- |
 | [📚 first_step/](first_step/) | 按学习顺序积累的基础练习，部分文件保留了调试说明和实验结果。 |
+| [🛠️ twice_step/](twice_step/) | 引导式项目、用户主导的DQN迁移和正在开始的PPO项目。 |
 | [🧭 强化学习指南.txt](强化学习指南.txt) | 长期学习路线、教学方式和阶段验收要求，会随学习情况调整。 |
+| [📍 学习交接.md](学习交接.md) | 当前任务、学习证据边界与未来约十步。 |
+| [🗂️ 历史记录.md](历史记录.md) | 已发生的实现、检查、贡献和失败记录。 |
+| [🧵 强化学习发展主线](强化学习发展主线_逐页要点与讲稿.md) | 问题驱动的算法总览、讲稿与个人教学定位。 |
 
 ## 💬 欢迎批评，也欢迎一起学习
 
