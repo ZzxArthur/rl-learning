@@ -79,3 +79,16 @@ actions        → torch.long     用于索引实际动作的 Q 值
 0.99^100 ≈ 0.366（约 36.6%）
 0.999^100 ≈ 0.905（约 90.5%）
 
+
+
+在 torch.distributions.Normal 中：
+- loc 是均值 μ：分布的中心，采样通常围绕这个数。
+- scale 是标准差 σ：控制采样的分散程度，必须大于0。注意它是标准差，不是方差。
+例如：
+distribution = torch.distributions.Normal(
+    loc=torch.tensor([0.8]),
+    scale=torch.tensor([0.3]),
+)
+表示均值为 0.8、标准差为 0.3 的正态分布。约68%的样本落在：
+0.8 ± 0.3，也就是 [0.5, 1.1]
+这个区间不是硬边界，仍可能采到区间外的值。

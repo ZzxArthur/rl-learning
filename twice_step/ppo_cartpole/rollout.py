@@ -8,23 +8,22 @@ from advantages import compute_gae  # compute_gae(rewards, values, next_values, 
 from losses import computer_ppo_loss
 
 
-def collect_rollout(env, model, num_step, seed):
+def collect_rollout(env, state, model, num_step):
     transitions = []
-    state, _ = env.reset(seed=seed)
-    for step in range(num_step):
+    for _ in range(num_step):
         with torch.no_grad():
             state_tensor = torch.as_tensor(state, dtype=torch.float32)
-            action, old_action_log_prob, values, _ = model(state_tensor)
+            action, old_log_probs, values, _ = model(state_tensor)
         action = int(action.item())
         next_state, reward, terminated, truncated, _ = env.step(action)
         transition = (state, action, reward, next_state,
-                      terminated, truncated, old_action_log_prob, values)
+                      terminated, truncated, old_log_probs, values)
         transitions.append(transition)
         if terminated or truncated:
             state, _ = env.reset()
         else:
             state = next_state
-    return transitions
+    return transitions, state
 
 
 def random_split(states, actions, old_log_probs, advantages,
@@ -53,7 +52,8 @@ if __name__ == "__main__":
     env = gym.make("CartPole-v1")
     model = Ppo_net()
     optimizer = torch.optim.SGD(model.parameters(), lr=lr)
-    transitions = collect_rollout(env, model, num_steps, seed)
+    state, _ = env.reset(seed=seed)
+    transitions, state = collect_rollout(env, state, model, num_steps)
     (
         states, actions, rewards, next_states,
         terminated, truncated, old_log_probs, values
@@ -80,9 +80,11 @@ if __name__ == "__main__":
         indices = torch.randperm(num_steps, device=states.device)
         for start in range(0, num_steps, minibatch_size):
             mb_indices = indices[start: start + minibatch_size]
-            mb_states, mb_actions, mb_old_log_probs, \
-                mb_advantages, mb_values_target = random_split
-            (states, actions, old_log_probs, advantages, values_target, mb_indices)
+            (
+                mb_states, mb_actions, mb_old_log_probs,
+                mb_advantages, mb_values_target
+            ) = random_split(
+                states, actions, old_log_probs, advantages, values_target, mb_indices)
 
             _, mb_new_log_probs, mb_new_values, mb_entropy = model(mb_states, mb_actions)
             ppo_loss = computer_ppo_loss(mb_new_log_probs, mb_old_log_probs, mb_advantages,

@@ -32,5 +32,3 @@ class Ppo_net(torch.nn.Module):
 
         values = self.critic_net(state).squeeze(-1)  # [batch_size, 1] -> [batch_size]
         return action, action_log_prob, values, entropy
-
-

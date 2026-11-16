@@ -12,7 +12,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Python-Learning-3776AB?style=flat&amp;logo=python&amp;logoColor=white" alt="Python：学习中">
   <img src="https://img.shields.io/badge/PyTorch-Practicing-EE4C2C?style=flat&amp;logo=pytorch&amp;logoColor=white" alt="PyTorch：练习中">
-  <img src="https://img.shields.io/badge/Stage-Discrete_PPO-14B8A6?style=flat" alt="当前阶段：离散PPO起步">
+  <img src="https://img.shields.io/badge/Stage-Continuous_PPO-14B8A6?style=flat" alt="当前阶段：连续动作PPO">
   <img src="https://img.shields.io/badge/Feedback-Welcome-F59E0B?style=flat" alt="欢迎批评与建议">
 </p>
 
@@ -32,8 +32,8 @@
 
 部分练习参考教程完成，学习中也会查阅官方文档、借助 AI 解释概念和检查代码。我会继续练习脱离参考独立实现，把自己的理解和问题都记录下来。
 
-> 📍 **当前进度（2026-11-12）：离散 PPO 起步。**
-> 已完成引导式 REINFORCE/DQN 和用户主导的 LunarLander DQN 基础项目；PPO clip 小题已通过，下一步在空的 `twice_step/ppo_cartpole/networks.py` 实现 ActorCritic。完整 PPO、SAC 和机器人项目仍待完成。最新任务以 [学习交接](学习交接.md) 和源码为准。
+> 📍 **当前进度（2026-11-16）：离散 PPO 基础闭环完成，进入连续动作 PPO。**
+> 已完成引导式 REINFORCE/DQN、用户主导的 LunarLander DQN，以及用户编写核心的 PPO CartPole。当前保存模型在固定100个种子的评估中均为500分；多训练种子稳定性尚未验证。下一步在空的 `twice_step/ppo_pendulum/networks.py` 实现高斯策略网络；SAC 和机器人项目仍待完成。最新任务以 [学习交接](学习交接.md) 和源码为准。
 
 ## 🧩 现在在练什么？
 
@@ -41,7 +41,8 @@
 | --- | --- |
 | 🔢 Python / PyTorch 与基础 RL | 已有练习和项目实践，在新问题中继续巩固。 |
 | 🧠 REINFORCE / DQN | 基础项目闭环完成，有教师审查、纠错和部分工具补写。 |
-| 🎲 离散 PPO | ratio/clip 固定数据小题通过；网络、采样和完整更新尚待实现。 |
+| 🎲 离散 PPO | 训练、保存与独立评估闭环完成；用户主导算法核心，教师补部分工程工具。 |
+| 🎛️ 连续动作 PPO | 当前任务：Pendulum 的高斯策略与价值网络。 |
 | 🛠️ 项目工程 | 继续练职责、梯度流向、实验记录与独立验证。 |
 | 🦾 SAC / 机器人 / 视觉 | 后续方向，尚未完成相应独立项目。 |
 
@@ -49,7 +50,7 @@
 
 ```mermaid
 flowchart LR
-    A["🌱 基础练习<br/>已有实践"] --> B["🧠 算法项目<br/>当前：离散PPO → 连续PPO / SAC"]
+    A["🌱 基础练习<br/>已有实践"] --> B["🧠 算法项目<br/>当前：连续PPO → SAC"]
     B --> C["🦾 机械臂仿真<br/>状态输入 → 双相机视觉"]
     C --> D["🌉 Sim2Real<br/>逐步走向真机"]
     style A fill:#DCFCE7,stroke:#86EFAC,color:#14532D
