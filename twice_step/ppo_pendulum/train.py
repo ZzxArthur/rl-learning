@@ -1,5 +1,6 @@
 # 连续PPO训练入口：采样原始高斯动作，计算GAE并进行多轮小批更新。
 # 记录完整回合奖励，保存网络配置、权重和每10局平均奖励曲线。
+# advantages没做标准化, 没做梯度裁剪
 from pathlib import Path
 import sys
 
@@ -23,15 +24,15 @@ if __name__ == "__main__":
     env_id = "Pendulum-v1"
     num_batches = 500
     num_steps = 1024
-    update_epochs = 16
-    minibatch_size = 128
+    update_epochs = 10
+    minibatch_size = 64
 
     gamma = 0.99
-    gae_lambda = 0.7
+    gae_lambda = 0.95
     lr = 0.001
     clip_epsilon = 0.2
     value_coef = 0.5
-    entropy_coef = 0.01
+    entropy_coef = 0.0
 
     state_dimension = 3
     action_dimension = 1
@@ -93,11 +94,15 @@ if __name__ == "__main__":
                 ppo_loss = computer_ppo_loss(mb_new_log_probs, mb_old_log_probs, mb_advantages,
                                              mb_new_values, mb_values_target, mb_entropy,
                                              clip_epsilon, value_coef, entropy_coef)
+                optimizer.zero_grad()
                 ppo_loss.backward()
+                grad_norm = torch.nn.utils.clip_grad_norm_(
+                        ppo_model.parameters(),
+                        max_norm=0.5,
+                    )
                 with torch.no_grad():
                     optimizer.step()
                     total_updates += 1
-                    optimizer.zero_grad()
 
         print(f"批次{batch_index}/{num_batches}, 累计环境步数:{total_env_steps}, "
               f"累计更新次数:{total_updates}, 已完成局数:{num_episodes}")

@@ -1,0 +1,24 @@
+{
+  "total_env_steps": 512000,
+  "total_updates": 80000,
+  "episodes": 2560,
+  "best_batch": 50,
+  "best_validation_mean": -166.41508038293526,
+  "final_validation_mean": -360.88620827752413,
+  "test_results": {
+    "test_final": {
+      "mean": -488.03521386202067,
+      "std": 532.8046271657386
+    },
+    "test_best": {
+      "mean": -177.26080790731058,
+      "std": 110.63241183517111
+    }
+  },
+  "elapsed_seconds": 380.6021293899976,
+  "max_actor_grad": 38859.90760707463,
+  "max_critic_grad": 26214.559474341877,
+  "max_total_grad_post": 0.5000006388768279,
+  "std_min": 0.30929937958717346,
+  "std_max": 3.382810115814209
+}
