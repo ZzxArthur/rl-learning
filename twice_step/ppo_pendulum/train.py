@@ -1,6 +1,6 @@
 # 连续PPO训练入口：采样原始高斯动作，计算GAE并进行多轮小批更新。
 # 记录完整回合奖励，保存网络配置、权重和每10局平均奖励曲线。
-# advantages没做标准化, 没做梯度裁剪
+
 from pathlib import Path
 import sys
 
@@ -22,21 +22,21 @@ from twice_step.ppo_cartpole.losses import computer_ppo_loss  # computer_ppo_los
 if __name__ == "__main__":
     seed = 42
     env_id = "Pendulum-v1"
-    num_batches = 500
+    num_batches = 200
     num_steps = 1024
     update_epochs = 10
     minibatch_size = 64
 
-    gamma = 0.99
+    gamma = 0.95
     gae_lambda = 0.95
-    lr = 0.001
+    lr = 3e-4
     clip_epsilon = 0.2
     value_coef = 0.5
     entropy_coef = 0.0
 
     state_dimension = 3
     action_dimension = 1
-    hidden_dimension = [256, 256]
+    hidden_dimension = [512, 512]
 
     network_config = {
         "state_dimension": state_dimension,
@@ -80,7 +80,7 @@ if __name__ == "__main__":
         with torch.no_grad():
             next_values = ppo_model.critic_net(next_states).squeeze(-1)
         td_error, advantages, values_target = compute_gae(rewards, values, next_values, terminated, truncated, gamma, gae_lambda)
-
+        advantages = (advantages - advantages.mean()) / (advantages.std() + 1e-8)
         for _ in range(update_epochs):
             indices = torch.randperm(num_steps, device=states.device)
             for start in range(0, num_steps, minibatch_size):
