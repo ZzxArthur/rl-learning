@@ -1,0 +1,26 @@
+{
+  "target_count": 1,
+  "seed": 18000,
+  "checkpoint_steps": 1433600,
+  "joint_step_rad": 0.12,
+  "successes": 1,
+  "single_hits": 1,
+  "collisions": 0,
+  "horizon": 400,
+  "hold_steps": 10,
+  "episodes": [
+    {
+      "target_m": [
+        0.35,
+        -0.15,
+        0.3
+      ],
+      "final_distance_m": 0.0011086065646632509,
+      "closest_distance_m": 0.0010182592228423363,
+      "steps": 17,
+      "status": "success"
+    }
+  ],
+  "mean_final_distance_m": 0.0011086065646632509,
+  "mean_closest_distance_m": 0.0010182592228423363
+}

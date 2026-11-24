@@ -1,0 +1,96 @@
+WARNING Fri Nov 20 22:12:13 2026: OpenGL error 0x502 in or before mjr_makeContext
+
+WARNING Fri Nov 20 22:12:20 2026: OpenGL error 0x502 in or before mjr_makeContext
+
+WARNING Fri Nov 20 22:16:22 2026: OpenGL error 0x502 in or before mjr_makeContext
+
+WARNING Fri Nov 20 22:23:06 2026: OpenGL error 0x502 in or before mjr_makeContext
+
+WARNING Mon Nov 23 14:59:53 2026: OpenGL error 0x502 in or before mjr_makeContext
+
+WARNING Mon Nov 23 16:43:03 2026: OpenGL error 0x502 in or before mjr_makeContext
+
+WARNING Mon Nov 23 22:06:10 2026: OpenGL error 0x502 in or before mjr_makeContext
+
+WARNING Mon Nov 23 22:07:48 2026: OpenGL error 0x502 in or before mjr_makeContext
+
+WARNING Mon Nov 23 22:10:55 2026: OpenGL error 0x502 in or before mjr_makeContext
+
+WARNING Mon Nov 23 22:14:52 2026: OpenGL error 0x502 in or before mjr_makeContext
+
+WARNING Mon Nov 23 22:26:09 2026: OpenGL error 0x502 in or before mjr_makeContext
+
+WARNING Mon Nov 23 22:36:23 2026: OpenGL error 0x502 in or before mjr_makeContext
+
+WARNING Mon Nov 23 22:42:57 2026: OpenGL error 0x502 in or before mjr_makeContext
+
+WARNING Mon Nov 23 22:43:08 2026: OpenGL error 0x502 in or before mjr_makeContext
+
+WARNING Mon Nov 23 22:43:13 2026: OpenGL error 0x502 in or before mjr_makeContext
+
+WARNING Mon Nov 23 22:43:50 2026: OpenGL error 0x502 in or before mjr_makeContext
+
+WARNING Mon Nov 23 22:44:08 2026: OpenGL error 0x502 in or before mjr_makeContext
+
+WARNING Mon Nov 23 22:45:14 2026: OpenGL error 0x502 in or before mjr_makeContext
+
+WARNING Mon Nov 23 22:45:15 2026: OpenGL error 0x502 in or before mjr_makeContext
+
+WARNING Mon Nov 23 22:45:17 2026: OpenGL error 0x502 in or before mjr_makeContext
+
+WARNING Mon Nov 23 22:47:10 2026: OpenGL error 0x502 in or before mjr_makeContext
+
+WARNING Mon Nov 23 22:49:09 2026: OpenGL error 0x502 in or before mjr_makeContext
+
+WARNING Mon Nov 23 22:55:07 2026: Attach conflict when attaching 'piper_description', policy is 'warning'
+impratio: parent has 1 (default), child has 10, keeping parent value
+integrator: parent has 0 (default), child has 3, keeping parent value
+cone: parent has 0 (default), child has 1, keeping parent value
+
+WARNING Mon Nov 23 22:55:07 2026: Attach conflict when attaching 'piper_description', policy is 'warning'
+impratio: parent has 1 (default), child has 10, keeping parent value
+integrator: parent has 0 (default), child has 3, keeping parent value
+cone: parent has 0 (default), child has 1, keeping parent value
+
+WARNING Mon Nov 23 22:55:07 2026: Attach conflict when attaching 'piper_description', policy is 'warning'
+impratio: parent has 1 (default), child has 10, keeping parent value
+integrator: parent has 0 (default), child has 3, keeping parent value
+cone: parent has 0 (default), child has 1, keeping parent value
+
+WARNING Mon Nov 23 22:55:07 2026: Attach conflict when attaching 'piper_description', policy is 'warning'
+impratio: parent has 1 (default), child has 10, keeping parent value
+integrator: parent has 0 (default), child has 3, keeping parent value
+cone: parent has 0 (default), child has 1, keeping parent value
+
+WARNING Mon Nov 23 22:55:36 2026: Attach conflict when attaching 'piper_description' to 'piper_scene', policy is 'warning'
+impratio: parent has 1 (default), child has 10, keeping parent value
+integrator: parent has 0 (default), child has 3, keeping parent value
+cone: parent has 0 (default), child has 1, keeping parent value
+
+WARNING Mon Nov 23 22:55:36 2026: Attach conflict when attaching 'piper_description' to 'piper_scene', policy is 'warning'
+impratio: parent has 1 (default), child has 10, keeping parent value
+integrator: parent has 0 (default), child has 3, keeping parent value
+cone: parent has 0 (default), child has 1, keeping parent value
+
+WARNING Mon Nov 23 22:55:36 2026: Attach conflict when attaching 'piper_description' to 'piper_scene', policy is 'warning'
+impratio: parent has 1 (default), child has 10, keeping parent value
+integrator: parent has 0 (default), child has 3, keeping parent value
+cone: parent has 0 (default), child has 1, keeping parent value
+
+WARNING Mon Nov 23 22:55:36 2026: Attach conflict when attaching 'piper_description' to 'piper_scene', policy is 'warning'
+impratio: parent has 1 (default), child has 10, keeping parent value
+integrator: parent has 0 (default), child has 3, keeping parent value
+cone: parent has 0 (default), child has 1, keeping parent value
+
+WARNING Mon Nov 23 22:56:44 2026: OpenGL error 0x502 in or before mjr_makeContext
+
+WARNING Mon Nov 23 23:03:54 2026: OpenGL error 0x502 in or before mjr_makeContext
+
+WARNING Mon Nov 23 23:12:05 2026: OpenGL error 0x502 in or before mjr_makeContext
+
+WARNING Tue Nov 24 10:27:25 2026: OpenGL error 0x502 in or before mjr_makeContext
+
+WARNING Tue Nov 24 10:59:01 2026: OpenGL error 0x502 in or before mjr_makeContext
+
+WARNING Tue Nov 24 21:18:20 2026: OpenGL error 0x502 in or before mjr_makeContext
+

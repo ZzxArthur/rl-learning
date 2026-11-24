@@ -1,0 +1,72 @@
+Warp 1.19.0 initialized:
+   CUDA Toolkit 13.4, Driver 13.0
+   Devices:
+     "cpu"      : "x86_64"
+     "cuda:0"   : "NVIDIA GeForce RTX 5060 Ti" (15 GiB, sm_120, mempool enabled)
+   Kernel cache:
+     /home/hatepp/.cache/warp/1.19.0
+CUDA NVIDIA GeForce RTX 5060 Ti | 1024 环境 | 911,360 步 | 经验池 100,000 条
+Actor / Q 隐藏层 [512, 512, 256, 128] | ELU
+起点 固定 home | 目标随机
+近目标权重 0 | 初始 alpha 0.002
+Actor 初始权重 twice_step/piper_reach/sac/runs/fixed_home_replay100k_10m/sac_piper.pt
+Module reset_data__locals__reset_xfrc_applied_a0b243d9 a0b243d load on device 'cuda:0' took 0.70 ms  (cached)
+Module reset_data__locals__reset_M_75746178 7574617 load on device 'cuda:0' took 0.43 ms  (cached)
+Module reset_data__locals__reset_mocap_9bfd9313 9bfd931 load on device 'cuda:0' took 0.32 ms  (cached)
+Module reset_data__locals__reset_contact_45b60b23 45b60b2 load on device 'cuda:0' took 0.45 ms  (cached)
+Module reset_data__locals__reset_sleep_bafb6237 bafb623 load on device 'cuda:0' took 0.34 ms  (cached)
+Module reset_data__locals__reset_nworld_a88a061f a88a061 load on device 'cuda:0' took 0.41 ms  (cached)
+Module mujoco_warp._src.smooth 29bdd99 load on device 'cuda:0' took 2.16 ms  (cached)
+Module _nxn_broadphase__locals__kernel_2214e32d 2214e32 load on device 'cuda:0' took 0.48 ms  (cached)
+Module _nxn_broadphase__locals__kernel_2214e32d c72691b load on device 'cuda:0' took 0.38 ms  (cached)
+Module ccd_kernel_builder__locals__ccd_kernel_b14d846d b14d846 load on device 'cuda:0' took 0.73 ms  (cached)
+Module _primitive_narrowphase__locals__primitive_narrowphase_e687fbcd e687fbc load on device 'cuda:0' took 0.67 ms  (cached)
+Module mujoco_warp._src.constraint 9feb269 load on device 'cuda:0' took 0.39 ms  (cached)
+Module _equality_joint__locals__kernel_313ab29b 313ab29 load on device 'cuda:0' took 0.57 ms  (cached)
+Module _friction_dof__locals__kernel_de3fc701 de3fc70 load on device 'cuda:0' took 0.55 ms  (cached)
+Module _limit_slide_hinge__locals__kernel_0914a21e 0914a21 load on device 'cuda:0' took 0.47 ms  (cached)
+Module _efc_contact_init__locals__kernel_293e2f58 293e2f5 load on device 'cuda:0' took 0.48 ms  (cached)
+Module _efc_contact_jac_dense__locals__kernel_5012db29 1305718 load on device 'cuda:0' took 0.58 ms  (cached)
+Module _efc_contact_update__locals__kernel_08ca74ca 08ca74c load on device 'cuda:0' took 0.49 ms  (cached)
+Module mujoco_warp._src.forward cac294c load on device 'cuda:0' took 1.03 ms  (cached)
+Module mujoco_warp._src.passive a2eea36 load on device 'cuda:0' took 1.23 ms  (cached)
+Module _qfrc_passive_kernel__locals__kernel_887f05a4 887f05a load on device 'cuda:0' took 0.48 ms  (cached)
+Module _qfrc_smooth__locals__kernel_5d93552d 5d93552 load on device 'cuda:0' took 0.40 ms  (cached)
+Module mujoco_warp._src.support d4bd46c load on device 'cuda:0' took 0.37 ms  (cached)
+Module _tile_cholesky_factorize_solve_block__locals__kernel_095abfd2 cb9156b load on device 'cuda:0' took 25.81 ms  (cached)
+Module _solve_init_dof__locals__kernel_08db194e 08db194 load on device 'cuda:0' took 0.45 ms  (cached)
+Module mujoco_warp._src.solver aacce26 load on device 'cuda:0' took 0.60 ms  (cached)
+Module _solve_init_jaref_kernel__locals__kernel_f5f128d8 f5f128d load on device 'cuda:0' took 0.48 ms  (cached)
+Module mul_m_kernel__locals___mul_m_2eb0ef19 2eb0ef1 load on device 'cuda:0' took 0.37 ms  (cached)
+Module _update_constraint_efc__locals__kernel_01e3395a 01e3395 load on device 'cuda:0' took 0.40 ms  (cached)
+Module _update_constraint_init_qfrc_constraint_dense__locals__kernel_1f63a94a 1f63a94 load on device 'cuda:0' took 0.41 ms  (cached)
+Module _update_gradient_zero_grad_dot__locals__kernel_eeeb13da eeeb13d load on device 'cuda:0' took 0.33 ms  (cached)
+Module _update_gradient_grad__locals__kernel_9654ebd0 9654ebd load on device 'cuda:0' took 0.35 ms  (cached)
+Module _update_gradient_JTDAJ_dense_tiled__locals__kernel_71d7974c e447444 load on device 'cuda:0' took 0.67 ms  (cached)
+Module _update_gradient_cholesky__locals__kernel_ac49bc9a 25a5877 load on device 'cuda:0' took 25.51 ms  (cached)
+Module _linesearch_iterative_kernel__locals__kernel_69885ef8 02acce6 load on device 'cuda:0' took 0.75 ms  (cached)
+Module _solve_done__locals__kernel_8d3e2217 8d3e221 load on device 'cuda:0' took 0.63 ms  (cached)
+Module mujoco_warp._src.derivative 4b57f23 load on device 'cuda:0' took 1.91 ms  (cached)
+Module _next_time_builder__locals___next_time_1cb22d2e 1cb22d2 load on device 'cuda:0' took 0.52 ms  (cached)
+步数 1,024/911,360 | 更新 0 | 经验池 1,024 | 成功 0/0 | 暂无完整回合 | 预热 | 695 步/秒
+步数 51,200/911,360 | 更新 0 | 经验池 51,200 | 成功 0/0 | 暂无完整回合 | 预热 | 5541 步/秒
+步数 102,400/911,360 | 更新 0 | 经验池 100,000 | 成功 3/3 | 最近结束的一组平均末距 0.0016 米 | 预热 | 6052 步/秒
+步数 153,600/911,360 | 更新 0 | 经验池 100,000 | 成功 4/4 | 最近结束的一组平均末距 0.0019 米 | 预热 | 6229 步/秒
+步数 204,800/911,360 | 更新 0 | 经验池 100,000 | 成功 5/5 | 最近结束的一组平均末距 0.0017 米 | 预热 | 6343 步/秒
+步数 256,000/911,360 | 更新 0 | 经验池 100,000 | 成功 8/8 | 最近结束的一组平均末距 0.0019 米 | 预热 | 6406 步/秒
+步数 307,200/911,360 | 更新 0 | 经验池 100,000 | 成功 10/10 | 最近结束的一组平均末距 0.0020 米 | 预热 | 6458 步/秒
+步数 358,400/911,360 | 更新 0 | 经验池 100,000 | 成功 10/10 | 最近结束的一组平均末距 0.0020 米 | 预热 | 6399 步/秒
+采样预热结束 | 环境步数 409,600 | 成功 10/1024 | 用经验池 100,000 条转移预热 Critic 800 次
+Critic 预热完成 | 单独更新 800 次 | 开始更新 Actor 和 alpha
+步数 409,600/911,360 | 更新 2 | 经验池 100,000 | 成功 10/1024 | 最近结束的一组平均末距 0.0546 米 | Q损失 0.0009 | alpha 0.0020 | 6169 步/秒
+步数 460,800/911,360 | 更新 102 | 经验池 100,000 | 成功 10/1024 | 最近结束的一组平均末距 0.0546 米 | Q损失 0.0097 | alpha 0.0020 | 6141 步/秒
+步数 512,000/911,360 | 更新 202 | 经验池 100,000 | 成功 11/1028 | 最近结束的一组平均末距 0.0018 米 | Q损失 0.0110 | alpha 0.0019 | 5899 步/秒
+步数 563,200/911,360 | 更新 302 | 经验池 100,000 | 成功 11/1029 | 最近结束的一组平均末距 0.2889 米 | Q损失 0.0106 | alpha 0.0019 | 5866 步/秒
+步数 614,400/911,360 | 更新 402 | 经验池 100,000 | 成功 11/1030 | 最近结束的一组平均末距 0.2206 米 | Q损失 0.0094 | alpha 0.0018 | 5868 步/秒
+步数 665,600/911,360 | 更新 502 | 经验池 100,000 | 成功 11/1033 | 最近结束的一组平均末距 0.2081 米 | Q损失 0.0028 | alpha 0.0018 | 5859 步/秒
+步数 716,800/911,360 | 更新 602 | 经验池 100,000 | 成功 11/1035 | 最近结束的一组平均末距 0.2230 米 | Q损失 0.0046 | alpha 0.0017 | 5873 步/秒
+步数 768,000/911,360 | 更新 702 | 经验池 100,000 | 成功 11/1035 | 最近结束的一组平均末距 0.2230 米 | Q损失 0.0020 | alpha 0.0017 | 5863 步/秒
+步数 819,200/911,360 | 更新 802 | 经验池 100,000 | 成功 11/2048 | 最近结束的一组平均末距 0.3774 米 | Q损失 0.0012 | alpha 0.0016 | 5839 步/秒
+步数 870,400/911,360 | 更新 902 | 经验池 100,000 | 成功 11/2048 | 最近结束的一组平均末距 0.3774 米 | Q损失 0.0028 | alpha 0.0016 | 5840 步/秒
+步数 911,360/911,360 | 更新 982 | 经验池 100,000 | 成功 11/2051 | 最近结束的一组平均末距 0.3511 米 | Q损失 0.0022 | alpha 0.0015 | 5809 步/秒
+模型已保存 twice_step/piper_reach/sac/runs/critic_warmup_50eval/sac_piper.pt | completed

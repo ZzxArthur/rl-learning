@@ -1,0 +1,81 @@
+Warp 1.19.0 initialized:
+   CUDA Toolkit 13.4, Driver 13.0
+   Devices:
+     "cpu"      : "x86_64"
+     "cuda:0"   : "NVIDIA GeForce RTX 5060 Ti" (15 GiB, sm_120, mempool enabled)
+   Kernel cache:
+     /home/hatepp/.cache/warp/1.19.0
+Module reset_data__locals__reset_xfrc_applied_a0b243d9 a0b243d load on device 'cuda:0' took 0.50 ms  (cached)
+Module reset_data__locals__reset_M_75746178 7574617 load on device 'cuda:0' took 0.35 ms  (cached)
+Module reset_data__locals__reset_mocap_9bfd9313 9bfd931 load on device 'cuda:0' took 0.34 ms  (cached)
+Module reset_data__locals__reset_contact_45b60b23 45b60b2 load on device 'cuda:0' took 0.31 ms  (cached)
+Module reset_data__locals__reset_sleep_bafb6237 bafb623 load on device 'cuda:0' took 0.32 ms  (cached)
+Module reset_data__locals__reset_nworld_a88a061f a88a061 load on device 'cuda:0' took 0.34 ms  (cached)
+Module mujoco_warp._src.smooth 29bdd99 load on device 'cuda:0' took 1.92 ms  (cached)
+Module _nxn_broadphase__locals__kernel_2214e32d 2214e32 load on device 'cuda:0' took 0.42 ms  (cached)
+Module _nxn_broadphase__locals__kernel_2214e32d c72691b load on device 'cuda:0' took 0.31 ms  (cached)
+Module ccd_kernel_builder__locals__ccd_kernel_b14d846d b14d846 load on device 'cuda:0' took 0.55 ms  (cached)
+Module _primitive_narrowphase__locals__primitive_narrowphase_e687fbcd e687fbc load on device 'cuda:0' took 0.60 ms  (cached)
+Module mujoco_warp._src.constraint 9feb269 load on device 'cuda:0' took 0.34 ms  (cached)
+Module _equality_joint__locals__kernel_313ab29b 313ab29 load on device 'cuda:0' took 0.49 ms  (cached)
+Module _friction_dof__locals__kernel_de3fc701 de3fc70 load on device 'cuda:0' took 0.52 ms  (cached)
+Module _limit_slide_hinge__locals__kernel_0914a21e 0914a21 load on device 'cuda:0' took 0.45 ms  (cached)
+Module _efc_contact_init__locals__kernel_293e2f58 293e2f5 load on device 'cuda:0' took 0.40 ms  (cached)
+Module _efc_contact_jac_dense__locals__kernel_5012db29 1305718 load on device 'cuda:0' took 0.34 ms  (cached)
+Module _efc_contact_update__locals__kernel_08ca74ca 08ca74c load on device 'cuda:0' took 0.44 ms  (cached)
+Module mujoco_warp._src.forward cac294c load on device 'cuda:0' took 1.17 ms  (cached)
+Module mujoco_warp._src.passive a2eea36 load on device 'cuda:0' took 0.92 ms  (cached)
+Module _qfrc_passive_kernel__locals__kernel_887f05a4 887f05a load on device 'cuda:0' took 0.37 ms  (cached)
+Module _qfrc_smooth__locals__kernel_5d93552d 5d93552 load on device 'cuda:0' took 0.35 ms  (cached)
+Module mujoco_warp._src.support d4bd46c load on device 'cuda:0' took 0.30 ms  (cached)
+Module _tile_cholesky_factorize_solve_block__locals__kernel_095abfd2 cb9156b load on device 'cuda:0' took 24.93 ms  (cached)
+Module _solve_init_dof__locals__kernel_08db194e 08db194 load on device 'cuda:0' took 0.44 ms  (cached)
+Module mujoco_warp._src.solver aacce26 load on device 'cuda:0' took 0.51 ms  (cached)
+Module _solve_init_jaref_kernel__locals__kernel_f5f128d8 f5f128d load on device 'cuda:0' took 0.33 ms  (cached)
+Module mul_m_kernel__locals___mul_m_2eb0ef19 2eb0ef1 load on device 'cuda:0' took 0.35 ms  (cached)
+Module _update_constraint_efc__locals__kernel_01e3395a 01e3395 load on device 'cuda:0' took 0.33 ms  (cached)
+Module _update_constraint_init_qfrc_constraint_dense__locals__kernel_1f63a94a 1f63a94 load on device 'cuda:0' took 0.32 ms  (cached)
+Module _update_gradient_zero_grad_dot__locals__kernel_eeeb13da eeeb13d load on device 'cuda:0' took 0.33 ms  (cached)
+Module _update_gradient_grad__locals__kernel_9654ebd0 9654ebd load on device 'cuda:0' took 0.33 ms  (cached)
+Module _update_gradient_JTDAJ_dense_tiled__locals__kernel_71d7974c e447444 load on device 'cuda:0' took 0.62 ms  (cached)
+Module _update_gradient_cholesky__locals__kernel_ac49bc9a 25a5877 load on device 'cuda:0' took 25.07 ms  (cached)
+Module _linesearch_iterative_kernel__locals__kernel_69885ef8 02acce6 load on device 'cuda:0' took 0.70 ms  (cached)
+Module _solve_done__locals__kernel_8d3e2217 8d3e221 load on device 'cuda:0' took 0.46 ms  (cached)
+Module mujoco_warp._src.derivative 4b57f23 load on device 'cuda:0' took 1.87 ms  (cached)
+Module _next_time_builder__locals___next_time_1cb22d2e 1cb22d2 load on device 'cuda:0' took 1.10 ms  (cached)
+SAC+HER worlds=256 joint_step=0.12 horizon=160
+steps=40960 updates=0 near_fraction=0.850 success=0.000 full_success=0.000 nearest_m=0.16534 contact_steps=0.069 alpha=0.0302 steps_per_s=22557
+steps=81920 updates=640 near_fraction=0.809 success=0.000 full_success=0.000 nearest_m=0.13834 contact_steps=0.000 alpha=0.0252 steps_per_s=15298
+steps=122880 updates=1280 near_fraction=0.768 success=0.000 full_success=0.000 nearest_m=0.12299 contact_steps=0.000 alpha=0.0211 steps_per_s=14692
+steps=163840 updates=1920 near_fraction=0.727 success=0.008 full_success=0.000 nearest_m=0.06734 contact_steps=0.000 alpha=0.0181 steps_per_s=15048
+steps=204800 updates=2560 near_fraction=0.686 success=0.086 full_success=0.000 nearest_m=0.05012 contact_steps=0.000 alpha=0.0159 steps_per_s=14404
+steps=245760 updates=3200 near_fraction=0.645 success=0.250 full_success=0.000 nearest_m=0.03620 contact_steps=0.000 alpha=0.0142 steps_per_s=11795
+steps=286720 updates=3840 near_fraction=0.604 success=0.457 full_success=0.098 nearest_m=0.02214 contact_steps=0.000 alpha=0.0128 steps_per_s=10957
+steps=327680 updates=4480 near_fraction=0.563 success=0.637 full_success=0.242 nearest_m=0.01408 contact_steps=0.000 alpha=0.0119 steps_per_s=11350
+steps=368640 updates=5120 near_fraction=0.522 success=0.590 full_success=0.256 nearest_m=0.01531 contact_steps=0.000 alpha=0.0114 steps_per_s=11713
+steps=409600 updates=5760 near_fraction=0.481 success=0.645 full_success=0.343 nearest_m=0.01158 contact_steps=0.001 alpha=0.0111 steps_per_s=11920
+steps=450560 updates=6400 near_fraction=0.440 success=0.676 full_success=0.438 nearest_m=0.01304 contact_steps=0.000 alpha=0.0110 steps_per_s=12111
+steps=491520 updates=7040 near_fraction=0.399 success=0.691 full_success=0.518 nearest_m=0.01310 contact_steps=0.000 alpha=0.0112 steps_per_s=12336
+steps=532480 updates=7680 near_fraction=0.358 success=0.664 full_success=0.485 nearest_m=0.00720 contact_steps=0.000 alpha=0.0112 steps_per_s=12508
+steps=573440 updates=8320 near_fraction=0.318 success=0.699 full_success=0.539 nearest_m=0.00790 contact_steps=0.000 alpha=0.0112 steps_per_s=12671
+steps=614400 updates=8960 near_fraction=0.277 success=0.734 full_success=0.632 nearest_m=0.00846 contact_steps=0.000 alpha=0.0110 steps_per_s=12772
+steps=655360 updates=9600 near_fraction=0.236 success=0.703 full_success=0.626 nearest_m=0.00783 contact_steps=0.000 alpha=0.0108 steps_per_s=12868
+steps=696320 updates=10240 near_fraction=0.200 success=0.707 full_success=0.646 nearest_m=0.00817 contact_steps=0.001 alpha=0.0107 steps_per_s=12927
+steps=737280 updates=10880 near_fraction=0.200 success=0.746 full_success=0.690 nearest_m=0.00711 contact_steps=0.000 alpha=0.0100 steps_per_s=13058
+steps=778240 updates=11520 near_fraction=0.200 success=0.746 full_success=0.688 nearest_m=0.00894 contact_steps=0.002 alpha=0.0093 steps_per_s=13217
+steps=819200 updates=12160 near_fraction=0.200 success=0.812 full_success=0.746 nearest_m=0.00543 contact_steps=0.000 alpha=0.0084 steps_per_s=13341
+steps=860160 updates=12800 near_fraction=0.200 success=0.762 full_success=0.700 nearest_m=0.00856 contact_steps=0.000 alpha=0.0079 steps_per_s=13350
+steps=901120 updates=13440 near_fraction=0.200 success=0.824 full_success=0.782 nearest_m=0.00512 contact_steps=0.001 alpha=0.0078 steps_per_s=13463
+steps=942080 updates=14080 near_fraction=0.200 success=0.910 full_success=0.885 nearest_m=0.00359 contact_steps=0.000 alpha=0.0075 steps_per_s=13524
+steps=983040 updates=14720 near_fraction=0.200 success=0.855 full_success=0.820 nearest_m=0.00402 contact_steps=0.000 alpha=0.0072 steps_per_s=13559
+steps=1024000 updates=15360 near_fraction=0.200 success=0.918 full_success=0.898 nearest_m=0.00286 contact_steps=0.000 alpha=0.0071 steps_per_s=13632
+steps=1064960 updates=16000 near_fraction=0.200 success=0.891 full_success=0.869 nearest_m=0.00345 contact_steps=0.000 alpha=0.0069 steps_per_s=13643
+steps=1105920 updates=16640 near_fraction=0.200 success=0.914 full_success=0.897 nearest_m=0.00286 contact_steps=0.000 alpha=0.0070 steps_per_s=13515
+steps=1146880 updates=17280 near_fraction=0.200 success=0.949 full_success=0.937 nearest_m=0.00223 contact_steps=0.000 alpha=0.0069 steps_per_s=13557
+steps=1187840 updates=17920 near_fraction=0.200 success=0.945 full_success=0.930 nearest_m=0.00297 contact_steps=0.002 alpha=0.0070 steps_per_s=13564
+steps=1228800 updates=18560 near_fraction=0.200 success=0.941 full_success=0.923 nearest_m=0.00286 contact_steps=0.000 alpha=0.0069 steps_per_s=13657
+steps=1269760 updates=19200 near_fraction=0.200 success=0.914 full_success=0.892 nearest_m=0.00355 contact_steps=0.000 alpha=0.0067 steps_per_s=13741
+steps=1310720 updates=19840 near_fraction=0.200 success=0.961 full_success=0.948 nearest_m=0.00236 contact_steps=0.000 alpha=0.0066 steps_per_s=13818
+steps=1351680 updates=20480 near_fraction=0.200 success=0.977 full_success=0.971 nearest_m=0.00177 contact_steps=0.000 alpha=0.0066 steps_per_s=13895
+steps=1392640 updates=21120 near_fraction=0.200 success=0.961 full_success=0.950 nearest_m=0.00247 contact_steps=0.003 alpha=0.0066 steps_per_s=13977
+steps=1433600 updates=21760 near_fraction=0.200 success=0.977 full_success=0.971 nearest_m=0.00164 contact_steps=0.000 alpha=0.0066 steps_per_s=14029

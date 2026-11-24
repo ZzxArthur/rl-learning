@@ -1,0 +1,9 @@
+{
+  "seed": 77,
+  "poses": 160000,
+  "dynamic_transitions": 48000,
+  "prediction_p90_mm": 12.514972686767578,
+  "outcome_updates": 3800,
+  "goal_actor_updates": 8500,
+  "feedback_actor_updates": 2400
+}

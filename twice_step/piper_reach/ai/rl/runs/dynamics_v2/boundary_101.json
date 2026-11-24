@@ -1,0 +1,2355 @@
+{
+  "protocol": {
+    "start": "home",
+    "position_tolerance_m": 0.01,
+    "hold_steps": 10,
+    "max_steps": 400,
+    "control_dt_s": 0.04,
+    "goal_file": "twice_step/piper_reach/ai/rl/runs/boundary_101.json",
+    "weights": "twice_step/piper_reach/ai/rl/runs/dynamics_v2/feedback_1200.pt"
+  },
+  "summary": {
+    "episodes": 101,
+    "successes": 94,
+    "success_rate": 0.9306930693069307,
+    "entered_tolerance": 96,
+    "collision_episodes": 2,
+    "mean_best_error_m": 0.004693529107022033,
+    "mean_final_error_m": 0.009164064182133015,
+    "median_final_error_m": 0.004262870524990667,
+    "p90_final_error_m": 0.007404673506163399,
+    "max_final_error_m": 0.1065801545005291,
+    "mean_success_time_s": 1.7412765957446816,
+    "total_wall_s": 2.10274928304716,
+    "failures": {
+      "collision": 2,
+      "timeout": 4,
+      "did_not_hold": 1
+    }
+  },
+  "episodes": [
+    {
+      "target_m": [
+        -0.47436316008283014,
+        0.29458599458558365,
+        0.26931539650758557
+      ],
+      "endpoint_m": [
+        -0.4734815113908483,
+        0.2938031786876906,
+        0.27055020404063984
+      ],
+      "initial_error_m": 0.9838745815371714,
+      "best_error_m": 0.0016835290770360015,
+      "final_error_m": 0.0017072945820083005,
+      "success": true,
+      "collision": false,
+      "steps": 50,
+      "first_reach_step": 41,
+      "first_reach_time_s": 1.6400000000000001,
+      "sim_time_s": 2.0,
+      "wall_time_s": 0.01820532100100536,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        -0.46583843731869157,
+        -0.2012173521141735,
+        0.3789503416090527
+      ],
+      "endpoint_m": [
+        -0.4654954275903699,
+        -0.2052992292531203,
+        0.3803295343376681
+      ],
+      "initial_error_m": 0.9471450494893752,
+      "best_error_m": 0.00432221577826066,
+      "final_error_m": 0.00432221577826066,
+      "success": true,
+      "collision": false,
+      "steps": 61,
+      "first_reach_step": 52,
+      "first_reach_time_s": 2.08,
+      "sim_time_s": 2.44,
+      "wall_time_s": 0.0210499419918051,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        0.12374337288411189,
+        0.42206934422244907,
+        0.5636573959071582
+      ],
+      "endpoint_m": [
+        0.1233206165323024,
+        0.4219094676872137,
+        0.5641995661710306
+      ],
+      "initial_error_m": 0.5717048978974735,
+      "best_error_m": 0.0007058555337613832,
+      "final_error_m": 0.0007058555337613832,
+      "success": true,
+      "collision": false,
+      "steps": 33,
+      "first_reach_step": 24,
+      "first_reach_time_s": 0.96,
+      "sim_time_s": 1.32,
+      "wall_time_s": 0.01208982098614797,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        -0.2060169888594223,
+        0.2356762351466896,
+        0.5581744957552499
+      ],
+      "endpoint_m": [
+        -0.2044776822994209,
+        0.22919243733936043,
+        0.5597615190335944
+      ],
+      "initial_error_m": 0.7299055362503708,
+      "best_error_m": 0.006850382586249985,
+      "final_error_m": 0.006850382586249985,
+      "success": true,
+      "collision": false,
+      "steps": 50,
+      "first_reach_step": 41,
+      "first_reach_time_s": 1.6400000000000001,
+      "sim_time_s": 2.0,
+      "wall_time_s": 0.01749757099605631,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        -0.27244454903607196,
+        0.11059643944269344,
+        0.2711625989093436
+      ],
+      "endpoint_m": [
+        -0.27148274856347043,
+        0.10528872343055005,
+        0.2723755095964428
+      ],
+      "initial_error_m": 0.7465364695044848,
+      "best_error_m": 0.004746162293685609,
+      "final_error_m": 0.005528839096007346,
+      "success": true,
+      "collision": false,
+      "steps": 61,
+      "first_reach_step": 49,
+      "first_reach_time_s": 1.96,
+      "sim_time_s": 2.44,
+      "wall_time_s": 0.0211629129917128,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        0.357876870551054,
+        0.27108555147969066,
+        0.5536193163002973
+      ],
+      "endpoint_m": [
+        0.35749594760921594,
+        0.2707625890219566,
+        0.554004785536772
+      ],
+      "initial_error_m": 0.3413402646293869,
+      "best_error_m": 0.00042556849480558347,
+      "final_error_m": 0.0006308673148869045,
+      "success": true,
+      "collision": false,
+      "steps": 23,
+      "first_reach_step": 14,
+      "first_reach_time_s": 0.56,
+      "sim_time_s": 0.92,
+      "wall_time_s": 0.008720315992832184,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        0.1719669826894713,
+        0.03839909017366584,
+        0.6596547288958511
+      ],
+      "endpoint_m": [
+        0.17190594917761057,
+        0.03823594552177871,
+        0.6591119148164367
+      ],
+      "initial_error_m": 0.4092716420606772,
+      "best_error_m": 0.0005700775314112057,
+      "final_error_m": 0.0005700775314112057,
+      "success": true,
+      "collision": false,
+      "steps": 22,
+      "first_reach_step": 13,
+      "first_reach_time_s": 0.52,
+      "sim_time_s": 0.88,
+      "wall_time_s": 0.009148183991783299,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        -0.07975408246543847,
+        0.6578346090158759,
+        0.12106026730746781
+      ],
+      "endpoint_m": [
+        -0.0770024541334785,
+        0.6565785873380294,
+        0.12137405145167385
+      ],
+      "initial_error_m": 0.8853134792754476,
+      "best_error_m": 0.0018640683770802923,
+      "final_error_m": 0.003040971789020754,
+      "success": true,
+      "collision": false,
+      "steps": 41,
+      "first_reach_step": 32,
+      "first_reach_time_s": 1.28,
+      "sim_time_s": 1.6400000000000001,
+      "wall_time_s": 0.014153465002891608,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        -0.379135653624748,
+        0.17827305663794374,
+        0.42914185035718244
+      ],
+      "endpoint_m": [
+        -0.37747458220840174,
+        0.17485933730049075,
+        0.4310807745815221
+      ],
+      "initial_error_m": 0.8589219411313803,
+      "best_error_m": 0.003984374001552941,
+      "final_error_m": 0.004262870524990667,
+      "success": true,
+      "collision": false,
+      "steps": 58,
+      "first_reach_step": 49,
+      "first_reach_time_s": 1.96,
+      "sim_time_s": 2.32,
+      "wall_time_s": 0.019238336011767387,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        0.06684236972477636,
+        -0.18910965343240116,
+        0.13525132265165815
+      ],
+      "endpoint_m": [
+        0.07263043543701762,
+        -0.18899071175121407,
+        0.13781691920298336
+      ],
+      "initial_error_m": 0.4957244045645154,
+      "best_error_m": 0.006332309016221362,
+      "final_error_m": 0.006332309016221362,
+      "success": true,
+      "collision": false,
+      "steps": 35,
+      "first_reach_step": 26,
+      "first_reach_time_s": 1.04,
+      "sim_time_s": 1.4000000000000001,
+      "wall_time_s": 0.013377539013163187,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        0.21853488818532174,
+        0.4767974221492555,
+        0.462128868407155
+      ],
+      "endpoint_m": [
+        0.218889268432494,
+        0.4758268023065219,
+        0.4631388759575466
+      ],
+      "initial_error_m": 0.540697220675473,
+      "best_error_m": 0.0007620982922527188,
+      "final_error_m": 0.0014449233510958777,
+      "success": true,
+      "collision": false,
+      "steps": 31,
+      "first_reach_step": 22,
+      "first_reach_time_s": 0.88,
+      "sim_time_s": 1.24,
+      "wall_time_s": 0.010956700003589503,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        -0.3307737334024969,
+        0.2808677005258268,
+        0.33466346094324523
+      ],
+      "endpoint_m": [
+        -0.3287648448387772,
+        0.2766671877294722,
+        0.33529128537825825
+      ],
+      "initial_error_m": 0.8388472957555975,
+      "best_error_m": 0.0028781072955235535,
+      "final_error_m": 0.004698308688771116,
+      "success": true,
+      "collision": false,
+      "steps": 51,
+      "first_reach_step": 42,
+      "first_reach_time_s": 1.68,
+      "sim_time_s": 2.04,
+      "wall_time_s": 0.01737058800063096,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        -0.008583176711417402,
+        -0.6219487837550655,
+        0.18788002271541682
+      ],
+      "endpoint_m": [
+        -0.010137151007179077,
+        -0.6251639067687185,
+        0.1887165666742745
+      ],
+      "initial_error_m": 0.8005748144051701,
+      "best_error_m": 0.0020890435267012035,
+      "final_error_m": 0.0036676501877783395,
+      "success": true,
+      "collision": false,
+      "steps": 39,
+      "first_reach_step": 30,
+      "first_reach_time_s": 1.2,
+      "sim_time_s": 1.56,
+      "wall_time_s": 0.01319508400047198,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        -0.4254087211639947,
+        0.3948899903167416,
+        0.29767555439354404
+      ],
+      "endpoint_m": [
+        -0.42446247786798874,
+        0.3926967469581892,
+        0.2995515537867131
+      ],
+      "initial_error_m": 0.97104108690454,
+      "best_error_m": 0.003037279461663223,
+      "final_error_m": 0.003037279461663223,
+      "success": true,
+      "collision": false,
+      "steps": 51,
+      "first_reach_step": 42,
+      "first_reach_time_s": 1.68,
+      "sim_time_s": 2.04,
+      "wall_time_s": 0.016870593011844903,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        -0.4113814307597392,
+        0.2292981906013148,
+        0.6428167434362506
+      ],
+      "endpoint_m": [
+        -0.4106816438798705,
+        0.22745436966835386,
+        0.645556110274918
+      ],
+      "initial_error_m": 0.9403126726820508,
+      "best_error_m": 0.0028981201934719794,
+      "final_error_m": 0.0033754270821411323,
+      "success": true,
+      "collision": false,
+      "steps": 56,
+      "first_reach_step": 47,
+      "first_reach_time_s": 1.8800000000000001,
+      "sim_time_s": 2.24,
+      "wall_time_s": 0.018075315994792618,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        -0.5904792520111566,
+        0.2681391696126477,
+        0.33730305673078276
+      ],
+      "endpoint_m": [
+        -0.5850677055257403,
+        0.27397791827106355,
+        0.34090814278925047
+      ],
+      "initial_error_m": 1.083683782702535,
+      "best_error_m": 0.003992091039696047,
+      "final_error_m": 0.008739134210488613,
+      "success": true,
+      "collision": false,
+      "steps": 62,
+      "first_reach_step": 44,
+      "first_reach_time_s": 1.76,
+      "sim_time_s": 2.48,
+      "wall_time_s": 0.020813891998841427,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        0.01213628716929499,
+        0.053878504282487284,
+        0.44261055028123325
+      ],
+      "endpoint_m": [
+        0.012094778211159424,
+        0.050884766316430546,
+        0.4426808637036276
+      ],
+      "initial_error_m": 0.45599206950693455,
+      "best_error_m": 0.002983972181049522,
+      "final_error_m": 0.0029948512451178338,
+      "success": true,
+      "collision": false,
+      "steps": 45,
+      "first_reach_step": 36,
+      "first_reach_time_s": 1.44,
+      "sim_time_s": 1.8,
+      "wall_time_s": 0.015073989008669741,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        -0.003919643818919294,
+        -0.20510609904923316,
+        0.16202596993031265
+      ],
+      "endpoint_m": [
+        0.0019513900669661387,
+        -0.2062992698119647,
+        0.1649416197412631
+      ],
+      "initial_error_m": 0.5484187624787179,
+      "best_error_m": 0.006662860435154535,
+      "final_error_m": 0.006662860435154535,
+      "success": true,
+      "collision": false,
+      "steps": 42,
+      "first_reach_step": 33,
+      "first_reach_time_s": 1.32,
+      "sim_time_s": 1.68,
+      "wall_time_s": 0.01525965699693188,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        0.3404128575838365,
+        -0.04737236193451937,
+        0.6789143823924509
+      ],
+      "endpoint_m": [
+        0.340377341228893,
+        -0.046483471638703394,
+        0.6790646735830554
+      ],
+      "initial_error_m": 0.3340377018024762,
+      "best_error_m": 0.0007256908903705857,
+      "final_error_m": 0.000902205526162198,
+      "success": true,
+      "collision": false,
+      "steps": 25,
+      "first_reach_step": 12,
+      "first_reach_time_s": 0.48,
+      "sim_time_s": 1.0,
+      "wall_time_s": 0.009848721994785592,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        -0.33482140944704725,
+        0.4954306483737639,
+        0.30429461016605097
+      ],
+      "endpoint_m": [
+        -0.3333704834681527,
+        0.49350730458533326,
+        0.3059732284906311
+      ],
+      "initial_error_m": 0.9376248524462456,
+      "best_error_m": 0.002379443645037557,
+      "final_error_m": 0.002936357778667636,
+      "success": true,
+      "collision": false,
+      "steps": 48,
+      "first_reach_step": 39,
+      "first_reach_time_s": 1.56,
+      "sim_time_s": 1.92,
+      "wall_time_s": 0.01795879300334491,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        -0.44946623898692467,
+        0.18442525390835737,
+        0.6373474954593115
+      ],
+      "endpoint_m": [
+        -0.4426088062873598,
+        0.181385749368179,
+        0.6394316319760558
+      ],
+      "initial_error_m": 0.9646631955726932,
+      "best_error_m": 0.0077850238342122855,
+      "final_error_m": 0.0077850238342122855,
+      "success": true,
+      "collision": false,
+      "steps": 65,
+      "first_reach_step": 50,
+      "first_reach_time_s": 2.0,
+      "sim_time_s": 2.6,
+      "wall_time_s": 0.023229904007166624,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        -0.3416294536934008,
+        -0.2967471515496609,
+        0.44281782704082506
+      ],
+      "endpoint_m": [
+        -0.3410153888402351,
+        -0.30140479152262717,
+        0.444698582379613
+      ],
+      "initial_error_m": 0.8577103562295803,
+      "best_error_m": 0.005060427492420569,
+      "final_error_m": 0.005060427492420569,
+      "success": true,
+      "collision": false,
+      "steps": 53,
+      "first_reach_step": 44,
+      "first_reach_time_s": 1.76,
+      "sim_time_s": 2.12,
+      "wall_time_s": 0.017330870003206655,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        -0.06298577230250713,
+        0.01958174066816732,
+        0.5205707717795289
+      ],
+      "endpoint_m": [
+        -0.06230714674550461,
+        0.016077453446448252,
+        0.5220375145975116
+      ],
+      "initial_error_m": 0.543732439690911,
+      "best_error_m": 0.0038590019529697313,
+      "final_error_m": 0.0038590019529697313,
+      "success": true,
+      "collision": false,
+      "steps": 57,
+      "first_reach_step": 48,
+      "first_reach_time_s": 1.92,
+      "sim_time_s": 2.2800000000000002,
+      "wall_time_s": 0.019607644993811846,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        -0.11237288145223723,
+        -0.04919722736282478,
+        0.7682704021819511
+      ],
+      "endpoint_m": [
+        -0.11258096817272187,
+        -0.053126743160796186,
+        0.7701450146947537
+      ],
+      "initial_error_m": 0.698253601843223,
+      "best_error_m": 0.0043587345139277645,
+      "final_error_m": 0.0043587345139277645,
+      "success": true,
+      "collision": false,
+      "steps": 54,
+      "first_reach_step": 45,
+      "first_reach_time_s": 1.8,
+      "sim_time_s": 2.16,
+      "wall_time_s": 0.017764588992577046,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        -0.2028373053262328,
+        0.5888500251845463,
+        0.44205119559977935
+      ],
+      "endpoint_m": [
+        -0.20144382630649757,
+        0.5885472153531424,
+        0.4442684494601151
+      ],
+      "initial_error_m": 0.8880676911430426,
+      "best_error_m": 0.00222300813609654,
+      "final_error_m": 0.0026362268972171233,
+      "success": true,
+      "collision": false,
+      "steps": 43,
+      "first_reach_step": 34,
+      "first_reach_time_s": 1.36,
+      "sim_time_s": 1.72,
+      "wall_time_s": 0.014404476009076461,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        -0.24204922731697565,
+        -0.13703919665570835,
+        0.15244287045249402
+      ],
+      "endpoint_m": [
+        -0.2400945355731508,
+        -0.14143640953530762,
+        0.15590984140812508
+      ],
+      "initial_error_m": 0.7474680067103184,
+      "best_error_m": 0.005081606821477487,
+      "final_error_m": 0.0059309517388931796,
+      "success": true,
+      "collision": false,
+      "steps": 56,
+      "first_reach_step": 47,
+      "first_reach_time_s": 1.8800000000000001,
+      "sim_time_s": 2.24,
+      "wall_time_s": 0.01821387499512639,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        -0.015516771987046603,
+        0.15284933880551593,
+        0.2107151512901572
+      ],
+      "endpoint_m": [
+        -0.013494330771177308,
+        0.15124774812849523,
+        0.21060528314557006
+      ],
+      "initial_error_m": 0.5234352668366331,
+      "best_error_m": 0.002264120038429316,
+      "final_error_m": 0.002582137133763721,
+      "success": true,
+      "collision": false,
+      "steps": 48,
+      "first_reach_step": 39,
+      "first_reach_time_s": 1.56,
+      "sim_time_s": 1.92,
+      "wall_time_s": 0.01585006099776365,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        -0.10011391137383654,
+        -0.0014481687067736324,
+        0.4575580859877464
+      ],
+      "endpoint_m": [
+        -0.10066720580259521,
+        -0.0006472203445822937,
+        0.4609672996768583
+      ],
+      "initial_error_m": 0.5661784848090489,
+      "best_error_m": 0.002191450414164812,
+      "final_error_m": 0.0035454747188240305,
+      "success": true,
+      "collision": false,
+      "steps": 60,
+      "first_reach_step": 51,
+      "first_reach_time_s": 2.04,
+      "sim_time_s": 2.4,
+      "wall_time_s": 0.019298697006888688,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        0.24128810708091866,
+        -0.6622236786275979,
+        0.044861095502402096
+      ],
+      "endpoint_m": [
+        0.21368773526965804,
+        -0.6528804644439224,
+        0.026949422686264067
+      ],
+      "initial_error_m": 0.7707580424347877,
+      "best_error_m": 0.017760397247159766,
+      "final_error_m": 0.034203862332699245,
+      "success": false,
+      "collision": true,
+      "steps": 23,
+      "first_reach_step": null,
+      "first_reach_time_s": null,
+      "sim_time_s": 0.92,
+      "wall_time_s": 0.0077724270086036995,
+      "failure_reason": "collision"
+    },
+    {
+      "target_m": [
+        0.09379371980251297,
+        -0.09016826706729039,
+        0.5762450336858593
+      ],
+      "endpoint_m": [
+        0.09782607854172534,
+        -0.08661443702069152,
+        0.5772460167949987
+      ],
+      "initial_error_m": 0.4293027618616853,
+      "best_error_m": 0.005402242464583664,
+      "final_error_m": 0.005467320384483933,
+      "success": true,
+      "collision": false,
+      "steps": 31,
+      "first_reach_step": 20,
+      "first_reach_time_s": 0.8,
+      "sim_time_s": 1.24,
+      "wall_time_s": 0.011098707997007295,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        0.04371707814337547,
+        0.48138919273275294,
+        0.6269633161781033
+      ],
+      "endpoint_m": [
+        0.04436451583906612,
+        0.4809717360324288,
+        0.6279078258199218
+      ],
+      "initial_error_m": 0.6847188559317753,
+      "best_error_m": 0.0010921503421661032,
+      "final_error_m": 0.0012188289994641464,
+      "success": true,
+      "collision": false,
+      "steps": 35,
+      "first_reach_step": 26,
+      "first_reach_time_s": 1.04,
+      "sim_time_s": 1.4000000000000001,
+      "wall_time_s": 0.012074389989720657,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        -0.245457980323261,
+        0.015414904061259449,
+        0.6026402238242016
+      ],
+      "endpoint_m": [
+        -0.161988249772648,
+        0.07321450862375173,
+        0.6004245108325229
+      ],
+      "initial_error_m": 0.742144275996093,
+      "best_error_m": 0.010608547895445143,
+      "final_error_m": 0.10155244748322863,
+      "success": false,
+      "collision": false,
+      "steps": 400,
+      "first_reach_step": null,
+      "first_reach_time_s": null,
+      "sim_time_s": 16.0,
+      "wall_time_s": 0.130629253006191,
+      "failure_reason": "timeout"
+    },
+    {
+      "target_m": [
+        -0.05458430314971892,
+        -0.14582728169366732,
+        0.18067819498354518
+      ],
+      "endpoint_m": [
+        -0.050207510873122085,
+        -0.14872941422330493,
+        0.18448116666213216
+      ],
+      "initial_error_m": 0.5673344249248731,
+      "best_error_m": 0.006413220362763816,
+      "final_error_m": 0.006483924539982955,
+      "success": true,
+      "collision": false,
+      "steps": 49,
+      "first_reach_step": 40,
+      "first_reach_time_s": 1.6,
+      "sim_time_s": 1.96,
+      "wall_time_s": 0.018750012997770682,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        -0.15337331123287892,
+        -0.017205061124073287,
+        0.09793706051062039
+      ],
+      "endpoint_m": [
+        -0.08239595492099504,
+        -0.09630019136822032,
+        0.10603055147521338
+      ],
+      "initial_error_m": 0.6709017427262451,
+      "best_error_m": 0.009033375951469268,
+      "final_error_m": 0.1065801545005291,
+      "success": false,
+      "collision": false,
+      "steps": 400,
+      "first_reach_step": 55,
+      "first_reach_time_s": 2.2,
+      "sim_time_s": 16.0,
+      "wall_time_s": 0.132106531993486,
+      "failure_reason": "did_not_hold"
+    },
+    {
+      "target_m": [
+        0.006409209684847594,
+        0.058947458960577744,
+        0.8246110946675907
+      ],
+      "endpoint_m": [
+        0.005691460762384849,
+        0.05649222597168704,
+        0.8223313612544315
+      ],
+      "initial_error_m": 0.643880172220593,
+      "best_error_m": 0.003426443780438875,
+      "final_error_m": 0.003426443780438875,
+      "success": true,
+      "collision": false,
+      "steps": 33,
+      "first_reach_step": 24,
+      "first_reach_time_s": 0.96,
+      "sim_time_s": 1.32,
+      "wall_time_s": 0.013816587001201697,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        -0.4743548964037301,
+        0.3891397127020468,
+        0.4492399448376193
+      ],
+      "endpoint_m": [
+        -0.4744315303790584,
+        0.39142690913941647,
+        0.45267857142107215
+      ],
+      "initial_error_m": 1.014051585470717,
+      "best_error_m": 0.004130531816814848,
+      "final_error_m": 0.004130531816814848,
+      "success": true,
+      "collision": false,
+      "steps": 50,
+      "first_reach_step": 41,
+      "first_reach_time_s": 1.6400000000000001,
+      "sim_time_s": 2.0,
+      "wall_time_s": 0.017289987998083234,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        -0.11810239484347809,
+        0.14629768053850284,
+        0.3570774048467936
+      ],
+      "endpoint_m": [
+        -0.11663283387211854,
+        0.14146110265803463,
+        0.35924526059993855
+      ],
+      "initial_error_m": 0.595494206098211,
+      "best_error_m": 0.004294691285741727,
+      "final_error_m": 0.005500153962283343,
+      "success": true,
+      "collision": false,
+      "steps": 52,
+      "first_reach_step": 43,
+      "first_reach_time_s": 1.72,
+      "sim_time_s": 2.08,
+      "wall_time_s": 0.01818303500476759,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        0.3447713801116331,
+        -0.017619508319856952,
+        0.36125557520328805
+      ],
+      "endpoint_m": [
+        0.34551971053320085,
+        -0.015952559097629788,
+        0.36284916055368316
+      ],
+      "initial_error_m": 0.11651392373996149,
+      "best_error_m": 0.002397761720838648,
+      "final_error_m": 0.0024245066298778013,
+      "success": true,
+      "collision": false,
+      "steps": 16,
+      "first_reach_step": 7,
+      "first_reach_time_s": 0.28,
+      "sim_time_s": 0.64,
+      "wall_time_s": 0.006475283007603139,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        -0.17222682714190335,
+        -0.49190964041968,
+        0.2370711120878605
+      ],
+      "endpoint_m": [
+        -0.17089084842849678,
+        -0.49511359250270875,
+        0.23855263670235485
+      ],
+      "initial_error_m": 0.8124498583930759,
+      "best_error_m": 0.00248734157729639,
+      "final_error_m": 0.0037742632733253336,
+      "success": true,
+      "collision": false,
+      "steps": 45,
+      "first_reach_step": 30,
+      "first_reach_time_s": 1.2,
+      "sim_time_s": 1.8,
+      "wall_time_s": 0.01651643100194633,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        0.002754343917346934,
+        0.5122893963678112,
+        0.46632238485142413
+      ],
+      "endpoint_m": [
+        0.002676637223153828,
+        0.5121225389925315,
+        0.4674651123247992
+      ],
+      "initial_error_m": 0.691828135529067,
+      "best_error_m": 0.0011574566049808736,
+      "final_error_m": 0.0011574566049808736,
+      "success": true,
+      "collision": false,
+      "steps": 37,
+      "first_reach_step": 28,
+      "first_reach_time_s": 1.12,
+      "sim_time_s": 1.48,
+      "wall_time_s": 0.01387789000000339,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        -0.36203673201542536,
+        -0.3835382623297986,
+        0.35500463289155254
+      ],
+      "endpoint_m": [
+        -0.3616083219223415,
+        -0.3880984660845277,
+        0.35673888861980957
+      ],
+      "initial_error_m": 0.9072435260044495,
+      "best_error_m": 0.003920527627724701,
+      "final_error_m": 0.004897615381335472,
+      "success": true,
+      "collision": false,
+      "steps": 52,
+      "first_reach_step": 43,
+      "first_reach_time_s": 1.72,
+      "sim_time_s": 2.08,
+      "wall_time_s": 0.01769394299481064,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        0.14965395931351777,
+        -0.2428117481365006,
+        0.6007026753654239
+      ],
+      "endpoint_m": [
+        0.15519611591082638,
+        -0.23871884865757503,
+        0.602659071421432
+      ],
+      "initial_error_m": 0.4566164672697297,
+      "best_error_m": 0.0071620396132418135,
+      "final_error_m": 0.0071620396132418135,
+      "success": true,
+      "collision": false,
+      "steps": 33,
+      "first_reach_step": 24,
+      "first_reach_time_s": 0.96,
+      "sim_time_s": 1.32,
+      "wall_time_s": 0.011945145000936463,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        -0.23276114824536515,
+        -0.15458485528733043,
+        0.7262477482913792
+      ],
+      "endpoint_m": [
+        -0.23439139396336756,
+        -0.15387777260436655,
+        0.7262056107121294
+      ],
+      "initial_error_m": 0.7936146431115033,
+      "best_error_m": 0.0017774820947614686,
+      "final_error_m": 0.0017774820947614686,
+      "success": true,
+      "collision": false,
+      "steps": 56,
+      "first_reach_step": 47,
+      "first_reach_time_s": 1.8800000000000001,
+      "sim_time_s": 2.24,
+      "wall_time_s": 0.01917256299930159,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        0.27053268567605426,
+        0.27173100073522194,
+        0.1086568442589819
+      ],
+      "endpoint_m": [
+        0.26928424729486117,
+        0.27345856766853355,
+        0.10848664267748004
+      ],
+      "initial_error_m": 0.4211100075830917,
+      "best_error_m": 0.0021382363010325695,
+      "final_error_m": 0.0021382363010325695,
+      "success": true,
+      "collision": false,
+      "steps": 22,
+      "first_reach_step": 13,
+      "first_reach_time_s": 0.52,
+      "sim_time_s": 0.88,
+      "wall_time_s": 0.00819871699786745,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        -0.16543199075394857,
+        -0.3213995929610168,
+        0.6287725500173023
+      ],
+      "endpoint_m": [
+        -0.16244352570441506,
+        -0.3219789954273053,
+        0.6307958318327548
+      ],
+      "initial_error_m": 0.7491336333572439,
+      "best_error_m": 0.003655174397339397,
+      "final_error_m": 0.003655174397339397,
+      "success": true,
+      "collision": false,
+      "steps": 42,
+      "first_reach_step": 33,
+      "first_reach_time_s": 1.32,
+      "sim_time_s": 1.68,
+      "wall_time_s": 0.013952139997854829,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        0.5296168940473192,
+        -0.3841939680875556,
+        0.3710188883857974
+      ],
+      "endpoint_m": [
+        0.5256762008169744,
+        -0.3861857751788942,
+        0.37196534156260846
+      ],
+      "initial_error_m": 0.39196020711921614,
+      "best_error_m": 0.004515764856664616,
+      "final_error_m": 0.004515764856664616,
+      "success": true,
+      "collision": false,
+      "steps": 31,
+      "first_reach_step": 16,
+      "first_reach_time_s": 0.64,
+      "sim_time_s": 1.24,
+      "wall_time_s": 0.01151936300448142,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        -0.13861670330109424,
+        -0.07780040138705852,
+        0.07550822744768103
+      ],
+      "endpoint_m": [
+        -0.13462370382573324,
+        -0.08107810495049221,
+        0.08011781993045783
+      ],
+      "initial_error_m": 0.6714954662089769,
+      "best_error_m": 0.005286639888801124,
+      "final_error_m": 0.006923563267368295,
+      "success": true,
+      "collision": false,
+      "steps": 60,
+      "first_reach_step": 51,
+      "first_reach_time_s": 2.04,
+      "sim_time_s": 2.4,
+      "wall_time_s": 0.02089868299663067,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        0.24517276919597253,
+        -0.5248146938742989,
+        0.39615288036250135
+      ],
+      "endpoint_m": [
+        0.24428721334177517,
+        -0.5255172827024188,
+        0.39736408359103625
+      ],
+      "initial_error_m": 0.5687154971910074,
+      "best_error_m": 0.0014958265316522322,
+      "final_error_m": 0.0016567599382878349,
+      "success": true,
+      "collision": false,
+      "steps": 33,
+      "first_reach_step": 24,
+      "first_reach_time_s": 0.96,
+      "sim_time_s": 1.32,
+      "wall_time_s": 0.012227694009197876,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        -0.1723401666242116,
+        0.0002348540590696841,
+        0.43322214764484557
+      ],
+      "endpoint_m": [
+        -0.1655564281245968,
+        0.0005549942387351172,
+        0.435526935488938
+      ],
+      "initial_error_m": 0.6347772998375728,
+      "best_error_m": 0.007171725369258658,
+      "final_error_m": 0.007171725369258658,
+      "success": true,
+      "collision": false,
+      "steps": 62,
+      "first_reach_step": 53,
+      "first_reach_time_s": 2.12,
+      "sim_time_s": 2.48,
+      "wall_time_s": 0.020766469999216497,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        0.01946148642130203,
+        -0.023282134346208225,
+        0.6366848870631724
+      ],
+      "endpoint_m": [
+        0.021036258480499948,
+        -0.021425158760928827,
+        0.636544695108235
+      ],
+      "initial_error_m": 0.5146878741378907,
+      "best_error_m": 0.0023987092086544086,
+      "final_error_m": 0.002438835612947987,
+      "success": true,
+      "collision": false,
+      "steps": 27,
+      "first_reach_step": 18,
+      "first_reach_time_s": 0.72,
+      "sim_time_s": 1.08,
+      "wall_time_s": 0.00994582699786406,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        -0.4149960785967442,
+        -0.05416008502020117,
+        0.5077660920620297
+      ],
+      "endpoint_m": [
+        -0.3233855772203695,
+        -0.08431303445939912,
+        0.5253439530302183
+      ],
+      "initial_error_m": 0.8867727088001731,
+      "best_error_m": 0.025895059503664213,
+      "final_error_m": 0.09803400184900415,
+      "success": false,
+      "collision": false,
+      "steps": 400,
+      "first_reach_step": null,
+      "first_reach_time_s": null,
+      "sim_time_s": 16.0,
+      "wall_time_s": 0.150884427013807,
+      "failure_reason": "timeout"
+    },
+    {
+      "target_m": [
+        0.13028756964689106,
+        -0.17076507355299556,
+        0.789024483995026
+      ],
+      "endpoint_m": [
+        0.13538344859950535,
+        -0.16682929093800242,
+        0.7882436956838711
+      ],
+      "initial_error_m": 0.5594637160582967,
+      "best_error_m": 0.006127862835035709,
+      "final_error_m": 0.006485984696174953,
+      "success": true,
+      "collision": false,
+      "steps": 28,
+      "first_reach_step": 19,
+      "first_reach_time_s": 0.76,
+      "sim_time_s": 1.12,
+      "wall_time_s": 0.011238831008085981,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        0.013003753092473952,
+        0.49723529259441057,
+        0.18575960444641204
+      ],
+      "endpoint_m": [
+        0.015334635331048967,
+        0.4945639920938309,
+        0.1858195374385692
+      ],
+      "initial_error_m": 0.6922574013809586,
+      "best_error_m": 0.001995933497668457,
+      "final_error_m": 0.0035457651273104102,
+      "success": true,
+      "collision": false,
+      "steps": 34,
+      "first_reach_step": 25,
+      "first_reach_time_s": 1.0,
+      "sim_time_s": 1.36,
+      "wall_time_s": 0.012674799989326857,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        -0.3866088059154114,
+        -0.4563875099208191,
+        0.4515495633461278
+      ],
+      "endpoint_m": [
+        -0.3893917948947966,
+        -0.4585527203263757,
+        0.45217444684440333
+      ],
+      "initial_error_m": 0.9652792298662111,
+      "best_error_m": 0.0026971059259207016,
+      "final_error_m": 0.0035810114697005387,
+      "success": true,
+      "collision": false,
+      "steps": 50,
+      "first_reach_step": 41,
+      "first_reach_time_s": 1.6400000000000001,
+      "sim_time_s": 2.0,
+      "wall_time_s": 0.02084462600760162,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        0.05424398084779672,
+        0.18579186990227822,
+        0.3912683863679649
+      ],
+      "endpoint_m": [
+        0.05617244262454613,
+        0.181615869039079,
+        0.39246063325209646
+      ],
+      "initial_error_m": 0.44556114075825454,
+      "best_error_m": 0.004367171828673144,
+      "final_error_m": 0.0047517786845081,
+      "success": true,
+      "collision": false,
+      "steps": 37,
+      "first_reach_step": 28,
+      "first_reach_time_s": 1.12,
+      "sim_time_s": 1.48,
+      "wall_time_s": 0.014067563999560662,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        0.16154463633044613,
+        0.04433642212784521,
+        0.5635229584117193
+      ],
+      "endpoint_m": [
+        0.16169254564709673,
+        0.0451963303362098,
+        0.5636417482144542
+      ],
+      "initial_error_m": 0.35741187873104957,
+      "best_error_m": 0.0007561817591418582,
+      "final_error_m": 0.0008805852088234631,
+      "success": true,
+      "collision": false,
+      "steps": 30,
+      "first_reach_step": 21,
+      "first_reach_time_s": 0.84,
+      "sim_time_s": 1.2,
+      "wall_time_s": 0.011558141995919868,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        -0.2827559163589923,
+        0.1878183893390351,
+        0.23642040580031992
+      ],
+      "endpoint_m": [
+        -0.28008784334716413,
+        0.1854276443714795,
+        0.23604277809645888
+      ],
+      "initial_error_m": 0.7768246647320811,
+      "best_error_m": 0.0009404681373683818,
+      "final_error_m": 0.003602343373286558,
+      "success": true,
+      "collision": false,
+      "steps": 53,
+      "first_reach_step": 44,
+      "first_reach_time_s": 1.76,
+      "sim_time_s": 2.12,
+      "wall_time_s": 0.017475397005910054,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        0.43997013309945504,
+        -0.1903958768917194,
+        0.4940666352695305
+      ],
+      "endpoint_m": [
+        0.43924687003886237,
+        -0.1912255578717158,
+        0.4947861737592775
+      ],
+      "initial_error_m": 0.22893277505229093,
+      "best_error_m": 0.0013149964340685865,
+      "final_error_m": 0.0013149964340685865,
+      "success": true,
+      "collision": false,
+      "steps": 18,
+      "first_reach_step": 9,
+      "first_reach_time_s": 0.36,
+      "sim_time_s": 0.72,
+      "wall_time_s": 0.006748432002495974,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        0.3299626995193135,
+        0.20985830941861952,
+        0.2842605393633137
+      ],
+      "endpoint_m": [
+        0.3300698960647627,
+        0.20868371589773893,
+        0.28445398250185866
+      ],
+      "initial_error_m": 0.2600805194626154,
+      "best_error_m": 0.0005160171544587227,
+      "final_error_m": 0.0011952327331951028,
+      "success": true,
+      "collision": false,
+      "steps": 19,
+      "first_reach_step": 10,
+      "first_reach_time_s": 0.4,
+      "sim_time_s": 0.76,
+      "wall_time_s": 0.0071273500070674345,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        -0.26664451027899616,
+        0.09044180677845969,
+        0.5075938270084104
+      ],
+      "endpoint_m": [
+        -0.2664170812980556,
+        0.08617005092771401,
+        0.5097433417758901
+      ],
+      "initial_error_m": 0.7441411412396997,
+      "best_error_m": 0.004787487412554197,
+      "final_error_m": 0.004787487412554197,
+      "success": true,
+      "collision": false,
+      "steps": 60,
+      "first_reach_step": 51,
+      "first_reach_time_s": 2.04,
+      "sim_time_s": 2.4,
+      "wall_time_s": 0.02062414601095952,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        0.07192035922321881,
+        0.11250611723975751,
+        0.29675615899033225
+      ],
+      "endpoint_m": [
+        0.0726156972281859,
+        0.1104149863718995,
+        0.2977300298061659
+      ],
+      "initial_error_m": 0.40974145268369616,
+      "best_error_m": 0.0020733996289390546,
+      "final_error_m": 0.0024093043837574175,
+      "success": true,
+      "collision": false,
+      "steps": 43,
+      "first_reach_step": 34,
+      "first_reach_time_s": 1.36,
+      "sim_time_s": 1.72,
+      "wall_time_s": 0.015183135008555837,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        0.008737370068762032,
+        0.02205902278623087,
+        0.47728228946021767
+      ],
+      "endpoint_m": [
+        0.00376003031571644,
+        0.02147097656062605,
+        0.476597165860527
+      ],
+      "initial_error_m": 0.4635187216204015,
+      "best_error_m": 0.004419031695057342,
+      "final_error_m": 0.0050585673591985675,
+      "success": true,
+      "collision": false,
+      "steps": 43,
+      "first_reach_step": 34,
+      "first_reach_time_s": 1.36,
+      "sim_time_s": 1.72,
+      "wall_time_s": 0.014274113986175507,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        -0.19394946607905178,
+        -0.08950935118634307,
+        0.5343053958750923
+      ],
+      "endpoint_m": [
+        -0.1965967665808217,
+        -0.0933812483072734,
+        0.5365472432087331
+      ],
+      "initial_error_m": 0.6795977089183489,
+      "best_error_m": 0.005198621618188085,
+      "final_error_m": 0.005198621618188085,
+      "success": true,
+      "collision": false,
+      "steps": 53,
+      "first_reach_step": 44,
+      "first_reach_time_s": 1.76,
+      "sim_time_s": 2.12,
+      "wall_time_s": 0.016387085008318536,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        0.13965231178335644,
+        -0.13037103964093216,
+        0.6836358316510761
+      ],
+      "endpoint_m": [
+        0.1435517710398817,
+        -0.1284173295985424,
+        0.6844528463369747
+      ],
+      "initial_error_m": 0.46643165919203056,
+      "best_error_m": 0.00411836605387301,
+      "final_error_m": 0.004437372918744727,
+      "success": true,
+      "collision": false,
+      "steps": 23,
+      "first_reach_step": 14,
+      "first_reach_time_s": 0.56,
+      "sim_time_s": 0.92,
+      "wall_time_s": 0.008118611003737897,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        -0.33877592802878964,
+        -0.11000656308279799,
+        0.516807857717579
+      ],
+      "endpoint_m": [
+        -0.3390209430793943,
+        -0.11394871128036328,
+        0.5188533208853964
+      ],
+      "initial_error_m": 0.8190113794502094,
+      "best_error_m": 0.004447975309900858,
+      "final_error_m": 0.004447975309900858,
+      "success": true,
+      "collision": false,
+      "steps": 59,
+      "first_reach_step": 50,
+      "first_reach_time_s": 2.0,
+      "sim_time_s": 2.36,
+      "wall_time_s": 0.0186876280058641,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        -0.2544089654794819,
+        0.46684933199199863,
+        0.34483058320408183
+      ],
+      "endpoint_m": [
+        -0.25210843290228246,
+        0.4638095564701873,
+        0.3460463809570947
+      ],
+      "initial_error_m": 0.8524851337961092,
+      "best_error_m": 0.0018314420311430868,
+      "final_error_m": 0.004001355962419541,
+      "success": true,
+      "collision": false,
+      "steps": 45,
+      "first_reach_step": 32,
+      "first_reach_time_s": 1.28,
+      "sim_time_s": 1.8,
+      "wall_time_s": 0.015098345000296831,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        -0.11296514935159273,
+        -0.15164746883494987,
+        0.7001491851482687
+      ],
+      "endpoint_m": [
+        -0.11130002106507464,
+        -0.15410375852615424,
+        0.7027854966109304
+      ],
+      "initial_error_m": 0.6779107718144836,
+      "best_error_m": 0.003969401640781725,
+      "final_error_m": 0.003969401640781725,
+      "success": true,
+      "collision": false,
+      "steps": 49,
+      "first_reach_step": 40,
+      "first_reach_time_s": 1.6,
+      "sim_time_s": 1.96,
+      "wall_time_s": 0.0159896499972092,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        0.03037084756349029,
+        0.1337277476479431,
+        0.33282746325605556
+      ],
+      "endpoint_m": [
+        0.03148624196254997,
+        0.13054475658023917,
+        0.3338749842812535
+      ],
+      "initial_error_m": 0.45049734432607186,
+      "best_error_m": 0.0027686222402987758,
+      "final_error_m": 0.003531690402734705,
+      "success": true,
+      "collision": false,
+      "steps": 44,
+      "first_reach_step": 35,
+      "first_reach_time_s": 1.4000000000000001,
+      "sim_time_s": 1.76,
+      "wall_time_s": 0.014453541007242166,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        -0.16783174014607108,
+        0.0384813901725692,
+        0.1393554617194929
+      ],
+      "endpoint_m": [
+        -0.1634357608507292,
+        0.03273101614912306,
+        0.14136015273522057
+      ],
+      "initial_error_m": 0.6694715347582263,
+      "best_error_m": 0.0059540915665048525,
+      "final_error_m": 0.007510673834160147,
+      "success": true,
+      "collision": false,
+      "steps": 60,
+      "first_reach_step": 51,
+      "first_reach_time_s": 2.04,
+      "sim_time_s": 2.4,
+      "wall_time_s": 0.019596850994275883,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        0.3777184540252656,
+        -0.2642642205401106,
+        0.630117996378421
+      ],
+      "endpoint_m": [
+        0.37621839075079405,
+        -0.2638558885611723,
+        0.6300340497716664
+      ],
+      "initial_error_m": 0.38025838540560286,
+      "best_error_m": 0.0015567187950180212,
+      "final_error_m": 0.0015569110010619097,
+      "success": true,
+      "collision": false,
+      "steps": 25,
+      "first_reach_step": 16,
+      "first_reach_time_s": 0.64,
+      "sim_time_s": 1.0,
+      "wall_time_s": 0.00898535099986475,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        -0.17110921491901016,
+        -0.5378290565083914,
+        0.38247264888415794
+      ],
+      "endpoint_m": [
+        -0.1721939041876797,
+        -0.5404572724290377,
+        0.3836344391165475
+      ],
+      "initial_error_m": 0.8296927606644554,
+      "best_error_m": 0.0022351274012989203,
+      "final_error_m": 0.0030714534473407665,
+      "success": true,
+      "collision": false,
+      "steps": 43,
+      "first_reach_step": 34,
+      "first_reach_time_s": 1.36,
+      "sim_time_s": 1.72,
+      "wall_time_s": 0.01435487499111332,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        0.14839227236301686,
+        -0.10554535689402142,
+        0.08130784166206774
+      ],
+      "endpoint_m": [
+        0.15309762419906592,
+        -0.10336067303190483,
+        0.08343267518088317
+      ],
+      "initial_error_m": 0.437971279281183,
+      "best_error_m": 0.005606076788725292,
+      "final_error_m": 0.005606076788725292,
+      "success": true,
+      "collision": false,
+      "steps": 30,
+      "first_reach_step": 21,
+      "first_reach_time_s": 0.84,
+      "sim_time_s": 1.2,
+      "wall_time_s": 0.011343339996528812,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        0.025910833526462063,
+        0.08286259970322822,
+        0.7389587740612028
+      ],
+      "endpoint_m": [
+        0.026546399263278685,
+        0.07866991306252007,
+        0.7378326461622096
+      ],
+      "initial_error_m": 0.5746148148077381,
+      "best_error_m": 0.004110772806415015,
+      "final_error_m": 0.004387565283603062,
+      "success": true,
+      "collision": false,
+      "steps": 30,
+      "first_reach_step": 21,
+      "first_reach_time_s": 0.84,
+      "sim_time_s": 1.2,
+      "wall_time_s": 0.0116815920046065,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        -0.16070114553010598,
+        0.019520215671017204,
+        0.1683403582474482
+      ],
+      "endpoint_m": [
+        -0.1544808702763026,
+        0.016600210091175682,
+        0.17027806076462754
+      ],
+      "initial_error_m": 0.6524473358303887,
+      "best_error_m": 0.005988465873346519,
+      "final_error_m": 0.0071395341489811,
+      "success": true,
+      "collision": false,
+      "steps": 63,
+      "first_reach_step": 54,
+      "first_reach_time_s": 2.16,
+      "sim_time_s": 2.52,
+      "wall_time_s": 0.020249137000064366,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        0.13968607922116533,
+        0.004839128169612629,
+        0.2550540864066572
+      ],
+      "endpoint_m": [
+        0.14129543867273417,
+        0.005198373408544416,
+        0.25605318756033835
+      ],
+      "initial_error_m": 0.3399133436132079,
+      "best_error_m": 0.001928029590368384,
+      "final_error_m": 0.001928029590368384,
+      "success": true,
+      "collision": false,
+      "steps": 43,
+      "first_reach_step": 34,
+      "first_reach_time_s": 1.36,
+      "sim_time_s": 1.72,
+      "wall_time_s": 0.014138904996798374,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        -0.48222166807076333,
+        0.14698384047085244,
+        0.5078916095093607
+      ],
+      "endpoint_m": [
+        -0.4754770181966534,
+        0.14137932753942645,
+        0.5094788721800181
+      ],
+      "initial_error_m": 0.9625887033838846,
+      "best_error_m": 0.008911805086990783,
+      "final_error_m": 0.008911805086990783,
+      "success": true,
+      "collision": false,
+      "steps": 83,
+      "first_reach_step": 74,
+      "first_reach_time_s": 2.96,
+      "sim_time_s": 3.3200000000000003,
+      "wall_time_s": 0.028390107996528968,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        -0.0539506270909384,
+        0.27237588596582224,
+        0.5717999006465531
+      ],
+      "endpoint_m": [
+        -0.05112631496859653,
+        0.2656099119155122,
+        0.5728362625133747
+      ],
+      "initial_error_m": 0.6143030810829758,
+      "best_error_m": 0.007404673506163399,
+      "final_error_m": 0.007404673506163399,
+      "success": true,
+      "collision": false,
+      "steps": 39,
+      "first_reach_step": 30,
+      "first_reach_time_s": 1.2,
+      "sim_time_s": 1.56,
+      "wall_time_s": 0.01259663600649219,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        -0.12659010851739225,
+        0.03980643177293749,
+        0.3446526674689406
+      ],
+      "endpoint_m": [
+        -0.12451275989712209,
+        0.03489038908721091,
+        0.34731772544401934
+      ],
+      "initial_error_m": 0.5877592124620672,
+      "best_error_m": 0.005229064920519473,
+      "final_error_m": 0.0059653488572383616,
+      "success": true,
+      "collision": false,
+      "steps": 61,
+      "first_reach_step": 52,
+      "first_reach_time_s": 2.08,
+      "sim_time_s": 2.44,
+      "wall_time_s": 0.019315287994686514,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        -0.14469179112299752,
+        0.04180346243130948,
+        0.13332440787286837
+      ],
+      "endpoint_m": [
+        -0.14170798266431908,
+        0.036078491751129746,
+        0.13565082683112134
+      ],
+      "initial_error_m": 0.6502193148889148,
+      "best_error_m": 0.0035068279945730213,
+      "final_error_m": 0.00686226109794122,
+      "success": true,
+      "collision": false,
+      "steps": 61,
+      "first_reach_step": 52,
+      "first_reach_time_s": 2.08,
+      "sim_time_s": 2.44,
+      "wall_time_s": 0.01989626900467556,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        -0.17375407006138746,
+        0.42580147085411957,
+        0.6620627001816507
+      ],
+      "endpoint_m": [
+        -0.17309342508691145,
+        0.42362110850568563,
+        0.6630275027942448
+      ],
+      "initial_error_m": 0.8160038793485626,
+      "best_error_m": 0.0023713421041512057,
+      "final_error_m": 0.0024741212246042503,
+      "success": true,
+      "collision": false,
+      "steps": 43,
+      "first_reach_step": 34,
+      "first_reach_time_s": 1.36,
+      "sim_time_s": 1.72,
+      "wall_time_s": 0.014368831005413085,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        -0.08284047387699224,
+        -0.01460228907277332,
+        0.41031236907353696
+      ],
+      "endpoint_m": [
+        -0.0815705343284373,
+        -0.014491120990740881,
+        0.41426097762040087
+      ],
+      "initial_error_m": 0.5438683862993051,
+      "best_error_m": 0.0032882873526801867,
+      "final_error_m": 0.004149290813598558,
+      "success": true,
+      "collision": false,
+      "steps": 62,
+      "first_reach_step": 53,
+      "first_reach_time_s": 2.12,
+      "sim_time_s": 2.48,
+      "wall_time_s": 0.019669162997161038,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        0.03464665728500971,
+        0.14336835660339342,
+        0.2757967424722242
+      ],
+      "endpoint_m": [
+        0.03627407332794372,
+        0.14113597878625483,
+        0.2764624698558315
+      ],
+      "initial_error_m": 0.45771477339205097,
+      "best_error_m": 0.00267454376523681,
+      "final_error_m": 0.002841687288308845,
+      "success": true,
+      "collision": false,
+      "steps": 44,
+      "first_reach_step": 35,
+      "first_reach_time_s": 1.4000000000000001,
+      "sim_time_s": 1.76,
+      "wall_time_s": 0.015113397006643936,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        0.4085749437948025,
+        0.08644902726315712,
+        0.4926437748949485
+      ],
+      "endpoint_m": [
+        0.4079794177787598,
+        0.0846771907308073,
+        0.4937878667373995
+      ],
+      "initial_error_m": 0.1571703787268133,
+      "best_error_m": 0.0018348362385017653,
+      "final_error_m": 0.0021915752501605102,
+      "success": true,
+      "collision": false,
+      "steps": 15,
+      "first_reach_step": 6,
+      "first_reach_time_s": 0.24,
+      "sim_time_s": 0.6,
+      "wall_time_s": 0.0058643420052248985,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        -0.20044701716625182,
+        -0.2509921933249686,
+        0.11174598692880287
+      ],
+      "endpoint_m": [
+        -0.19764526622587375,
+        -0.25521876562681395,
+        0.11355138656894904
+      ],
+      "initial_error_m": 0.7523517018910504,
+      "best_error_m": 0.003283503879826534,
+      "final_error_m": 0.005382674949806627,
+      "success": true,
+      "collision": false,
+      "steps": 48,
+      "first_reach_step": 39,
+      "first_reach_time_s": 1.56,
+      "sim_time_s": 1.92,
+      "wall_time_s": 0.015416114998515695,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        0.5401539077331925,
+        -0.2827373434100511,
+        0.41532673614141874
+      ],
+      "endpoint_m": [
+        0.5392550138669701,
+        -0.2861627973597963,
+        0.4161366525521419
+      ],
+      "initial_error_m": 0.29878678519554264,
+      "best_error_m": 0.003632865196634185,
+      "final_error_m": 0.003632865196634185,
+      "success": true,
+      "collision": false,
+      "steps": 23,
+      "first_reach_step": 14,
+      "first_reach_time_s": 0.56,
+      "sim_time_s": 0.92,
+      "wall_time_s": 0.008052400007727556,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        -0.07973942291247446,
+        0.10539969164802629,
+        0.4743471789495244
+      ],
+      "endpoint_m": [
+        -0.07883053954212008,
+        0.10111341595653207,
+        0.4756183565453644
+      ],
+      "initial_error_m": 0.5587329943233459,
+      "best_error_m": 0.004562249528967758,
+      "final_error_m": 0.004562249528967758,
+      "success": true,
+      "collision": false,
+      "steps": 51,
+      "first_reach_step": 42,
+      "first_reach_time_s": 1.68,
+      "sim_time_s": 2.04,
+      "wall_time_s": 0.01647736299491953,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        -0.1448142315634609,
+        -0.09968218277632884,
+        0.3145691300594527
+      ],
+      "endpoint_m": [
+        -0.14208962983908913,
+        -0.09918173974206128,
+        0.31973921218872386
+      ],
+      "initial_error_m": 0.6151112791170196,
+      "best_error_m": 0.005749239862937082,
+      "final_error_m": 0.005865462216262731,
+      "success": true,
+      "collision": false,
+      "steps": 57,
+      "first_reach_step": 48,
+      "first_reach_time_s": 1.92,
+      "sim_time_s": 2.2800000000000002,
+      "wall_time_s": 0.018698483996558934,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        0.18385896983602384,
+        0.10953446149583246,
+        0.5291364880166269
+      ],
+      "endpoint_m": [
+        0.18503188196112375,
+        0.10843651282371694,
+        0.5291055262735009
+      ],
+      "initial_error_m": 0.33572791141588637,
+      "best_error_m": 0.001576775176577185,
+      "final_error_m": 0.0016069140516356169,
+      "success": true,
+      "collision": false,
+      "steps": 27,
+      "first_reach_step": 18,
+      "first_reach_time_s": 0.72,
+      "sim_time_s": 1.08,
+      "wall_time_s": 0.010064685993711464,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        -0.17966414931219854,
+        -0.04576009711818087,
+        0.04211747290970992
+      ],
+      "endpoint_m": [
+        -0.1161055299830184,
+        -0.11724895837584287,
+        0.06669248322196536
+      ],
+      "initial_error_m": 0.7200363297363933,
+      "best_error_m": 0.017855905400658335,
+      "final_error_m": 0.09876379147641276,
+      "success": false,
+      "collision": false,
+      "steps": 400,
+      "first_reach_step": null,
+      "first_reach_time_s": null,
+      "sim_time_s": 16.0,
+      "wall_time_s": 0.135138198005734,
+      "failure_reason": "timeout"
+    },
+    {
+      "target_m": [
+        -0.3991020293162326,
+        0.2278390732825141,
+        0.6266646916553177
+      ],
+      "endpoint_m": [
+        -0.3971528636528083,
+        0.22356843350469746,
+        0.6290511257385216
+      ],
+      "initial_error_m": 0.9239908742131848,
+      "best_error_m": 0.0010243105906832404,
+      "final_error_m": 0.005266182538501644,
+      "success": true,
+      "collision": false,
+      "steps": 58,
+      "first_reach_step": 49,
+      "first_reach_time_s": 1.96,
+      "sim_time_s": 2.32,
+      "wall_time_s": 0.018842288001906127,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        0.17828608322200676,
+        0.3780209453682215,
+        0.6762218930692813
+      ],
+      "endpoint_m": [
+        0.17879871788000012,
+        0.37696461178568585,
+        0.6767538497016996
+      ],
+      "initial_error_m": 0.5605605388574323,
+      "best_error_m": 0.001123920795182559,
+      "final_error_m": 0.0012890356042183008,
+      "success": true,
+      "collision": false,
+      "steps": 30,
+      "first_reach_step": 21,
+      "first_reach_time_s": 0.84,
+      "sim_time_s": 1.2,
+      "wall_time_s": 0.010588405988528393,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        0.4556957164333383,
+        0.20215360673882324,
+        0.48158610895614673
+      ],
+      "endpoint_m": [
+        0.455363751248629,
+        0.20055516484747016,
+        0.4823138458497111
+      ],
+      "initial_error_m": 0.22940654394413873,
+      "best_error_m": 0.0011859872042125415,
+      "final_error_m": 0.0017874054800593527,
+      "success": true,
+      "collision": false,
+      "steps": 19,
+      "first_reach_step": 10,
+      "first_reach_time_s": 0.4,
+      "sim_time_s": 0.76,
+      "wall_time_s": 0.007055939000565559,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        -0.5980418821147528,
+        0.12289860783962564,
+        0.4000210039467339
+      ],
+      "endpoint_m": [
+        -0.525482783753904,
+        0.18954385357725217,
+        0.40333978747129146
+      ],
+      "initial_error_m": 1.0647439358302906,
+      "best_error_m": 0.05552632894861079,
+      "final_error_m": 0.09857700471433914,
+      "success": false,
+      "collision": false,
+      "steps": 400,
+      "first_reach_step": null,
+      "first_reach_time_s": null,
+      "sim_time_s": 16.0,
+      "wall_time_s": 0.11708083600387909,
+      "failure_reason": "timeout"
+    },
+    {
+      "target_m": [
+        -0.13096626490316846,
+        -0.27686735919559324,
+        0.2169702489036812
+      ],
+      "endpoint_m": [
+        -0.12544497100034674,
+        -0.2806892844907381,
+        0.21927184918568715
+      ],
+      "initial_error_m": 0.6704505658000883,
+      "best_error_m": 0.006517451194921639,
+      "final_error_m": 0.00709853246672397,
+      "success": true,
+      "collision": false,
+      "steps": 45,
+      "first_reach_step": 36,
+      "first_reach_time_s": 1.44,
+      "sim_time_s": 1.8,
+      "wall_time_s": 0.015267118011252023,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        -0.29646484149626845,
+        -0.4725825098806825,
+        0.31541790771168293
+      ],
+      "endpoint_m": [
+        -0.2957847706994638,
+        -0.47543894054474756,
+        0.3170998723508304
+      ],
+      "initial_error_m": 0.8938447695828728,
+      "best_error_m": 0.002555420755231511,
+      "final_error_m": 0.0033838879228810393,
+      "success": true,
+      "collision": false,
+      "steps": 49,
+      "first_reach_step": 37,
+      "first_reach_time_s": 1.48,
+      "sim_time_s": 1.96,
+      "wall_time_s": 0.02207573299529031,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        -0.009478733929957076,
+        -0.17579657418492134,
+        0.7257092573651854
+      ],
+      "endpoint_m": [
+        -0.003633239566161114,
+        -0.17628697060278853,
+        0.7278049045240127
+      ],
+      "initial_error_m": 0.6142447383613379,
+      "best_error_m": 0.006229127548712428,
+      "final_error_m": 0.006229127548712428,
+      "success": true,
+      "collision": false,
+      "steps": 42,
+      "first_reach_step": 33,
+      "first_reach_time_s": 1.32,
+      "sim_time_s": 1.68,
+      "wall_time_s": 0.016094134000013582,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        -0.5168911836033797,
+        -0.30938275086147105,
+        0.3290567324817132
+      ],
+      "endpoint_m": [
+        -0.5180962331744839,
+        -0.3140815023380976,
+        0.3298464719423875
+      ],
+      "initial_error_m": 1.0253522661415344,
+      "best_error_m": 0.004907390116994945,
+      "final_error_m": 0.004914681914800286,
+      "success": true,
+      "collision": false,
+      "steps": 59,
+      "first_reach_step": 50,
+      "first_reach_time_s": 2.0,
+      "sim_time_s": 2.36,
+      "wall_time_s": 0.019697335999808274,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        0.4349000434745741,
+        -0.21699293255276064,
+        0.5387543465686377
+      ],
+      "endpoint_m": [
+        0.43441650140081733,
+        -0.21763976864821957,
+        0.5394418108476513
+      ],
+      "initial_error_m": 0.27672141111949367,
+      "best_error_m": 0.0010605739042618381,
+      "final_error_m": 0.0010605739042618381,
+      "success": true,
+      "collision": false,
+      "steps": 21,
+      "first_reach_step": 12,
+      "first_reach_time_s": 0.48,
+      "sim_time_s": 0.84,
+      "wall_time_s": 0.007794777993694879,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        0.005744895582996262,
+        0.011328276372208672,
+        0.5091306304729593
+      ],
+      "endpoint_m": [
+        0.0011041589036962368,
+        0.011575001468124999,
+        0.5081092003147855
+      ],
+      "initial_error_m": 0.47438072176202034,
+      "best_error_m": 0.004349595313772715,
+      "final_error_m": 0.004758217078652728,
+      "success": true,
+      "collision": false,
+      "steps": 42,
+      "first_reach_step": 33,
+      "first_reach_time_s": 1.32,
+      "sim_time_s": 1.68,
+      "wall_time_s": 0.014524541998980567,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        -0.0880070610484999,
+        -0.1842199601626828,
+        0.09073267507469675
+      ],
+      "endpoint_m": [
+        -0.08228412275100179,
+        -0.18738571005184923,
+        0.09272172378670161
+      ],
+      "initial_error_m": 0.6421638777437481,
+      "best_error_m": 0.006741392374734531,
+      "final_error_m": 0.006835957130969737,
+      "success": true,
+      "collision": false,
+      "steps": 45,
+      "first_reach_step": 36,
+      "first_reach_time_s": 1.44,
+      "sim_time_s": 1.8,
+      "wall_time_s": 0.01659403600206133,
+      "failure_reason": null
+    },
+    {
+      "target_m": [
+        0.17588281834236755,
+        0.20564412879574043,
+        0.040651068257416545
+      ],
+      "endpoint_m": [
+        0.17845851812529706,
+        0.20326975022285762,
+        0.04407098289985695
+      ],
+      "initial_error_m": 0.48054571691569353,
+      "best_error_m": 0.004895683725561365,
+      "final_error_m": 0.004895683725561365,
+      "success": false,
+      "collision": true,
+      "steps": 16,
+      "first_reach_step": 15,
+      "first_reach_time_s": 0.6,
+      "sim_time_s": 0.64,
+      "wall_time_s": 0.005609040992567316,
+      "failure_reason": "collision"
+    }
+  ]
+}

@@ -4,23 +4,17 @@ import torch
 
 
 class Ppo_net(torch.nn.Module):
-    def __init__(self, state_dimension, action_dimension, hidden_dimension):
+    def __init__(self, state_dimension, action_dimension, hidden_dimension, activation="tanh"):
         super().__init__()
 
-        self.actor_net = torch.nn.Sequential(
-            torch.nn.Linear(state_dimension, hidden_dimension[0]),
-            torch.nn.Tanh(),
-            torch.nn.Linear(hidden_dimension[0], hidden_dimension[1]),
-            torch.nn.Tanh(),
-            torch.nn.Linear(hidden_dimension[1], action_dimension)
-        )
-        self.critic_net = torch.nn.Sequential(
-            torch.nn.Linear(state_dimension, hidden_dimension[0]),
-            torch.nn.Tanh(),
-            torch.nn.Linear(hidden_dimension[0], hidden_dimension[1]),
-            torch.nn.Tanh(),
-            torch.nn.Linear(hidden_dimension[1], 1)
-        )
+        activation_cls = {"tanh": torch.nn.Tanh, "elu": torch.nn.ELU}[activation]
+        widths = [state_dimension, *hidden_dimension]
+        for name, output_dimension in (("actor_net", action_dimension), ("critic_net", 1)):
+            layers = []
+            for input_width, output_width in zip(widths, widths[1:]):
+                layers.extend((torch.nn.Linear(input_width, output_width), activation_cls()))
+            layers.append(torch.nn.Linear(widths[-1], output_dimension))
+            setattr(self, name, torch.nn.Sequential(*layers))
 
         self.log_std = torch.nn.Parameter(torch.zeros(action_dimension))
 

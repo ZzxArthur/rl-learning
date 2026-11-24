@@ -1,0 +1,2295 @@
+{
+  "evaluation_seeds": [
+    670487,
+    116739,
+    26225,
+    777572,
+    288389,
+    256787,
+    234053,
+    146316,
+    772246,
+    107473,
+    709570,
+    776646,
+    935518,
+    571858,
+    91161,
+    619176,
+    442417,
+    33326,
+    31244,
+    98246,
+    229258,
+    243962,
+    529903,
+    631262,
+    27824,
+    588508,
+    208496,
+    750800,
+    681453,
+    735392,
+    571412,
+    439898,
+    231148,
+    471029,
+    617889,
+    291704,
+    848749,
+    911527,
+    6814,
+    795667,
+    844962,
+    167414,
+    732052,
+    443143,
+    356778,
+    291369,
+    163032,
+    225772,
+    800581,
+    352944,
+    107175,
+    97251,
+    398382,
+    101414,
+    376417,
+    888662,
+    360663,
+    633052,
+    277370,
+    846335,
+    45561,
+    765179,
+    481741,
+    562275,
+    130889,
+    967096,
+    396922,
+    82627,
+    578856,
+    307419,
+    869693,
+    659176,
+    648564,
+    928463,
+    903565,
+    379201,
+    605397,
+    201629,
+    738797,
+    72933,
+    48050,
+    693384,
+    238968,
+    810620,
+    303445,
+    83667,
+    896865,
+    244098,
+    908573,
+    105907,
+    398591,
+    291476,
+    475435,
+    666563,
+    874628,
+    382554,
+    170555,
+    388162,
+    372528,
+    219684
+  ],
+  "models": {
+    "seeded_baseline": {
+      "checkpoint": "/home/hatepp/piper/RL/twice_step/sac_reacher/experiments/seeded_baseline_20261123/sac_checkpoint.pt",
+      "training_config": {
+        "seed": 42,
+        "actor_lr": 0.0003,
+        "critic_lr": 0.0003,
+        "alpha_lr": 0.0003,
+        "gamma": 0.99,
+        "num_steps": 40000,
+        "batch_size": 256,
+        "warmup_steps": 1000,
+        "capacity": 20000,
+        "target_entropy": -0.1,
+        "tau": 0.005
+      },
+      "training_steps": 40000,
+      "training_updates": 39000,
+      "velocity_weight": 0.0,
+      "evaluation_mean_reward": -6.792454342842711,
+      "evaluation_min_reward": -13.165073470737763,
+      "evaluation_max_reward": -1.530515010356099,
+      "evaluation_mean_final_distance_m": 0.10617568167053408,
+      "evaluation_mean_distance_at_25_m": 0.08259455267337858,
+      "evaluation_mean_joint_speed_rad_s": 4.14073248953132,
+      "evaluation_mean_final_joint_speed_rad_s": 4.749424002974162,
+      "training_last10_reward": -13.23247510996073,
+      "episodes": [
+        {
+          "reward": -13.165073470737763,
+          "final_distance": 0.25723422720419925,
+          "distance_at_25": 0.10303364536350659,
+          "mean_joint_speed": 7.892640392201583,
+          "final_joint_speed": 8.055624812469077
+        },
+        {
+          "reward": -10.044395131910512,
+          "final_distance": 0.1862501395031834,
+          "distance_at_25": 0.14949154237250517,
+          "mean_joint_speed": 6.945184043067541,
+          "final_joint_speed": 9.147450283181772
+        },
+        {
+          "reward": -6.437725034855042,
+          "final_distance": 0.06942319217597163,
+          "distance_at_25": 0.02898388792764236,
+          "mean_joint_speed": 6.541917286104896,
+          "final_joint_speed": 7.682077517742604
+        },
+        {
+          "reward": -3.1384278296219725,
+          "final_distance": 0.0681530933061054,
+          "distance_at_25": 0.06320907934875902,
+          "mean_joint_speed": 0.3992286957128158,
+          "final_joint_speed": 0.13916710344283756
+        },
+        {
+          "reward": -6.3250633859773355,
+          "final_distance": 0.12470571012660212,
+          "distance_at_25": 0.04986633657051005,
+          "mean_joint_speed": 3.0779194734491355,
+          "final_joint_speed": 2.0451696894143803
+        },
+        {
+          "reward": -7.094622979336542,
+          "final_distance": 0.11075385525749608,
+          "distance_at_25": 0.10304082137706919,
+          "mean_joint_speed": 2.4903764047197687,
+          "final_joint_speed": 2.21555189064906
+        },
+        {
+          "reward": -3.0647604590056976,
+          "final_distance": 0.02440266494697095,
+          "distance_at_25": 0.06519913980558784,
+          "mean_joint_speed": 1.7102562853605339,
+          "final_joint_speed": 2.158482414824345
+        },
+        {
+          "reward": -8.11613475720303,
+          "final_distance": 0.12906490306507523,
+          "distance_at_25": 0.1578881852598199,
+          "mean_joint_speed": 1.9248417767443768,
+          "final_joint_speed": 2.622621641859826
+        },
+        {
+          "reward": -2.9585031982104977,
+          "final_distance": 0.04158085212307638,
+          "distance_at_25": 0.06265773343455219,
+          "mean_joint_speed": 0.8964562645486067,
+          "final_joint_speed": 0.769721929581418
+        },
+        {
+          "reward": -6.858258203163957,
+          "final_distance": 0.08639517219172131,
+          "distance_at_25": 0.04411300383082402,
+          "mean_joint_speed": 6.568644903789394,
+          "final_joint_speed": 8.016719766237426
+        },
+        {
+          "reward": -3.8053176774912876,
+          "final_distance": 0.152506244462695,
+          "distance_at_25": 0.024017929879185794,
+          "mean_joint_speed": 3.8348519065436535,
+          "final_joint_speed": 2.2761440313862575
+        },
+        {
+          "reward": -6.740903073748431,
+          "final_distance": 0.13380589224669628,
+          "distance_at_25": 0.06153407542410479,
+          "mean_joint_speed": 3.2479179517100967,
+          "final_joint_speed": 2.3829824687269436
+        },
+        {
+          "reward": -13.043732270617706,
+          "final_distance": 0.14342262713393433,
+          "distance_at_25": 0.2509300776088036,
+          "mean_joint_speed": 4.915945965158479,
+          "final_joint_speed": 6.420175265189241
+        },
+        {
+          "reward": -9.153685739397748,
+          "final_distance": 0.17843559372135165,
+          "distance_at_25": 0.1133199228026926,
+          "mean_joint_speed": 4.551856262508809,
+          "final_joint_speed": 4.377197590127158
+        },
+        {
+          "reward": -10.796941929473205,
+          "final_distance": 0.17938940234160486,
+          "distance_at_25": 0.09614659911660414,
+          "mean_joint_speed": 6.9766365909272565,
+          "final_joint_speed": 8.677562362201467
+        },
+        {
+          "reward": -8.54574623757754,
+          "final_distance": 0.12046109997076627,
+          "distance_at_25": 0.041120682291961044,
+          "mean_joint_speed": 7.098920760967909,
+          "final_joint_speed": 7.980450410091928
+        },
+        {
+          "reward": -5.556271901393775,
+          "final_distance": 0.07524665356694223,
+          "distance_at_25": 0.08328280123149244,
+          "mean_joint_speed": 1.165006791379024,
+          "final_joint_speed": 0.17801799284205752
+        },
+        {
+          "reward": -12.011249482789394,
+          "final_distance": 0.16875032434510348,
+          "distance_at_25": 0.0929647668513284,
+          "mean_joint_speed": 7.915579026296339,
+          "final_joint_speed": 7.289995109134836
+        },
+        {
+          "reward": -6.807784495640135,
+          "final_distance": 0.11827869357226313,
+          "distance_at_25": 0.13490818580838543,
+          "mean_joint_speed": 1.3720818799097334,
+          "final_joint_speed": 1.3289156428260585
+        },
+        {
+          "reward": -2.4522657692003764,
+          "final_distance": 0.017727058365227706,
+          "distance_at_25": 0.05208335856290772,
+          "mean_joint_speed": 1.2082938112746655,
+          "final_joint_speed": 1.0720281297082443
+        },
+        {
+          "reward": -6.3627741888058935,
+          "final_distance": 0.07188374747795394,
+          "distance_at_25": 0.05085720560443829,
+          "mean_joint_speed": 6.395865419557842,
+          "final_joint_speed": 7.725075967055571
+        },
+        {
+          "reward": -4.675674000984713,
+          "final_distance": 0.08292910165516362,
+          "distance_at_25": 0.09354263996604494,
+          "mean_joint_speed": 3.7489387940688177,
+          "final_joint_speed": 3.0333637773760525
+        },
+        {
+          "reward": -11.493259163361017,
+          "final_distance": 0.18881270617901702,
+          "distance_at_25": 0.09655767161696488,
+          "mean_joint_speed": 7.0989784111560175,
+          "final_joint_speed": 8.469687510842245
+        },
+        {
+          "reward": -4.578304687146859,
+          "final_distance": 0.04318269642079346,
+          "distance_at_25": 0.05568639209426866,
+          "mean_joint_speed": 1.2598150352050317,
+          "final_joint_speed": 0.18968249890100525
+        },
+        {
+          "reward": -5.844089236736437,
+          "final_distance": 0.10008982869560538,
+          "distance_at_25": 0.10545389795960045,
+          "mean_joint_speed": 0.9030201327537764,
+          "final_joint_speed": 0.34526526938250046
+        },
+        {
+          "reward": -9.66816915315077,
+          "final_distance": 0.20273765431278132,
+          "distance_at_25": 0.07027645909848237,
+          "mean_joint_speed": 7.2717812201901895,
+          "final_joint_speed": 8.105569771892515
+        },
+        {
+          "reward": -7.974388403149561,
+          "final_distance": 0.13667152557386394,
+          "distance_at_25": 0.10296959576167729,
+          "mean_joint_speed": 6.50493279695171,
+          "final_joint_speed": 8.518935804073022
+        },
+        {
+          "reward": -7.317083167839024,
+          "final_distance": 0.09727710964002582,
+          "distance_at_25": 0.008124217335906497,
+          "mean_joint_speed": 6.929727683849558,
+          "final_joint_speed": 7.551505455441898
+        },
+        {
+          "reward": -2.995420320057913,
+          "final_distance": 0.13199819736679605,
+          "distance_at_25": 0.01694073296866611,
+          "mean_joint_speed": 3.4318731439491255,
+          "final_joint_speed": 5.202294651352176
+        },
+        {
+          "reward": -4.789079985393596,
+          "final_distance": 0.10329662735813579,
+          "distance_at_25": 0.06786745320436362,
+          "mean_joint_speed": 4.076336736798186,
+          "final_joint_speed": 2.8864948715114687
+        },
+        {
+          "reward": -8.424681759273376,
+          "final_distance": 0.14180117366966385,
+          "distance_at_25": 0.1053472308380851,
+          "mean_joint_speed": 6.752924713362781,
+          "final_joint_speed": 8.864797240593152
+        },
+        {
+          "reward": -6.108294943006574,
+          "final_distance": 0.06246524011728511,
+          "distance_at_25": 0.05919601808538067,
+          "mean_joint_speed": 6.125968648103363,
+          "final_joint_speed": 7.479661124416687
+        },
+        {
+          "reward": -8.828191233300643,
+          "final_distance": 0.1461039100619463,
+          "distance_at_25": 0.09100086071795253,
+          "mean_joint_speed": 6.750036262467362,
+          "final_joint_speed": 8.973779129707255
+        },
+        {
+          "reward": -10.899386568996404,
+          "final_distance": 0.18702294850904808,
+          "distance_at_25": 0.11442567755550635,
+          "mean_joint_speed": 6.856581634499464,
+          "final_joint_speed": 9.347863409994433
+        },
+        {
+          "reward": -8.532390955779796,
+          "final_distance": 0.12379437426090907,
+          "distance_at_25": 0.12666710298420858,
+          "mean_joint_speed": 3.4742672264520564,
+          "final_joint_speed": 5.259119189543408
+        },
+        {
+          "reward": -2.1967603388488435,
+          "final_distance": 0.014001534967455627,
+          "distance_at_25": 0.04744649586431647,
+          "mean_joint_speed": 1.1326536086790264,
+          "final_joint_speed": 0.9844268662013039
+        },
+        {
+          "reward": -5.13686923301351,
+          "final_distance": 0.13722697326714314,
+          "distance_at_25": 0.03668902431022361,
+          "mean_joint_speed": 4.332712703959763,
+          "final_joint_speed": 2.7241373900189276
+        },
+        {
+          "reward": -11.054091309791655,
+          "final_distance": 0.1773640163760234,
+          "distance_at_25": 0.08575024758815218,
+          "mean_joint_speed": 7.120501046098502,
+          "final_joint_speed": 8.483251872660409
+        },
+        {
+          "reward": -4.957505544214741,
+          "final_distance": 0.050524543460639705,
+          "distance_at_25": 0.11152482893992732,
+          "mean_joint_speed": 3.4525542928730024,
+          "final_joint_speed": 6.200787937764522
+        },
+        {
+          "reward": -6.269451716522399,
+          "final_distance": 0.05931802118818036,
+          "distance_at_25": 0.040983070803598406,
+          "mean_joint_speed": 6.395521329050073,
+          "final_joint_speed": 7.788391789390778
+        },
+        {
+          "reward": -4.352649244654734,
+          "final_distance": 0.08054002725668101,
+          "distance_at_25": 0.07538798032243045,
+          "mean_joint_speed": 0.8912774587545048,
+          "final_joint_speed": 0.6468124209982352
+        },
+        {
+          "reward": -11.83335750238049,
+          "final_distance": 0.17545369053686663,
+          "distance_at_25": 0.09692968620277662,
+          "mean_joint_speed": 7.821113358101128,
+          "final_joint_speed": 7.7107446345949215
+        },
+        {
+          "reward": -5.732710910451592,
+          "final_distance": 0.07619048386958449,
+          "distance_at_25": 0.08513298165790475,
+          "mean_joint_speed": 1.3739443405920424,
+          "final_joint_speed": 0.4399796929702524
+        },
+        {
+          "reward": -10.595929479174638,
+          "final_distance": 0.18119807323674386,
+          "distance_at_25": 0.10689880605274568,
+          "mean_joint_speed": 6.824855563198524,
+          "final_joint_speed": 9.497989588961245
+        },
+        {
+          "reward": -6.234673208428498,
+          "final_distance": 0.05007327811888995,
+          "distance_at_25": 0.062395375392862856,
+          "mean_joint_speed": 5.97760530546041,
+          "final_joint_speed": 7.4102473460838265
+        },
+        {
+          "reward": -5.279914573705952,
+          "final_distance": 0.0891195541129987,
+          "distance_at_25": 0.10744031536860488,
+          "mean_joint_speed": 1.112001932813837,
+          "final_joint_speed": 1.0951114841177592
+        },
+        {
+          "reward": -13.00944096124518,
+          "final_distance": 0.1812263365725507,
+          "distance_at_25": 0.10929023979816824,
+          "mean_joint_speed": 8.086093997884943,
+          "final_joint_speed": 6.917530057136369
+        },
+        {
+          "reward": -3.9879987295075354,
+          "final_distance": 0.03292106407234324,
+          "distance_at_25": 0.05970491718054517,
+          "mean_joint_speed": 2.7020521569714497,
+          "final_joint_speed": 5.476377509508713
+        },
+        {
+          "reward": -4.062408650579925,
+          "final_distance": 0.04375292769208759,
+          "distance_at_25": 0.04018336374748176,
+          "mean_joint_speed": 1.6064420763614073,
+          "final_joint_speed": 2.4883465301300096
+        },
+        {
+          "reward": -7.322184573240343,
+          "final_distance": 0.118248666260879,
+          "distance_at_25": 0.12102097431796176,
+          "mean_joint_speed": 1.7248915352882648,
+          "final_joint_speed": 0.9000116904210171
+        },
+        {
+          "reward": -8.610793434738886,
+          "final_distance": 0.14403011831665916,
+          "distance_at_25": 0.094063359299799,
+          "mean_joint_speed": 6.671551261905261,
+          "final_joint_speed": 8.977942092084009
+        },
+        {
+          "reward": -7.98428095364994,
+          "final_distance": 0.12655540496656426,
+          "distance_at_25": 0.076797491710128,
+          "mean_joint_speed": 6.645774828530582,
+          "final_joint_speed": 8.638349853870698
+        },
+        {
+          "reward": -3.5388932186882727,
+          "final_distance": 0.07408520038389789,
+          "distance_at_25": 0.07170307976941111,
+          "mean_joint_speed": 0.5175008202566085,
+          "final_joint_speed": 0.2952889692278915
+        },
+        {
+          "reward": -8.492469643583846,
+          "final_distance": 0.08550688444431438,
+          "distance_at_25": 0.17504952336215912,
+          "mean_joint_speed": 2.6703231090052393,
+          "final_joint_speed": 5.562896698189698
+        },
+        {
+          "reward": -3.668364150052898,
+          "final_distance": 0.0844295360809604,
+          "distance_at_25": 0.030934936238579822,
+          "mean_joint_speed": 3.4606297590277615,
+          "final_joint_speed": 3.260899254556766
+        },
+        {
+          "reward": -8.16007191730865,
+          "final_distance": 0.12469824718009455,
+          "distance_at_25": 0.0605440680649026,
+          "mean_joint_speed": 6.752141623859055,
+          "final_joint_speed": 8.46790561809018
+        },
+        {
+          "reward": -9.116288972571168,
+          "final_distance": 0.12768357482498915,
+          "distance_at_25": 0.16338101930077295,
+          "mean_joint_speed": 2.7268281170751067,
+          "final_joint_speed": 4.005394869634898
+        },
+        {
+          "reward": -3.1704288700160217,
+          "final_distance": 0.07866437326586524,
+          "distance_at_25": 0.0485556855733086,
+          "mean_joint_speed": 2.9377266395795667,
+          "final_joint_speed": 2.4799772741923793
+        },
+        {
+          "reward": -5.315420328134672,
+          "final_distance": 0.07146417504761843,
+          "distance_at_25": 0.11109515119952987,
+          "mean_joint_speed": 1.7380855254874932,
+          "final_joint_speed": 2.328901618189398
+        },
+        {
+          "reward": -3.626184079356921,
+          "final_distance": 0.032245489880703665,
+          "distance_at_25": 0.04921990523189498,
+          "mean_joint_speed": 2.9227625693201955,
+          "final_joint_speed": 5.339190684141588
+        },
+        {
+          "reward": -6.114275247494583,
+          "final_distance": 0.051839322120493816,
+          "distance_at_25": 0.12131594930877118,
+          "mean_joint_speed": 4.551655608659942,
+          "final_joint_speed": 3.430351155948722
+        },
+        {
+          "reward": -6.927470472931099,
+          "final_distance": 0.09477890943339853,
+          "distance_at_25": 0.05969888486836805,
+          "mean_joint_speed": 6.576957479393802,
+          "final_joint_speed": 8.015681021010883
+        },
+        {
+          "reward": -6.295992498401704,
+          "final_distance": 0.05032755975799194,
+          "distance_at_25": 0.05216899968096087,
+          "mean_joint_speed": 6.09369913387492,
+          "final_joint_speed": 7.525210176129107
+        },
+        {
+          "reward": -3.8361874212671676,
+          "final_distance": 0.07154523524672017,
+          "distance_at_25": 0.07831286641347787,
+          "mean_joint_speed": 0.6255930359126995,
+          "final_joint_speed": 0.45874625128305146
+        },
+        {
+          "reward": -4.604070382706612,
+          "final_distance": 0.06466323440268147,
+          "distance_at_25": 0.09616974583780617,
+          "mean_joint_speed": 3.4367746703043967,
+          "final_joint_speed": 6.018672371538694
+        },
+        {
+          "reward": -3.1115353009210445,
+          "final_distance": 0.10040011112161032,
+          "distance_at_25": 0.049075709636060935,
+          "mean_joint_speed": 2.89328424814608,
+          "final_joint_speed": 2.167167631192184
+        },
+        {
+          "reward": -1.530515010356099,
+          "final_distance": 0.006202885075040786,
+          "distance_at_25": 0.03358895946027717,
+          "mean_joint_speed": 1.0837011481569356,
+          "final_joint_speed": 0.9185065437692731
+        },
+        {
+          "reward": -4.369393479609612,
+          "final_distance": 0.04041601447707855,
+          "distance_at_25": 0.059014638850262924,
+          "mean_joint_speed": 2.39392547723811,
+          "final_joint_speed": 6.399664453248201
+        },
+        {
+          "reward": -10.732989073149088,
+          "final_distance": 0.13366690875680565,
+          "distance_at_25": 0.18911332425182112,
+          "mean_joint_speed": 4.588010700007719,
+          "final_joint_speed": 4.354355174490071
+        },
+        {
+          "reward": -9.458519430601699,
+          "final_distance": 0.15991131920079701,
+          "distance_at_25": 0.10181714167388417,
+          "mean_joint_speed": 6.799112564844024,
+          "final_joint_speed": 9.188489688399903
+        },
+        {
+          "reward": -6.743080775158692,
+          "final_distance": 0.14836021348773876,
+          "distance_at_25": 0.06143118184786164,
+          "mean_joint_speed": 3.147979386080281,
+          "final_joint_speed": 1.7994436619345568
+        },
+        {
+          "reward": -4.591367586619058,
+          "final_distance": 0.07595704053175208,
+          "distance_at_25": 0.07356662517154738,
+          "mean_joint_speed": 1.3818673920305766,
+          "final_joint_speed": 3.188450550825708
+        },
+        {
+          "reward": -7.402461711698612,
+          "final_distance": 0.10447815254843297,
+          "distance_at_25": 0.05088088693135164,
+          "mean_joint_speed": 6.7920889434492535,
+          "final_joint_speed": 7.986282675381216
+        },
+        {
+          "reward": -4.72030886235807,
+          "final_distance": 0.09728385305305315,
+          "distance_at_25": 0.0917874723888834,
+          "mean_joint_speed": 3.880459846862934,
+          "final_joint_speed": 2.7792193458602803
+        },
+        {
+          "reward": -8.280898974611864,
+          "final_distance": 0.12392454882737403,
+          "distance_at_25": 0.125641016895265,
+          "mean_joint_speed": 3.0015807767399325,
+          "final_joint_speed": 3.7316516712081484
+        },
+        {
+          "reward": -5.351924540063598,
+          "final_distance": 0.09361986387545601,
+          "distance_at_25": 0.10759435281417752,
+          "mean_joint_speed": 0.9943655344638922,
+          "final_joint_speed": 0.8819867561798559
+        },
+        {
+          "reward": -7.752496757461286,
+          "final_distance": 0.07520806216979134,
+          "distance_at_25": 0.14387666995359086,
+          "mean_joint_speed": 5.630582096605107,
+          "final_joint_speed": 9.171498562130495
+        },
+        {
+          "reward": -8.64958376891696,
+          "final_distance": 0.12912972115670537,
+          "distance_at_25": 0.01950180083394764,
+          "mean_joint_speed": 7.231702880015034,
+          "final_joint_speed": 7.307343947295856
+        },
+        {
+          "reward": -3.7137421142054983,
+          "final_distance": 0.12126051387815828,
+          "distance_at_25": 0.04331596504154671,
+          "mean_joint_speed": 3.359771574640374,
+          "final_joint_speed": 1.4631911673849807
+        },
+        {
+          "reward": -5.862519853565699,
+          "final_distance": 0.10361002749207188,
+          "distance_at_25": 0.11070681264655467,
+          "mean_joint_speed": 0.8940301472747522,
+          "final_joint_speed": 0.5095257924077644
+        },
+        {
+          "reward": -11.654837885683543,
+          "final_distance": 0.18791569185395443,
+          "distance_at_25": 0.09800154252115047,
+          "mean_joint_speed": 7.2992586791931275,
+          "final_joint_speed": 8.12512648545502
+        },
+        {
+          "reward": -3.2197234493978852,
+          "final_distance": 0.0070108936330648365,
+          "distance_at_25": 0.06551981349838525,
+          "mean_joint_speed": 2.1275571236822413,
+          "final_joint_speed": 3.356534898236876
+        },
+        {
+          "reward": -6.205804497206315,
+          "final_distance": 0.10940788190525165,
+          "distance_at_25": 0.11630997023533818,
+          "mean_joint_speed": 1.002031151818757,
+          "final_joint_speed": 0.5664161019668359
+        },
+        {
+          "reward": -6.653949457382338,
+          "final_distance": 0.027264278861542424,
+          "distance_at_25": 0.15290654828425546,
+          "mean_joint_speed": 4.42718482565397,
+          "final_joint_speed": 3.9454931877114774
+        },
+        {
+          "reward": -2.9762721501343763,
+          "final_distance": 0.09500894021387986,
+          "distance_at_25": 0.052036812438591956,
+          "mean_joint_speed": 2.7216778780306488,
+          "final_joint_speed": 2.3611132330367255
+        },
+        {
+          "reward": -4.6941965097220315,
+          "final_distance": 0.08840458134839531,
+          "distance_at_25": 0.09121178075158022,
+          "mean_joint_speed": 0.5897980666267604,
+          "final_joint_speed": 0.3098762845159271
+        },
+        {
+          "reward": -5.376068467693737,
+          "final_distance": 0.07915765730772081,
+          "distance_at_25": 0.08472568507998952,
+          "mean_joint_speed": 0.9620759089333696,
+          "final_joint_speed": 0.029566538651217146
+        },
+        {
+          "reward": -6.553958601406658,
+          "final_distance": 0.0763229087708613,
+          "distance_at_25": 0.03597225924146805,
+          "mean_joint_speed": 6.595936632414007,
+          "final_joint_speed": 7.7513169969199724
+        },
+        {
+          "reward": -11.423509298132467,
+          "final_distance": 0.17711679438408734,
+          "distance_at_25": 0.0857477636798487,
+          "mean_joint_speed": 7.3833856483233085,
+          "final_joint_speed": 8.01245478851462
+        },
+        {
+          "reward": -1.9585493164748646,
+          "final_distance": 0.009373961762390545,
+          "distance_at_25": 0.04041722383688243,
+          "mean_joint_speed": 0.8686182675494518,
+          "final_joint_speed": 0.680766725305466
+        },
+        {
+          "reward": -10.483806309308997,
+          "final_distance": 0.16210298548954227,
+          "distance_at_25": 0.07109356444621881,
+          "mean_joint_speed": 7.210501744822648,
+          "final_joint_speed": 8.260703414150854
+        },
+        {
+          "reward": -7.374235473411153,
+          "final_distance": 0.1157449139951838,
+          "distance_at_25": 0.08422317819124789,
+          "mean_joint_speed": 6.5194725281776,
+          "final_joint_speed": 8.329090935192735
+        },
+        {
+          "reward": -10.36968540867175,
+          "final_distance": 0.17579678588337527,
+          "distance_at_25": 0.10481808042183595,
+          "mean_joint_speed": 6.861424135674822,
+          "final_joint_speed": 8.92037126615603
+        },
+        {
+          "reward": -5.191384627248551,
+          "final_distance": 0.07474426884736934,
+          "distance_at_25": 0.07854425082832078,
+          "mean_joint_speed": 1.0775644525579544,
+          "final_joint_speed": 0.4298356631988067
+        },
+        {
+          "reward": -3.6396348506390637,
+          "final_distance": 0.04586725129919602,
+          "distance_at_25": 0.021702275062564218,
+          "mean_joint_speed": 2.158860559797298,
+          "final_joint_speed": 5.627028937584336
+        },
+        {
+          "reward": -11.16318770294063,
+          "final_distance": 0.1881318215546276,
+          "distance_at_25": 0.10269303949314147,
+          "mean_joint_speed": 6.922808637591435,
+          "final_joint_speed": 9.003029282015348
+        },
+        {
+          "reward": -10.841094110752499,
+          "final_distance": 0.23156388583531934,
+          "distance_at_25": 0.07504031282736506,
+          "mean_joint_speed": 7.432587444635208,
+          "final_joint_speed": 8.026296361063306
+        },
+        {
+          "reward": -6.941850440862779,
+          "final_distance": 0.10892750026760442,
+          "distance_at_25": 0.10890534263889609,
+          "mean_joint_speed": 1.9256663672937788,
+          "final_joint_speed": 1.1317389742819697
+        },
+        {
+          "reward": -5.688720703160489,
+          "final_distance": 0.07353468051924407,
+          "distance_at_25": 0.08243840140375501,
+          "mean_joint_speed": 1.5594575641795174,
+          "final_joint_speed": 0.637813622197339
+        },
+        {
+          "reward": -8.468439423747073,
+          "final_distance": 0.11501055040093523,
+          "distance_at_25": 0.02774095999263047,
+          "mean_joint_speed": 7.157089399601702,
+          "final_joint_speed": 7.232342536786232
+        }
+      ]
+    },
+    "velocity_penalty": {
+      "checkpoint": "/home/hatepp/piper/RL/twice_step/sac_reacher/velocity_penalty_checkpoint.pt",
+      "training_config": {
+        "seed": 42,
+        "actor_lr": 0.0003,
+        "critic_lr": 0.0003,
+        "alpha_lr": 0.0003,
+        "gamma": 0.99,
+        "num_steps": 40000,
+        "batch_size": 256,
+        "warmup_steps": 1000,
+        "capacity": 20000,
+        "target_entropy": -0.1,
+        "tau": 0.005
+      },
+      "training_steps": 40000,
+      "training_updates": 39000,
+      "velocity_weight": 0.01,
+      "evaluation_mean_reward": -7.088990237261826,
+      "evaluation_min_reward": -14.894202676885714,
+      "evaluation_max_reward": -1.617010959670503,
+      "evaluation_mean_final_distance_m": 0.09469997275396544,
+      "evaluation_mean_distance_at_25_m": 0.12367616225096835,
+      "evaluation_mean_joint_speed_rad_s": 1.1893061489819001,
+      "evaluation_mean_final_joint_speed_rad_s": 0.3543082456245718,
+      "training_last10_reward": -13.865022565108749,
+      "episodes": [
+        {
+          "reward": -8.051201353273939,
+          "final_distance": 0.022496341472684454,
+          "distance_at_25": 0.1227798929659716,
+          "mean_joint_speed": 2.5397041689970083,
+          "final_joint_speed": 1.0274703398790195
+        },
+        {
+          "reward": -4.678671622275308,
+          "final_distance": 0.027953781453729603,
+          "distance_at_25": 0.04705572550260724,
+          "mean_joint_speed": 1.4373323734436476,
+          "final_joint_speed": 0.371940675398273
+        },
+        {
+          "reward": -11.622076618328807,
+          "final_distance": 0.2143600966359817,
+          "distance_at_25": 0.22792551734840277,
+          "mean_joint_speed": 0.7928497725327661,
+          "final_joint_speed": 0.17624708169275616
+        },
+        {
+          "reward": -3.557250982563166,
+          "final_distance": 0.0753945748512674,
+          "distance_at_25": 0.07250315491931046,
+          "mean_joint_speed": 0.47354501503474095,
+          "final_joint_speed": 0.09332286563979296
+        },
+        {
+          "reward": -5.3911335223040115,
+          "final_distance": 0.005725911777093457,
+          "distance_at_25": 0.06601808673356657,
+          "mean_joint_speed": 1.7137446450724767,
+          "final_joint_speed": 0.5643420526794103
+        },
+        {
+          "reward": -6.036884335781999,
+          "final_distance": 0.05794818503178984,
+          "distance_at_25": 0.08954601833913427,
+          "mean_joint_speed": 1.5570699093664613,
+          "final_joint_speed": 0.6464757930979005
+        },
+        {
+          "reward": -3.1578379529601293,
+          "final_distance": 0.058194939290765,
+          "distance_at_25": 0.05995180242270516,
+          "mean_joint_speed": 0.5762408871608644,
+          "final_joint_speed": 0.09944622246764369
+        },
+        {
+          "reward": -8.990305181453262,
+          "final_distance": 0.17168321874949793,
+          "distance_at_25": 0.1779295230237329,
+          "mean_joint_speed": 0.4564953883814846,
+          "final_joint_speed": 0.205549849778058
+        },
+        {
+          "reward": -2.8586858203358174,
+          "final_distance": 0.057755117575094606,
+          "distance_at_25": 0.055910403265288997,
+          "mean_joint_speed": 0.5953654009998776,
+          "final_joint_speed": 0.10192099021666169
+        },
+        {
+          "reward": -10.038349635835425,
+          "final_distance": 0.1605021552416633,
+          "distance_at_25": 0.18584403540583933,
+          "mean_joint_speed": 1.267815136569531,
+          "final_joint_speed": 0.24513273786606274
+        },
+        {
+          "reward": -2.7332368030056693,
+          "final_distance": 0.03161859438814979,
+          "distance_at_25": 0.03911483651272309,
+          "mean_joint_speed": 0.8878380600499003,
+          "final_joint_speed": 0.1722261256486959
+        },
+        {
+          "reward": -5.3885704425597405,
+          "final_distance": 0.010962116869609512,
+          "distance_at_25": 0.06601207598894572,
+          "mean_joint_speed": 1.7481293988401436,
+          "final_joint_speed": 0.6129652171855525
+        },
+        {
+          "reward": -7.7806846228982005,
+          "final_distance": 0.060652884706786134,
+          "distance_at_25": 0.12179671222631759,
+          "mean_joint_speed": 2.1954820940202455,
+          "final_joint_speed": 0.9842160525387881
+        },
+        {
+          "reward": -5.7113541304660815,
+          "final_distance": 0.01856973817105028,
+          "distance_at_25": 0.06969127025445909,
+          "mean_joint_speed": 1.9732799381504964,
+          "final_joint_speed": 0.7911282255754022
+        },
+        {
+          "reward": -7.8328627084992,
+          "final_distance": 0.05838468447533203,
+          "distance_at_25": 0.0923518992143266,
+          "mean_joint_speed": 2.09295053702481,
+          "final_joint_speed": 0.29632848968000813
+        },
+        {
+          "reward": -10.815077221333341,
+          "final_distance": 0.12428758752437775,
+          "distance_at_25": 0.20429899130687731,
+          "mean_joint_speed": 2.154659528124245,
+          "final_joint_speed": 0.5788814662086927
+        },
+        {
+          "reward": -6.2472714193143535,
+          "final_distance": 0.08012375388098483,
+          "distance_at_25": 0.10582759097890887,
+          "mean_joint_speed": 1.0812927586983747,
+          "final_joint_speed": 0.31957446461639044
+        },
+        {
+          "reward": -14.894202676885714,
+          "final_distance": 0.131877470001022,
+          "distance_at_25": 0.3302744512379507,
+          "mean_joint_speed": 2.9958131551801386,
+          "final_joint_speed": 0.9538185212560715
+        },
+        {
+          "reward": -7.582277956770296,
+          "final_distance": 0.15075050214797914,
+          "distance_at_25": 0.15123403905879437,
+          "mean_joint_speed": 0.20362402390100637,
+          "final_joint_speed": 0.044771566656227696
+        },
+        {
+          "reward": -2.1379664898402053,
+          "final_distance": 0.04212774902984049,
+          "distance_at_25": 0.03783358856119799,
+          "mean_joint_speed": 0.6201459739890924,
+          "final_joint_speed": 0.0904254625363533
+        },
+        {
+          "reward": -9.96648020932947,
+          "final_distance": 0.17644749315373023,
+          "distance_at_25": 0.18729497069893264,
+          "mean_joint_speed": 0.9807332068237645,
+          "final_joint_speed": 0.2618221487929027
+        },
+        {
+          "reward": -5.87686423524306,
+          "final_distance": 0.10812755775623015,
+          "distance_at_25": 0.11263182436369618,
+          "mean_joint_speed": 0.678008138308436,
+          "final_joint_speed": 0.16908023866729477
+        },
+        {
+          "reward": -8.43948159022136,
+          "final_distance": 0.06382744807980413,
+          "distance_at_25": 0.09699024185856037,
+          "mean_joint_speed": 2.3174643666484367,
+          "final_joint_speed": 0.32559150096224176
+        },
+        {
+          "reward": -5.4172403139974925,
+          "final_distance": 0.050509498946469666,
+          "distance_at_25": 0.08197692290397013,
+          "mean_joint_speed": 1.198377123413061,
+          "final_joint_speed": 0.35839899323583546
+        },
+        {
+          "reward": -6.5940281093599795,
+          "final_distance": 0.11606275467092932,
+          "distance_at_25": 0.1256784011535596,
+          "mean_joint_speed": 0.5351161383093055,
+          "final_joint_speed": 0.13246991586915785
+        },
+        {
+          "reward": -10.061194616638515,
+          "final_distance": 0.11073911232666704,
+          "distance_at_25": 0.19949268452703678,
+          "mean_joint_speed": 2.109545084094888,
+          "final_joint_speed": 1.3496281129851522
+        },
+        {
+          "reward": -6.355884210543751,
+          "final_distance": 0.07630277929124532,
+          "distance_at_25": 0.09413129566707377,
+          "mean_joint_speed": 1.342088504967384,
+          "final_joint_speed": 0.34913125205187934
+        },
+        {
+          "reward": -13.181175964987037,
+          "final_distance": 0.23956669175675815,
+          "distance_at_25": 0.2642642565854814,
+          "mean_joint_speed": 1.0230439537884801,
+          "final_joint_speed": 0.8950012150449971
+        },
+        {
+          "reward": -1.921342774597594,
+          "final_distance": 0.0197956069318527,
+          "distance_at_25": 0.022883845156504212,
+          "mean_joint_speed": 0.821455049702735,
+          "final_joint_speed": 0.1415421915449908
+        },
+        {
+          "reward": -5.153136700237727,
+          "final_distance": 0.08261146374224802,
+          "distance_at_25": 0.09050007832567274,
+          "mean_joint_speed": 0.903716114377241,
+          "final_joint_speed": 0.20645315744335666
+        },
+        {
+          "reward": -6.658007929827903,
+          "final_distance": 0.0724317630996983,
+          "distance_at_25": 0.09605949274003535,
+          "mean_joint_speed": 1.4310287093057672,
+          "final_joint_speed": 0.3455563525223136
+        },
+        {
+          "reward": -9.670364206336428,
+          "final_distance": 0.18133180962038942,
+          "distance_at_25": 0.18567221802982678,
+          "mean_joint_speed": 0.6988342463874284,
+          "final_joint_speed": 0.2288642697227737
+        },
+        {
+          "reward": -7.401846184262233,
+          "final_distance": 0.07349849870879412,
+          "distance_at_25": 0.10590649816360055,
+          "mean_joint_speed": 1.5862487495834625,
+          "final_joint_speed": 0.1039439988729006
+        },
+        {
+          "reward": -6.902015473597101,
+          "final_distance": 0.04265437003283721,
+          "distance_at_25": 0.07628845335725892,
+          "mean_joint_speed": 1.7924868899356132,
+          "final_joint_speed": 0.09234019523811181
+        },
+        {
+          "reward": -6.909959991643237,
+          "final_distance": 0.061164174142658095,
+          "distance_at_25": 0.10424013387571414,
+          "mean_joint_speed": 1.8553072168227949,
+          "final_joint_speed": 0.7973225388028147
+        },
+        {
+          "reward": -1.9600919274316806,
+          "final_distance": 0.04093757888378841,
+          "distance_at_25": 0.03560220042285165,
+          "mean_joint_speed": 0.6179027286857651,
+          "final_joint_speed": 0.09075280886084483
+        },
+        {
+          "reward": -3.783312581454875,
+          "final_distance": 0.04354412261955885,
+          "distance_at_25": 0.05399761844214661,
+          "mean_joint_speed": 0.9788485659624327,
+          "final_joint_speed": 0.1901790551276919
+        },
+        {
+          "reward": -8.497643809006632,
+          "final_distance": 0.0651778391775536,
+          "distance_at_25": 0.10470980914185345,
+          "mean_joint_speed": 2.2823441220342113,
+          "final_joint_speed": 0.34147554875365416
+        },
+        {
+          "reward": -6.2424593917828535,
+          "final_distance": 0.11995170407027134,
+          "distance_at_25": 0.12251749540724768,
+          "mean_joint_speed": 0.4688748272674968,
+          "final_joint_speed": 0.1110206682441661
+        },
+        {
+          "reward": -11.64689899666048,
+          "final_distance": 0.22912358011098993,
+          "distance_at_25": 0.23125821932805019,
+          "mean_joint_speed": 0.40586501013259985,
+          "final_joint_speed": 0.055571984643410725
+        },
+        {
+          "reward": -5.298103121711754,
+          "final_distance": 0.09548673527554927,
+          "distance_at_25": 0.1005644819144983,
+          "mean_joint_speed": 0.40002131850965394,
+          "final_joint_speed": 0.05717436629559965
+        },
+        {
+          "reward": -14.18602475925869,
+          "final_distance": 0.12354172902813448,
+          "distance_at_25": 0.30149018191143295,
+          "mean_joint_speed": 2.884992517681287,
+          "final_joint_speed": 0.8089532043237154
+        },
+        {
+          "reward": -6.215188244360864,
+          "final_distance": 0.07530706147561295,
+          "distance_at_25": 0.10277565606834071,
+          "mean_joint_speed": 1.1880271995613043,
+          "final_joint_speed": 0.3860858461420128
+        },
+        {
+          "reward": -6.961321368993718,
+          "final_distance": 0.04370233620526708,
+          "distance_at_25": 0.08085970755112588,
+          "mean_joint_speed": 1.7676653277615624,
+          "final_joint_speed": 0.048620443569781575
+        },
+        {
+          "reward": -10.283867395066984,
+          "final_distance": 0.19505867320336157,
+          "distance_at_25": 0.2003811290347613,
+          "mean_joint_speed": 0.7473249622603474,
+          "final_joint_speed": 0.22998356034968706
+        },
+        {
+          "reward": -5.758531996838259,
+          "final_distance": 0.11465534186306671,
+          "distance_at_25": 0.11523146728657437,
+          "mean_joint_speed": 0.4332996414872468,
+          "final_joint_speed": 0.10551939371547926
+        },
+        {
+          "reward": -11.47535980204376,
+          "final_distance": 0.033638341845104044,
+          "distance_at_25": 0.23504179362252903,
+          "mean_joint_speed": 2.926407356408203,
+          "final_joint_speed": 1.4141338039469915
+        },
+        {
+          "reward": -5.224833820332971,
+          "final_distance": 0.08126754946761018,
+          "distance_at_25": 0.09416855824178473,
+          "mean_joint_speed": 0.5273878249934081,
+          "final_joint_speed": 0.07941164749989615
+        },
+        {
+          "reward": -5.223384733543474,
+          "final_distance": 0.04718314597608129,
+          "distance_at_25": 0.08024691268168677,
+          "mean_joint_speed": 1.0549636767911579,
+          "final_joint_speed": 0.24842797283007131
+        },
+        {
+          "reward": -7.434501167616526,
+          "final_distance": 0.10453244039777163,
+          "distance_at_25": 0.13254423209241428,
+          "mean_joint_speed": 1.2714208633100277,
+          "final_joint_speed": 0.5214415644437149
+        },
+        {
+          "reward": -7.13039462962358,
+          "final_distance": 0.07398102868907908,
+          "distance_at_25": 0.10284462865862425,
+          "mean_joint_speed": 1.5344560024327236,
+          "final_joint_speed": 0.2888610291740787
+        },
+        {
+          "reward": -8.041247579311364,
+          "final_distance": 0.09708779307258089,
+          "distance_at_25": 0.1279965208534427,
+          "mean_joint_speed": 1.497995123253623,
+          "final_joint_speed": 0.1945639238454677
+        },
+        {
+          "reward": -3.783674159310945,
+          "final_distance": 0.07824132840697105,
+          "distance_at_25": 0.07696980291886277,
+          "mean_joint_speed": 0.30917404527260217,
+          "final_joint_speed": 0.05497088336714495
+        },
+        {
+          "reward": -9.841120865620528,
+          "final_distance": 0.19364661247121298,
+          "distance_at_25": 0.19632141274069462,
+          "mean_joint_speed": 0.23640727372027037,
+          "final_joint_speed": 0.11562375255902664
+        },
+        {
+          "reward": -4.4598132729507975,
+          "final_distance": 0.047930325741655996,
+          "distance_at_25": 0.07202269428340405,
+          "mean_joint_speed": 0.7082728186051576,
+          "final_joint_speed": 0.13433964345214744
+        },
+        {
+          "reward": -8.896436153813184,
+          "final_distance": 0.10347192459643986,
+          "distance_at_25": 0.1470930792706181,
+          "mean_joint_speed": 1.7485538680157353,
+          "final_joint_speed": 0.2051637888228808
+        },
+        {
+          "reward": -8.87812275797749,
+          "final_distance": 0.12983620610431512,
+          "distance_at_25": 0.16783694283760156,
+          "mean_joint_speed": 1.5023075511636126,
+          "final_joint_speed": 0.8931544372555725
+        },
+        {
+          "reward": -4.315142124491846,
+          "final_distance": 0.07648650293080932,
+          "distance_at_25": 0.08147837779784145,
+          "mean_joint_speed": 0.2906360923712675,
+          "final_joint_speed": 0.04092273018627052
+        },
+        {
+          "reward": -5.773996192930536,
+          "final_distance": 0.11324126082389473,
+          "distance_at_25": 0.11485988876936351,
+          "mean_joint_speed": 0.3974624380563822,
+          "final_joint_speed": 0.08863565729960401
+        },
+        {
+          "reward": -4.63494248911922,
+          "final_distance": 0.06358405149717707,
+          "distance_at_25": 0.07994675376266844,
+          "mean_joint_speed": 0.617413674569979,
+          "final_joint_speed": 0.12852397566700546
+        },
+        {
+          "reward": -8.162336224547518,
+          "final_distance": 0.14888540183276888,
+          "distance_at_25": 0.15483202844014562,
+          "mean_joint_speed": 0.8274377529698458,
+          "final_joint_speed": 0.240827522338153
+        },
+        {
+          "reward": -9.323786163482643,
+          "final_distance": 0.14491272282112808,
+          "distance_at_25": 0.1669988134174171,
+          "mean_joint_speed": 1.2285892750827831,
+          "final_joint_speed": 0.2136938161872814
+        },
+        {
+          "reward": -11.248589816765511,
+          "final_distance": 0.218008352704653,
+          "distance_at_25": 0.22207639301681056,
+          "mean_joint_speed": 0.5862033441261821,
+          "final_joint_speed": 0.18414063572835263
+        },
+        {
+          "reward": -4.127734275353725,
+          "final_distance": 0.0837214567049956,
+          "distance_at_25": 0.08320652208852364,
+          "mean_joint_speed": 0.46228164448653003,
+          "final_joint_speed": 0.09419734425629679
+        },
+        {
+          "reward": -5.738110344214231,
+          "final_distance": 0.1026736169063251,
+          "distance_at_25": 0.10784974007993338,
+          "mean_joint_speed": 0.7603600129789364,
+          "final_joint_speed": 0.16837104631744274
+        },
+        {
+          "reward": -4.0909882716357115,
+          "final_distance": 0.07768175271544298,
+          "distance_at_25": 0.0791630253190693,
+          "mean_joint_speed": 0.2987947886881735,
+          "final_joint_speed": 0.05166047270146021
+        },
+        {
+          "reward": -1.617010959670503,
+          "final_distance": 0.04112605205716266,
+          "distance_at_25": 0.03200485300570106,
+          "mean_joint_speed": 0.6412741628262013,
+          "final_joint_speed": 0.09155456097082772
+        },
+        {
+          "reward": -5.2732275609347745,
+          "final_distance": 0.06992611742666396,
+          "distance_at_25": 0.09059098434527448,
+          "mean_joint_speed": 0.7523372228193114,
+          "final_joint_speed": 0.16118028925923425
+        },
+        {
+          "reward": -8.276487799721307,
+          "final_distance": 0.07484060625634702,
+          "distance_at_25": 0.1375527434361573,
+          "mean_joint_speed": 2.1913350873001947,
+          "final_joint_speed": 1.055718278080633
+        },
+        {
+          "reward": -7.003721992610993,
+          "final_distance": 0.05925386982423057,
+          "distance_at_25": 0.09172748792907054,
+          "mean_joint_speed": 1.621246077118937,
+          "final_joint_speed": 0.09297324570805869
+        },
+        {
+          "reward": -5.13810781628738,
+          "final_distance": 0.010824444687425914,
+          "distance_at_25": 0.060287078097309446,
+          "mean_joint_speed": 1.684699717903881,
+          "final_joint_speed": 0.5985375897132054
+        },
+        {
+          "reward": -5.53084327113686,
+          "final_distance": 0.09050519186594733,
+          "distance_at_25": 0.10154968017292801,
+          "mean_joint_speed": 0.5368708512234192,
+          "final_joint_speed": 0.09250142776180552
+        },
+        {
+          "reward": -10.003230648151648,
+          "final_distance": 0.13543137918762282,
+          "distance_at_25": 0.18532358879965802,
+          "mean_joint_speed": 1.5936997491997031,
+          "final_joint_speed": 0.3841415739356842
+        },
+        {
+          "reward": -5.533338403159595,
+          "final_distance": 0.0974883327382662,
+          "distance_at_25": 0.10250537427359338,
+          "mean_joint_speed": 0.7121072472604483,
+          "final_joint_speed": 0.14115387712409894
+        },
+        {
+          "reward": -6.8104015790091905,
+          "final_distance": 0.0667414366715239,
+          "distance_at_25": 0.10482139701228506,
+          "mean_joint_speed": 1.7420598292033005,
+          "final_joint_speed": 0.7490279331093488
+        },
+        {
+          "reward": -5.92917702042593,
+          "final_distance": 0.11818703416173372,
+          "distance_at_25": 0.11865561676778005,
+          "mean_joint_speed": 0.40288887762727343,
+          "final_joint_speed": 0.10075321381556988
+        },
+        {
+          "reward": -11.632957809019658,
+          "final_distance": 0.22702012762884557,
+          "distance_at_25": 0.23257666145295205,
+          "mean_joint_speed": 0.39310616339420573,
+          "final_joint_speed": 0.3061364250014839
+        },
+        {
+          "reward": -14.406899423195442,
+          "final_distance": 0.21801524777391848,
+          "distance_at_25": 0.29982917077362065,
+          "mean_joint_speed": 1.8416893544909465,
+          "final_joint_speed": 2.441937696989136
+        },
+        {
+          "reward": -4.295796066243633,
+          "final_distance": 0.06630105550943212,
+          "distance_at_25": 0.07634278763803368,
+          "mean_joint_speed": 0.42504378219632244,
+          "final_joint_speed": 0.0671850714089375
+        },
+        {
+          "reward": -6.699845349721739,
+          "final_distance": 0.1277434662324719,
+          "distance_at_25": 0.13068121875730138,
+          "mean_joint_speed": 0.4061997487595591,
+          "final_joint_speed": 0.06505759653873805
+        },
+        {
+          "reward": -9.592434994478138,
+          "final_distance": 0.07973844949073533,
+          "distance_at_25": 0.12409333899152958,
+          "mean_joint_speed": 2.494294655144055,
+          "final_joint_speed": 0.3456841856106174
+        },
+        {
+          "reward": -3.5633783250021227,
+          "final_distance": 0.060709539159811456,
+          "distance_at_25": 0.0636827777534443,
+          "mean_joint_speed": 0.7358320400919918,
+          "final_joint_speed": 0.13358477277885972
+        },
+        {
+          "reward": -6.92334120896383,
+          "final_distance": 0.12825015173233736,
+          "distance_at_25": 0.13462870832124793,
+          "mean_joint_speed": 0.4114172425433122,
+          "final_joint_speed": 0.10090437075528734
+        },
+        {
+          "reward": -9.395901449086416,
+          "final_distance": 0.18092948595142333,
+          "distance_at_25": 0.18430625796101455,
+          "mean_joint_speed": 0.6025889222936361,
+          "final_joint_speed": 0.19026009773376243
+        },
+        {
+          "reward": -3.8611400397893245,
+          "final_distance": 0.07777154777802824,
+          "distance_at_25": 0.0769258491513196,
+          "mean_joint_speed": 0.24878708759507817,
+          "final_joint_speed": 0.04499197111050845
+        },
+        {
+          "reward": -5.337412605823264,
+          "final_distance": 0.10593264007713847,
+          "distance_at_25": 0.10602529789682995,
+          "mean_joint_speed": 0.30784936746493674,
+          "final_joint_speed": 0.0657676476758562
+        },
+        {
+          "reward": -6.1089365839141365,
+          "final_distance": 0.0866574581547887,
+          "distance_at_25": 0.10739438843683988,
+          "mean_joint_speed": 0.8935919707448092,
+          "final_joint_speed": 0.24677252833000676
+        },
+        {
+          "reward": -11.087211612998338,
+          "final_distance": 0.19322390558004265,
+          "distance_at_25": 0.21457647873920102,
+          "mean_joint_speed": 0.9972005801319102,
+          "final_joint_speed": 0.21379093905526533
+        },
+        {
+          "reward": -9.935462824971612,
+          "final_distance": 0.08275257469114661,
+          "distance_at_25": 0.13821534380577594,
+          "mean_joint_speed": 2.5589914502658124,
+          "final_joint_speed": 0.391129024987419
+        },
+        {
+          "reward": -1.8109405376837757,
+          "final_distance": 0.0444850776326907,
+          "distance_at_25": 0.03179839216413117,
+          "mean_joint_speed": 0.7403603669476637,
+          "final_joint_speed": 0.11232505498126137
+        },
+        {
+          "reward": -9.522183365781656,
+          "final_distance": 0.08352498434624567,
+          "distance_at_25": 0.13789003758351348,
+          "mean_joint_speed": 2.3785461931002483,
+          "final_joint_speed": 0.3719170601179615
+        },
+        {
+          "reward": -7.834255008826903,
+          "final_distance": 0.10957472801399548,
+          "distance_at_25": 0.12864991679034377,
+          "mean_joint_speed": 1.2877258553425945,
+          "final_joint_speed": 0.27638239337522835
+        },
+        {
+          "reward": -7.270591089437105,
+          "final_distance": 0.05436405343311473,
+          "distance_at_25": 0.08626109725344946,
+          "mean_joint_speed": 1.8632832118097018,
+          "final_joint_speed": 0.20588034117772874
+        },
+        {
+          "reward": -6.076875947234465,
+          "final_distance": 0.08392454566272332,
+          "distance_at_25": 0.10581220463825639,
+          "mean_joint_speed": 0.8954864763872067,
+          "final_joint_speed": 0.22215923381922348
+        },
+        {
+          "reward": -4.637266787693203,
+          "final_distance": 0.034120741725362204,
+          "distance_at_25": 0.06856901722546575,
+          "mean_joint_speed": 0.9862805550762286,
+          "final_joint_speed": 0.22810588324358771
+        },
+        {
+          "reward": -7.532422042966433,
+          "final_distance": 0.049559588050762694,
+          "distance_at_25": 0.08393379255829712,
+          "mean_joint_speed": 2.032634227308656,
+          "final_joint_speed": 0.22497812386887006
+        },
+        {
+          "reward": -9.469317499061635,
+          "final_distance": 0.08127826438986328,
+          "distance_at_25": 0.17548640754704287,
+          "mean_joint_speed": 2.342591665851344,
+          "final_joint_speed": 1.2484675931637559
+        },
+        {
+          "reward": -6.560389859209325,
+          "final_distance": 0.07987799728964066,
+          "distance_at_25": 0.10831682118916787,
+          "mean_joint_speed": 1.368893976073185,
+          "final_joint_speed": 0.5463879423208433
+        },
+        {
+          "reward": -6.009497470535408,
+          "final_distance": 0.0676838225094125,
+          "distance_at_25": 0.09649528200540283,
+          "mean_joint_speed": 1.2423740435656887,
+          "final_joint_speed": 0.4115350586669112
+        },
+        {
+          "reward": -13.566136328676917,
+          "final_distance": 0.17929441455150683,
+          "distance_at_25": 0.2893091525465932,
+          "mean_joint_speed": 1.9988038324816257,
+          "final_joint_speed": 1.5822087499880801
+        }
+      ]
+    },
+    "previous_baseline": {
+      "checkpoint": "/home/hatepp/piper/RL/twice_step/sac_reacher/sac_checkpoint.pt",
+      "training_config": {
+        "seed": 42,
+        "actor_lr": 0.0003,
+        "critic_lr": 0.0003,
+        "alpha_lr": 0.0003,
+        "gamma": 0.99,
+        "num_steps": 40000,
+        "batch_size": 256,
+        "warmup_steps": 1000,
+        "capacity": 20000,
+        "target_entropy": -0.1,
+        "tau": 0.005
+      },
+      "training_steps": 40000,
+      "training_updates": 39000,
+      "velocity_weight": 0.0,
+      "evaluation_mean_reward": -5.747232326463213,
+      "evaluation_min_reward": -12.310825126757432,
+      "evaluation_max_reward": -1.575936882138569,
+      "evaluation_mean_final_distance_m": 0.07351499728418862,
+      "evaluation_mean_distance_at_25_m": 0.07153484745908247,
+      "evaluation_mean_joint_speed_rad_s": 2.7074902027941756,
+      "evaluation_mean_final_joint_speed_rad_s": 0.8154572221390748,
+      "training_last10_reward": -11.7981698061694,
+      "episodes": [
+        {
+          "reward": -8.355874500236524,
+          "final_distance": 0.1042768152804531,
+          "distance_at_25": 0.08265456947735854,
+          "mean_joint_speed": 2.7699333150668104,
+          "final_joint_speed": 0.3593992084440396
+        },
+        {
+          "reward": -8.38059393840331,
+          "final_distance": 0.16659720521415447,
+          "distance_at_25": 0.12511790353822758,
+          "mean_joint_speed": 3.7571795194161317,
+          "final_joint_speed": 1.853439199625758
+        },
+        {
+          "reward": -7.931733555122452,
+          "final_distance": 0.05675909023277096,
+          "distance_at_25": 0.13843655038212652,
+          "mean_joint_speed": 3.4328314246143243,
+          "final_joint_speed": 0.4637514200139353
+        },
+        {
+          "reward": -2.5640215954258414,
+          "final_distance": 0.036850051765183,
+          "distance_at_25": 0.053278899958974925,
+          "mean_joint_speed": 1.2839070818801614,
+          "final_joint_speed": 1.6330970848871902
+        },
+        {
+          "reward": -6.56896611324159,
+          "final_distance": 0.09500465272816627,
+          "distance_at_25": 0.06530692540313854,
+          "mean_joint_speed": 2.3684613479321763,
+          "final_joint_speed": 0.35804410595729247
+        },
+        {
+          "reward": -4.634676056834451,
+          "final_distance": 0.05114416793182897,
+          "distance_at_25": 0.030191645359550337,
+          "mean_joint_speed": 2.3243906730931285,
+          "final_joint_speed": 0.28352667576490587
+        },
+        {
+          "reward": -2.1009641478722996,
+          "final_distance": 0.03886817836349402,
+          "distance_at_25": 0.01687035108676704,
+          "mean_joint_speed": 2.217872986219237,
+          "final_joint_speed": 0.405603660302147
+        },
+        {
+          "reward": -5.115488553334018,
+          "final_distance": 0.03621110459024236,
+          "distance_at_25": 0.08854564086631113,
+          "mean_joint_speed": 2.824570955829646,
+          "final_joint_speed": 0.9902058239876098
+        },
+        {
+          "reward": -1.9174128432640003,
+          "final_distance": 0.030146261418850313,
+          "distance_at_25": 0.03496882247722022,
+          "mean_joint_speed": 2.0066507997020824,
+          "final_joint_speed": 0.5913359362695217
+        },
+        {
+          "reward": -6.413611118503414,
+          "final_distance": 0.07203083208327563,
+          "distance_at_25": 0.05792733038903155,
+          "mean_joint_speed": 3.6252433243480997,
+          "final_joint_speed": 0.6139334489707232
+        },
+        {
+          "reward": -3.0352457693777835,
+          "final_distance": 0.07582573299422124,
+          "distance_at_25": 0.01989535132230414,
+          "mean_joint_speed": 2.679724910282672,
+          "final_joint_speed": 0.734832207670054
+        },
+        {
+          "reward": -6.4068945673387745,
+          "final_distance": 0.08877078557530219,
+          "distance_at_25": 0.06281833233856826,
+          "mean_joint_speed": 2.358808138116087,
+          "final_joint_speed": 0.26991093887256085
+        },
+        {
+          "reward": -6.595102596436933,
+          "final_distance": 0.07097662813532414,
+          "distance_at_25": 0.055883129740137094,
+          "mean_joint_speed": 2.597650448988886,
+          "final_joint_speed": 0.1779182866951731
+        },
+        {
+          "reward": -6.8228669337258125,
+          "final_distance": 0.0876960888996983,
+          "distance_at_25": 0.07090423369286424,
+          "mean_joint_speed": 2.297559382538913,
+          "final_joint_speed": 0.07250493889460015
+        },
+        {
+          "reward": -11.07479277610846,
+          "final_distance": 0.17592175344896463,
+          "distance_at_25": 0.173904349474334,
+          "mean_joint_speed": 3.6714590465254755,
+          "final_joint_speed": 0.7570724244172228
+        },
+        {
+          "reward": -9.278764872835517,
+          "final_distance": 0.10417444842834786,
+          "distance_at_25": 0.10272843800235834,
+          "mean_joint_speed": 3.4611461992081245,
+          "final_joint_speed": 0.6894657969086833
+        },
+        {
+          "reward": -3.7597322110399505,
+          "final_distance": 0.04749760194399189,
+          "distance_at_25": 0.027852805711784657,
+          "mean_joint_speed": 2.4687375823061326,
+          "final_joint_speed": 1.0638592728780136
+        },
+        {
+          "reward": -10.067906708590472,
+          "final_distance": 0.135253364407918,
+          "distance_at_25": 0.10945733144849627,
+          "mean_joint_speed": 3.2247560048241053,
+          "final_joint_speed": 0.7111337078828158
+        },
+        {
+          "reward": -7.19096152641888,
+          "final_distance": 0.13685549585824971,
+          "distance_at_25": 0.14166244872134895,
+          "mean_joint_speed": 0.7496228511672638,
+          "final_joint_speed": 0.7892827928171658
+        },
+        {
+          "reward": -2.05483248265077,
+          "final_distance": 0.05283420028796324,
+          "distance_at_25": 0.021902691212526512,
+          "mean_joint_speed": 1.9102430967670256,
+          "final_joint_speed": 0.4881120248944417
+        },
+        {
+          "reward": -5.61085174558878,
+          "final_distance": 0.056338535593872925,
+          "distance_at_25": 0.03860322069876073,
+          "mean_joint_speed": 3.478101908964015,
+          "final_joint_speed": 0.5480475778464693
+        },
+        {
+          "reward": -3.3394575915159432,
+          "final_distance": 0.022099332541423582,
+          "distance_at_25": 0.027718989694797642,
+          "mean_joint_speed": 2.9383956193281757,
+          "final_joint_speed": 0.8489234706409057
+        },
+        {
+          "reward": -12.131783659006121,
+          "final_distance": 0.18731804903311997,
+          "distance_at_25": 0.1832456354224171,
+          "mean_joint_speed": 3.6901063346958103,
+          "final_joint_speed": 0.7450057850320937
+        },
+        {
+          "reward": -4.086859536231263,
+          "final_distance": 0.06364688682591163,
+          "distance_at_25": 0.017685468470182826,
+          "mean_joint_speed": 2.3322377075053966,
+          "final_joint_speed": 0.843463205898712
+        },
+        {
+          "reward": -4.382208999237893,
+          "final_distance": 0.04098730602024866,
+          "distance_at_25": 0.08070437608012004,
+          "mean_joint_speed": 2.3145150006519284,
+          "final_joint_speed": 1.842576561442072
+        },
+        {
+          "reward": -6.506963104424513,
+          "final_distance": 0.06502465145668651,
+          "distance_at_25": 0.059879827729145615,
+          "mean_joint_speed": 2.6960029766613607,
+          "final_joint_speed": 0.25286901633749587
+        },
+        {
+          "reward": -6.648945370116372,
+          "final_distance": 0.11106748906648303,
+          "distance_at_25": 0.08040871844473083,
+          "mean_joint_speed": 3.6563560354648543,
+          "final_joint_speed": 1.2567485842800572
+        },
+        {
+          "reward": -7.486275097416855,
+          "final_distance": 0.06054142512820236,
+          "distance_at_25": 0.09480659534354026,
+          "mean_joint_speed": 3.2747783212211163,
+          "final_joint_speed": 0.4058176739749571
+        },
+        {
+          "reward": -2.8141395111810033,
+          "final_distance": 0.08083717732813607,
+          "distance_at_25": 0.023182634128382566,
+          "mean_joint_speed": 2.4199783419553276,
+          "final_joint_speed": 0.6106624308498213
+        },
+        {
+          "reward": -3.4890965764632464,
+          "final_distance": 0.046923879339773704,
+          "distance_at_25": 0.010045829615431516,
+          "mean_joint_speed": 3.0333580721652784,
+          "final_joint_speed": 0.944001792951778
+        },
+        {
+          "reward": -7.482392766837332,
+          "final_distance": 0.1304884611650943,
+          "distance_at_25": 0.10787488352877019,
+          "mean_joint_speed": 3.8971244845765054,
+          "final_joint_speed": 1.0386315000422548
+        },
+        {
+          "reward": -5.084544356190292,
+          "final_distance": 0.044558876066219555,
+          "distance_at_25": 0.02105052742413202,
+          "mean_joint_speed": 3.4148415350434735,
+          "final_joint_speed": 0.5830037413798855
+        },
+        {
+          "reward": -8.403195126757879,
+          "final_distance": 0.13587484012173232,
+          "distance_at_25": 0.12595647721166928,
+          "mean_joint_speed": 3.9258105330515156,
+          "final_joint_speed": 0.9456426832004474
+        },
+        {
+          "reward": -10.572253405817449,
+          "final_distance": 0.18032780106281118,
+          "distance_at_25": 0.17139677521852897,
+          "mean_joint_speed": 3.770963988829115,
+          "final_joint_speed": 0.901952784405988
+        },
+        {
+          "reward": -5.370281791604633,
+          "final_distance": 0.050840917555143805,
+          "distance_at_25": 0.03734108779152439,
+          "mean_joint_speed": 2.454193026811971,
+          "final_joint_speed": 0.17879853318797842
+        },
+        {
+          "reward": -1.9914453330626218,
+          "final_distance": 0.055815936176161055,
+          "distance_at_25": 0.02230663515942648,
+          "mean_joint_speed": 1.8753375925968359,
+          "final_joint_speed": 0.5376541151152017
+        },
+        {
+          "reward": -4.027255915134201,
+          "final_distance": 0.08350194044866424,
+          "distance_at_25": 0.03873841539206594,
+          "mean_joint_speed": 2.9113591073816356,
+          "final_joint_speed": 0.9866175975266558
+        },
+        {
+          "reward": -11.474542668114234,
+          "final_distance": 0.17544019214280163,
+          "distance_at_25": 0.17137578902077824,
+          "mean_joint_speed": 3.628375636618918,
+          "final_joint_speed": 0.6888587502917898
+        },
+        {
+          "reward": -3.2773420409719636,
+          "final_distance": 0.012013445390501424,
+          "distance_at_25": 0.03411134612854452,
+          "mean_joint_speed": 2.7394134789335225,
+          "final_joint_speed": 0.7182863117678773
+        },
+        {
+          "reward": -7.175937003888735,
+          "final_distance": 0.03118682624473148,
+          "distance_at_25": 0.14167843355445117,
+          "mean_joint_speed": 3.3057542887814524,
+          "final_joint_speed": 0.23436454828939418
+        },
+        {
+          "reward": -4.160424833349083,
+          "final_distance": 0.06484465441273397,
+          "distance_at_25": 0.07407256783943812,
+          "mean_joint_speed": 0.9162670591997086,
+          "final_joint_speed": 0.905119148399513
+        },
+        {
+          "reward": -10.159874672015336,
+          "final_distance": 0.13817459369338114,
+          "distance_at_25": 0.11305940710114919,
+          "mean_joint_speed": 3.0903464810140884,
+          "final_joint_speed": 0.66587010991095
+        },
+        {
+          "reward": -3.8154734989364716,
+          "final_distance": 0.04768487522459059,
+          "distance_at_25": 0.019595019733917987,
+          "mean_joint_speed": 2.464315674169001,
+          "final_joint_speed": 0.8440573101753173
+        },
+        {
+          "reward": -10.113290717296238,
+          "final_distance": 0.1719620317555837,
+          "distance_at_25": 0.1560920392081811,
+          "mean_joint_speed": 3.8946707813784673,
+          "final_joint_speed": 0.9665066696793596
+        },
+        {
+          "reward": -5.025958775780879,
+          "final_distance": 0.025266522464605437,
+          "distance_at_25": 0.03085452560011859,
+          "mean_joint_speed": 3.519656234507844,
+          "final_joint_speed": 0.5480695416041544
+        },
+        {
+          "reward": -4.276389945287011,
+          "final_distance": 0.033209305383559956,
+          "distance_at_25": 0.10024946729232008,
+          "mean_joint_speed": 2.5219349499780197,
+          "final_joint_speed": 0.6331621676840077
+        },
+        {
+          "reward": -10.237192611330089,
+          "final_distance": 0.13733350554897242,
+          "distance_at_25": 0.11396908085303273,
+          "mean_joint_speed": 3.099856120749062,
+          "final_joint_speed": 0.6434312571405585
+        },
+        {
+          "reward": -3.535179780694688,
+          "final_distance": 0.02555354805494624,
+          "distance_at_25": 0.05618354143318719,
+          "mean_joint_speed": 1.5152092685881196,
+          "final_joint_speed": 1.7113467619353224
+        },
+        {
+          "reward": -3.9952366706807934,
+          "final_distance": 0.06426310834280571,
+          "distance_at_25": 0.02156413455545453,
+          "mean_joint_speed": 2.331413651747961,
+          "final_joint_speed": 1.1488550071831165
+        },
+        {
+          "reward": -4.077137750105309,
+          "final_distance": 0.02981429705606069,
+          "distance_at_25": 0.036888658307171494,
+          "mean_joint_speed": 2.632171692967356,
+          "final_joint_speed": 0.7087601536362435
+        },
+        {
+          "reward": -7.911468267517469,
+          "final_distance": 0.13250500670831786,
+          "distance_at_25": 0.10788258742915256,
+          "mean_joint_speed": 3.7798459386027004,
+          "final_joint_speed": 0.8875906832587439
+        },
+        {
+          "reward": -7.5837198963593675,
+          "final_distance": 0.11548383271770347,
+          "distance_at_25": 0.10117298920837584,
+          "mean_joint_speed": 3.7081583108911427,
+          "final_joint_speed": 0.7728875494455131
+        },
+        {
+          "reward": -2.503403770127826,
+          "final_distance": 0.016732558301451345,
+          "distance_at_25": 0.055314767741652934,
+          "mean_joint_speed": 1.5896879916617492,
+          "final_joint_speed": 1.660227204653811
+        },
+        {
+          "reward": -5.3086507267489,
+          "final_distance": 0.02398094029222337,
+          "distance_at_25": 0.09395882645868345,
+          "mean_joint_speed": 2.8403978011894417,
+          "final_joint_speed": 0.6977698467109694
+        },
+        {
+          "reward": -3.1120764977892557,
+          "final_distance": 0.05596671287394503,
+          "distance_at_25": 0.022661590879539086,
+          "mean_joint_speed": 1.9545486767248466,
+          "final_joint_speed": 1.5158276060239797
+        },
+        {
+          "reward": -8.285498822162808,
+          "final_distance": 0.11372669182946875,
+          "distance_at_25": 0.10900724702653991,
+          "mean_joint_speed": 3.888411176472008,
+          "final_joint_speed": 0.8357206932417595
+        },
+        {
+          "reward": -4.610588945538801,
+          "final_distance": 0.007504913254032246,
+          "distance_at_25": 0.04982364166411068,
+          "mean_joint_speed": 2.741194058261804,
+          "final_joint_speed": 0.36943903979970144
+        },
+        {
+          "reward": -2.423148834030858,
+          "final_distance": 0.034380161291160366,
+          "distance_at_25": 0.034403501063511074,
+          "mean_joint_speed": 0.604103202168366,
+          "final_joint_speed": 0.1914979246431335
+        },
+        {
+          "reward": -3.432514693063354,
+          "final_distance": 0.017358146640896882,
+          "distance_at_25": 0.06151721943104144,
+          "mean_joint_speed": 2.5050240508246913,
+          "final_joint_speed": 0.4896565550683452
+        },
+        {
+          "reward": -2.773103597143883,
+          "final_distance": 0.046595205549579244,
+          "distance_at_25": 0.028936895937097248,
+          "mean_joint_speed": 1.9753355738818943,
+          "final_joint_speed": 1.563275068107795
+        },
+        {
+          "reward": -4.453359896823199,
+          "final_distance": 0.0343879001517895,
+          "distance_at_25": 0.008598335062295237,
+          "mean_joint_speed": 3.4929497609136866,
+          "final_joint_speed": 0.9583218327777403
+        },
+        {
+          "reward": -6.5107282880918005,
+          "final_distance": 0.08357836938305556,
+          "distance_at_25": 0.07096551175829446,
+          "mean_joint_speed": 3.479083460774363,
+          "final_joint_speed": 0.5853259857882229
+        },
+        {
+          "reward": -7.516057886020895,
+          "final_distance": 0.03780976105229377,
+          "distance_at_25": 0.15919905420973557,
+          "mean_joint_speed": 3.161695647749738,
+          "final_joint_speed": 0.24964545234961985
+        },
+        {
+          "reward": -2.972613549760729,
+          "final_distance": 0.011269955472861781,
+          "distance_at_25": 0.06968103315578414,
+          "mean_joint_speed": 1.9985662711006373,
+          "final_joint_speed": 1.8599225545935654
+        },
+        {
+          "reward": -3.238478211714979,
+          "final_distance": 0.018962798058050435,
+          "distance_at_25": 0.03076981233303472,
+          "mean_joint_speed": 2.849408953707455,
+          "final_joint_speed": 0.7273900636784912
+        },
+        {
+          "reward": -1.6581376437272486,
+          "final_distance": 0.02539253340644602,
+          "distance_at_25": 0.017835136621217607,
+          "mean_joint_speed": 0.5859670983051832,
+          "final_joint_speed": 0.13117806522648787
+        },
+        {
+          "reward": -2.107323489135972,
+          "final_distance": 0.07069564515493676,
+          "distance_at_25": 0.02883976140768574,
+          "mean_joint_speed": 1.783940569036846,
+          "final_joint_speed": 0.6422231376614981
+        },
+        {
+          "reward": -3.260795628329298,
+          "final_distance": 0.04201836989842997,
+          "distance_at_25": 0.038070490284669196,
+          "mean_joint_speed": 2.1960801807582633,
+          "final_joint_speed": 1.5176009312793262
+        },
+        {
+          "reward": -6.347250190869273,
+          "final_distance": 0.06156931396760018,
+          "distance_at_25": 0.05200838057039439,
+          "mean_joint_speed": 2.5837722720122067,
+          "final_joint_speed": 0.13763448713086418
+        },
+        {
+          "reward": -8.955024335044373,
+          "final_distance": 0.15051927940253793,
+          "distance_at_25": 0.13839935042314835,
+          "mean_joint_speed": 3.9280286241154894,
+          "final_joint_speed": 0.9876125420416565
+        },
+        {
+          "reward": -6.5627491760727565,
+          "final_distance": 0.0980337561914333,
+          "distance_at_25": 0.07118990065661081,
+          "mean_joint_speed": 2.2391173782627436,
+          "final_joint_speed": 0.2947656333744385
+        },
+        {
+          "reward": -3.701001116581622,
+          "final_distance": 0.026979997157767353,
+          "distance_at_25": 0.06389316128430259,
+          "mean_joint_speed": 1.8000089496271499,
+          "final_joint_speed": 1.8847414194635634
+        },
+        {
+          "reward": -8.154559102936934,
+          "final_distance": 0.09485850456740495,
+          "distance_at_25": 0.0807610100737325,
+          "mean_joint_speed": 3.550912185579164,
+          "final_joint_speed": 0.698728484469612
+        },
+        {
+          "reward": -3.1063448216859086,
+          "final_distance": 0.028519290219659366,
+          "distance_at_25": 0.010876723775918237,
+          "mean_joint_speed": 2.7771693179883403,
+          "final_joint_speed": 0.7437209316983762
+        },
+        {
+          "reward": -5.011716305255274,
+          "final_distance": 0.046271800302060365,
+          "distance_at_25": 0.03245681729200352,
+          "mean_joint_speed": 2.456179085291825,
+          "final_joint_speed": 0.21107749219472027
+        },
+        {
+          "reward": -4.976888575606691,
+          "final_distance": 0.04122410408165142,
+          "distance_at_25": 0.11261251291272086,
+          "mean_joint_speed": 2.439026621395779,
+          "final_joint_speed": 2.527539575580231
+        },
+        {
+          "reward": -5.69468458332374,
+          "final_distance": 0.014884929364986678,
+          "distance_at_25": 0.0855697126774722,
+          "mean_joint_speed": 2.9786509261053777,
+          "final_joint_speed": 0.18379270052163357
+        },
+        {
+          "reward": -7.808241634234413,
+          "final_distance": 0.08161637890325545,
+          "distance_at_25": 0.07975379126763549,
+          "mean_joint_speed": 3.1365876456336097,
+          "final_joint_speed": 0.4579518403081803
+        },
+        {
+          "reward": -1.8221351777999792,
+          "final_distance": 0.012096024150091002,
+          "distance_at_25": 0.013430633677977402,
+          "mean_joint_speed": 1.116682702361374,
+          "final_joint_speed": 1.228640957066323
+        },
+        {
+          "reward": -5.30166880529093,
+          "final_distance": 0.06511032691111741,
+          "distance_at_25": 0.10490098364541786,
+          "mean_joint_speed": 1.7471195133935733,
+          "final_joint_speed": 2.262601709759728
+        },
+        {
+          "reward": -12.310825126757432,
+          "final_distance": 0.1686671202569008,
+          "distance_at_25": 0.1446473464683123,
+          "mean_joint_speed": 3.9923668705564808,
+          "final_joint_speed": 1.1667521870874196
+        },
+        {
+          "reward": -2.433553827042709,
+          "final_distance": 0.03854959415671618,
+          "distance_at_25": 0.02120367540249336,
+          "mean_joint_speed": 2.398551662084252,
+          "final_joint_speed": 0.48817000507773783
+        },
+        {
+          "reward": -4.91431723286494,
+          "final_distance": 0.04587865093660609,
+          "distance_at_25": 0.0977775868845581,
+          "mean_joint_speed": 2.2930433782321007,
+          "final_joint_speed": 2.036834948308111
+        },
+        {
+          "reward": -4.647569594535679,
+          "final_distance": 0.015280303051875319,
+          "distance_at_25": 0.0432844075966696,
+          "mean_joint_speed": 3.3808706844482583,
+          "final_joint_speed": 0.5921476766808321
+        },
+        {
+          "reward": -1.575936882138569,
+          "final_distance": 0.02870092904896324,
+          "distance_at_25": 0.02111355949077061,
+          "mean_joint_speed": 0.6193992782112417,
+          "final_joint_speed": 0.3177289862101899
+        },
+        {
+          "reward": -4.808294447415479,
+          "final_distance": 0.09294856145411749,
+          "distance_at_25": 0.0936351381903563,
+          "mean_joint_speed": 0.7021614959587146,
+          "final_joint_speed": 0.9395174968998152
+        },
+        {
+          "reward": -3.658823174437389,
+          "final_distance": 0.04535410055100241,
+          "distance_at_25": 0.03922151087322338,
+          "mean_joint_speed": 2.425700618542627,
+          "final_joint_speed": 1.280467775186844
+        },
+        {
+          "reward": -7.270054462292872,
+          "final_distance": 0.06210904303950033,
+          "distance_at_25": 0.07177027153405778,
+          "mean_joint_speed": 3.4435748781637834,
+          "final_joint_speed": 0.658998343103391
+        },
+        {
+          "reward": -11.85546955233983,
+          "final_distance": 0.15988069341459435,
+          "distance_at_25": 0.1339088914510177,
+          "mean_joint_speed": 3.9062186993892807,
+          "final_joint_speed": 1.1191018436422884
+        },
+        {
+          "reward": -2.038345268511889,
+          "final_distance": 0.059761338073297685,
+          "distance_at_25": 0.02576729584001678,
+          "mean_joint_speed": 1.7773804327803973,
+          "final_joint_speed": 0.8757494276599744
+        },
+        {
+          "reward": -11.67208079080862,
+          "final_distance": 0.1586962260306496,
+          "distance_at_25": 0.14797854733823765,
+          "mean_joint_speed": 3.7011060361674732,
+          "final_joint_speed": 0.7588934708161656
+        },
+        {
+          "reward": -6.718245192856563,
+          "final_distance": 0.10267743741409713,
+          "distance_at_25": 0.08272997642127512,
+          "mean_joint_speed": 3.496906559152958,
+          "final_joint_speed": 0.6925602530671584
+        },
+        {
+          "reward": -10.36159352234595,
+          "final_distance": 0.17033384652329045,
+          "distance_at_25": 0.16940679713308104,
+          "mean_joint_speed": 3.7171250014207526,
+          "final_joint_speed": 0.8367375016675609
+        },
+        {
+          "reward": -3.724749663946082,
+          "final_distance": 0.04257808416576,
+          "distance_at_25": 0.04359969315055172,
+          "mean_joint_speed": 2.395258725912016,
+          "final_joint_speed": 1.4116749496553969
+        },
+        {
+          "reward": -4.128628899493776,
+          "final_distance": 0.0763106839913045,
+          "distance_at_25": 0.026422735488486292,
+          "mean_joint_speed": 2.2242214577242527,
+          "final_joint_speed": 1.1326756928372936
+        },
+        {
+          "reward": -11.19854877403207,
+          "final_distance": 0.18303271332264778,
+          "distance_at_25": 0.18000819527739376,
+          "mean_joint_speed": 3.7058267887503002,
+          "final_joint_speed": 0.8046774203981082
+        },
+        {
+          "reward": -7.159009439378852,
+          "final_distance": 0.0803934930746701,
+          "distance_at_25": 0.06550097045477513,
+          "mean_joint_speed": 2.7068345121776876,
+          "final_joint_speed": 0.2977377826042016
+        },
+        {
+          "reward": -4.0346315119391685,
+          "final_distance": 0.03800974593122082,
+          "distance_at_25": 0.019960402845264773,
+          "mean_joint_speed": 2.4941280306453777,
+          "final_joint_speed": 0.4769983062179564
+        },
+        {
+          "reward": -3.968319524060347,
+          "final_distance": 0.04982983486616281,
+          "distance_at_25": 0.01647686737229739,
+          "mean_joint_speed": 2.473186041178469,
+          "final_joint_speed": 0.7057769773290158
+        },
+        {
+          "reward": -8.117929568536104,
+          "final_distance": 0.08583925162591691,
+          "distance_at_25": 0.08363163818085313,
+          "mean_joint_speed": 3.2339101887653507,
+          "final_joint_speed": 0.4846794535757558
+        }
+      ]
+    }
+  },
+  "velocity_penalty_closer_count": 48,
+  "paired_reward_difference": -0.29653589441911493
+}
